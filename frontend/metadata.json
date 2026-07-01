@@ -1,0 +1,6 @@
+{
+  "name": "Federated Intelligence System",
+  "description": "A high-density information platform for AI/ML workflows, focusing on federated learning and distributed intelligence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
