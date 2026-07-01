@@ -2602,3 +2602,772 @@ ValueError: Unknown missing modality strategy: invalid
 2026-07-01 21:46:35 | INFO     | PP-MFL | Registered dataset: status_test
 2026-07-01 21:46:35 | INFO     | PP-MFL | Registered dataset: list_test_a
 2026-07-01 21:46:35 | INFO     | PP-MFL | Registered dataset: list_test_b
+2026-07-01 21:55:25 | INFO     | PP-MFL | Starting Personalized Prototype-Based Multimodal Federated Learning v0.1.0
+2026-07-01 21:55:38 | WARNING  | PP-MFL | HTTP 404: Not Found
+2026-07-01 21:55:38 | WARNING  | PP-MFL | HTTP 404: Not Found
+2026-07-01 21:56:25 | INFO     | PP-MFL | Shutting down application
+2026-07-01 22:04:35 | DEBUG    | PP-MFL | Registered encoder: image -> ImageEncoder
+2026-07-01 22:04:35 | DEBUG    | PP-MFL | Registered encoder: text -> TextEncoder
+2026-07-01 22:04:35 | DEBUG    | PP-MFL | Registered encoder: audio -> AudioEncoder
+2026-07-01 22:04:35 | DEBUG    | PP-MFL | Registered encoder: sensor -> SensorEncoder
+2026-07-01 22:04:52 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:04:52 | INFO     | PP-MFL | Registered dataset: meld
+2026-07-01 22:04:52 | INFO     | PP-MFL | Registered dataset: ptb_xl
+2026-07-01 22:04:52 | INFO     | PP-MFL | Registered dataset: hateful_memes
+2026-07-01 22:04:52 | INFO     | PP-MFL | Registered dataset: generic
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.014s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.005s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.005s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.004s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.002s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataLoader: batch_size=8, shuffle=False, workers=0, pin_memory=False, drop_last=False, seed=42
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.006s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.004s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | Sample uci_har data generated at datasets\sample\uci_har
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.004s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.090s
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.007s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.038s
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 15 samples for uci_har/train in 0.003s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 15 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 5 samples for uci_har/val in 0.000s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/val loaded 5 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 5 samples for uci_har/test in 0.002s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/test loaded 5 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | DataModule.setup(None): train=15, val=5, test=5
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.005s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.042s
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 21 samples for uci_har/train in 0.003s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 21 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/val in 0.001s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/val loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/test in 0.000s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/test loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | DataModule.setup(train): train=21, val=2, test=2
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.004s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.036s
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 21 samples for uci_har/train in 0.003s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 21 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/val in 0.000s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/val loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/test in 0.000s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/test loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | DataModule.setup(val): train=21, val=2, test=2
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.005s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.034s
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 21 samples for uci_har/train in 0.002s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 21 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/val in 0.001s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/val loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/test in 0.000s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/test loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | DataModule.setup(test): train=21, val=2, test=2
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.003s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.027s
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 21 samples for uci_har/train in 0.002s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 21 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/val in 0.001s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/val loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/test in 0.000s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/test loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | DataModule.setup(test): train=21, val=2, test=2
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.005s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.038s
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.006s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.034s
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.003s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.036s
+2026-07-01 22:04:53 | INFO     | PP-MFL | DataModule: uci_har, batch_size=4, workers=0, val_split=0.1, test_split=0.1, num_classes=6
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.003s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.031s
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 21 samples for uci_har/train in 0.002s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 21 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/val in 0.000s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/val loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/test in 0.000s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: uci_har/test loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | DataModule.setup(train): train=21, val=2, test=2
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.003s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.003s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.005s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:53 | INFO     | PP-MFL | Filtered dataset to 3 samples for test/train client=None
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 3 samples for test/train in 0.001s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 3 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.004s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:53 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.004s
+2026-07-01 22:04:53 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:54 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.004s
+2026-07-01 22:04:54 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:54 | DEBUG    | PP-MFL | Preloaded 10 samples for test_missing/train in 0.002s
+2026-07-01 22:04:54 | INFO     | PP-MFL | MultimodalDataset: test_missing/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 0.5, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:54 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.004s
+2026-07-01 22:04:54 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:54 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.004s
+2026-07-01 22:04:54 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:54 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.006s
+2026-07-01 22:04:54 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:54 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.003s
+2026-07-01 22:04:54 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:54 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:54 | DEBUG    | PP-MFL | Preloaded 10 samples for factory_test/train in 0.003s
+2026-07-01 22:04:54 | INFO     | PP-MFL | MultimodalDataset: factory_test/train loaded 10 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:54 | DEBUG    | PP-MFL | Preloaded 10 samples for factory_test/train in 0.003s
+2026-07-01 22:04:54 | INFO     | PP-MFL | MultimodalDataset: factory_test/train loaded 10 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:54 | DEBUG    | PP-MFL | Preloaded 10 samples for factory_test/train in 0.002s
+2026-07-01 22:04:54 | INFO     | PP-MFL | MultimodalDataset: factory_test/train loaded 10 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:54 | INFO     | PP-MFL | Sample uci_har data generated at datasets\sample\uci_har
+2026-07-01 22:04:54 | DEBUG    | PP-MFL | Preloaded 15 samples for uci_har/train in 0.002s
+2026-07-01 22:04:54 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 15 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:54 | INFO     | PP-MFL | DatasetStatistics: 15 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:54 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.066s
+2026-07-01 22:04:54 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.003s
+2026-07-01 22:04:54 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:04:54 | DEBUG    | PP-MFL | Preloaded 20 samples for stats_test/train in 0.008s
+2026-07-01 22:04:54 | INFO     | PP-MFL | MultimodalDataset: stats_test/train loaded 20 samples, 4 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:54 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 4 classes, missing_ratio=0.000, modalities={'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:54 | DEBUG    | PP-MFL | Preloaded 20 samples for stats_test/train in 0.008s
+2026-07-01 22:04:54 | INFO     | PP-MFL | MultimodalDataset: stats_test/train loaded 20 samples, 4 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:54 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 4 classes, missing_ratio=0.000, modalities={'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:54 | DEBUG    | PP-MFL | Preloaded 20 samples for stats_test/train in 0.006s
+2026-07-01 22:04:54 | INFO     | PP-MFL | MultimodalDataset: stats_test/train loaded 20 samples, 4 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:54 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 4 classes, missing_ratio=0.000, modalities={'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:54 | DEBUG    | PP-MFL | Preloaded 20 samples for missing_test/train in 0.005s
+2026-07-01 22:04:54 | INFO     | PP-MFL | MultimodalDataset: missing_test/train loaded 20 samples, 3 classes, modalities: {'image': 1.0, 'text': 0.5, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:54 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 3 classes, missing_ratio=0.250, modalities={'image': 1.0, 'text': 0.5, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:54 | DEBUG    | PP-MFL | Preloaded 20 samples for stats_test/train in 0.008s
+2026-07-01 22:04:54 | INFO     | PP-MFL | MultimodalDataset: stats_test/train loaded 20 samples, 4 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:54 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 4 classes, missing_ratio=0.000, modalities={'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:54 | DEBUG    | PP-MFL | Preloaded 20 samples for stats_test/train in 0.006s
+2026-07-01 22:04:54 | INFO     | PP-MFL | MultimodalDataset: stats_test/train loaded 20 samples, 4 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:54 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 4 classes, missing_ratio=0.000, modalities={'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:54 | DEBUG    | PP-MFL | Preloaded 20 samples for stats_test/train in 0.008s
+2026-07-01 22:04:54 | INFO     | PP-MFL | MultimodalDataset: stats_test/train loaded 20 samples, 4 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:54 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 4 classes, missing_ratio=0.000, modalities={'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:54 | DEBUG    | PP-MFL | Preloaded 0 samples for empty/train in 0.000s
+2026-07-01 22:04:54 | INFO     | PP-MFL | MultimodalDataset: empty/train loaded 0 samples, 0 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:54 | INFO     | PP-MFL | DatasetStatistics: 0 samples, 0 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:04:55 | INFO     | PP-MFL | Sample uci_har data generated at C:\Users\ivija\AppData\Local\Temp\pytest-of-ivija\pytest-13\test_uci_har_generate_and_load0\datasets\sample\uci_har
+2026-07-01 22:04:55 | INFO     | PP-MFL | Sample meld data generated at C:\Users\ivija\AppData\Local\Temp\pytest-of-ivija\pytest-13\test_meld_generate_and_load0\datasets\sample\meld
+2026-07-01 22:04:55 | INFO     | PP-MFL | Sample ptb_xl data generated at C:\Users\ivija\AppData\Local\Temp\pytest-of-ivija\pytest-13\test_ptbxl_generate_and_load0\datasets\sample\ptb_xl
+2026-07-01 22:04:56 | INFO     | PP-MFL | Sample hateful_memes data generated at C:\Users\ivija\AppData\Local\Temp\pytest-of-ivija\pytest-13\test_hateful_memes_generate_an0\datasets\sample\hateful_memes
+2026-07-01 22:04:56 | INFO     | PP-MFL | Sample generic dataset 'custom_test' generated at C:\Users\ivija\AppData\Local\Temp\pytest-of-ivija\pytest-13\test_generic_generate_and_load0\datasets\sample\custom_test
+2026-07-01 22:04:56 | INFO     | PP-MFL | Sample uci_har data generated at C:\Users\ivija\AppData\Local\Temp\pytest-of-ivija\pytest-13\test_validate_generated_sample0\datasets\sample\uci_har
+2026-07-01 22:04:56 | INFO     | PP-MFL | Sample uci_har data generated at datasets\sample\uci_har
+2026-07-01 22:04:56 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:04:56 | INFO     | PP-MFL | Registered dataset: meld
+2026-07-01 22:04:56 | INFO     | PP-MFL | Registered dataset: ptb_xl
+2026-07-01 22:04:56 | INFO     | PP-MFL | Registered dataset: hateful_memes
+2026-07-01 22:04:56 | INFO     | PP-MFL | Registered dataset: generic
+2026-07-01 22:04:56 | WARNING  | PP-MFL | HTTP 404: Dataset adapter not registered: 'nonexistent_dataset'. Available: ['generic', 'hateful_memes', 'meld', 'ptb_xl', 'uci_har']
+2026-07-01 22:04:56 | INFO     | PP-MFL | Registered dataset: my_custom_data
+2026-07-01 22:04:56 | INFO     | PP-MFL | Registered dataset: dup_test
+2026-07-01 22:04:56 | WARNING  | PP-MFL | HTTP 409: Dataset 'dup_test' already registered
+2026-07-01 22:04:56 | INFO     | PP-MFL | uci_har already downloaded at datasets\raw\uci_har
+2026-07-01 22:04:56 | WARNING  | PP-MFL | HTTP 404: Dataset adapter not registered: 'nonexistent'. Available: ['generic', 'hateful_memes', 'meld', 'ptb_xl', 'uci_har']
+2026-07-01 22:04:56 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:04:57 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:04:57 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:04:57 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:04:57 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:04:57 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:04:57 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:04:57 | WARNING  | PP-MFL | HTTP 400: Unknown partition strategy: invalid
+2026-07-01 22:04:57 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:04:57 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:04:57 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:04:57 | WARNING  | PP-MFL | HTTP 400: Unknown missing modality strategy: invalid
+2026-07-01 22:04:57 | INFO     | PP-MFL | Registered dataset: to_delete
+2026-07-01 22:04:57 | INFO     | PP-MFL | Unregistered dataset: to_delete
+2026-07-01 22:04:58 | INFO     | PP-MFL | Registered dataset: test_ds_1
+2026-07-01 22:04:58 | INFO     | PP-MFL | Registered dataset: unique_ds
+2026-07-01 22:04:58 | INFO     | PP-MFL | Registered dataset: exists_test
+2026-07-01 22:04:58 | INFO     | PP-MFL | Registered dataset: to_unregister
+2026-07-01 22:04:58 | INFO     | PP-MFL | Unregistered dataset: to_unregister
+2026-07-01 22:04:58 | INFO     | PP-MFL | Registered dataset: status_test
+2026-07-01 22:04:58 | INFO     | PP-MFL | Registered dataset: list_test_a
+2026-07-01 22:04:58 | INFO     | PP-MFL | Registered dataset: list_test_b
+2026-07-01 22:06:04 | DEBUG    | PP-MFL | Registered encoder: image -> ImageEncoder
+2026-07-01 22:06:04 | DEBUG    | PP-MFL | Registered encoder: text -> TextEncoder
+2026-07-01 22:06:04 | DEBUG    | PP-MFL | Registered encoder: audio -> AudioEncoder
+2026-07-01 22:06:04 | DEBUG    | PP-MFL | Registered encoder: sensor -> SensorEncoder
+2026-07-01 22:06:04 | INFO     | PP-MFL | Model saved to C:\Users\ivija\AppData\Local\Temp\tmpmedunlqu.pt
+2026-07-01 22:06:04 | INFO     | PP-MFL | Model loaded from C:\Users\ivija\AppData\Local\Temp\tmpmedunlqu.pt
+2026-07-01 22:06:08 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=256, params=11,307,840)
+2026-07-01 22:06:08 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=128, params=921,088)
+2026-07-01 22:06:08 | INFO     | PP-MFL | Created audio encoder: AudioEncoder (embed_dim=64, params=2,550,848)
+2026-07-01 22:06:08 | INFO     | PP-MFL | Created sensor encoder: SensorEncoder (embed_dim=64, params=554,048)
+2026-07-01 22:06:08 | INFO     | PP-MFL | Created fusion: concat (params=0)
+2026-07-01 22:06:08 | INFO     | PP-MFL | Created fusion: attention (params=526,848)
+2026-07-01 22:06:08 | INFO     | PP-MFL | Created fusion: weighted (params=4)
+2026-07-01 22:06:08 | INFO     | PP-MFL | Created projection head: 512->128 (params=329,344)
+2026-07-01 22:06:08 | INFO     | PP-MFL | Created classifier: 128->10 (params=1,290)
+2026-07-01 22:06:08 | DEBUG    | PP-MFL | Registered encoder: test_modality -> TestEncoder
+2026-07-01 22:06:08 | INFO     | PP-MFL | Initialized Sequential with xavier_uniform
+2026-07-01 22:06:08 | INFO     | PP-MFL | Initialized Sequential with xavier_uniform
+2026-07-01 22:06:08 | INFO     | PP-MFL | Model: Linear | Total params: 55 | Trainable: 55 | Non-trainable: 0
+2026-07-01 22:06:08 | INFO     | PP-MFL | Module                         Params          Trainable 
+2026-07-01 22:06:08 | INFO     | PP-MFL | -------------------------------------------------------
+2026-07-01 22:06:09 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=256, params=11,307,840)
+2026-07-01 22:06:09 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=128, params=921,088)
+2026-07-01 22:06:09 | INFO     | PP-MFL | Created fusion: concat (params=0)
+2026-07-01 22:06:09 | INFO     | PP-MFL | Created projection head: 384->64 (params=173,248)
+2026-07-01 22:06:09 | INFO     | PP-MFL | Created classifier: 64->5 (params=325)
+2026-07-01 22:06:10 | INFO     | PP-MFL | Model saved to C:\Users\ivija\AppData\Local\Temp\tmpdi8wa3sk.pt
+2026-07-01 22:06:10 | INFO     | PP-MFL | Model loaded from C:\Users\ivija\AppData\Local\Temp\tmpdi8wa3sk.pt
+2026-07-01 22:07:17 | DEBUG    | PP-MFL | Registered encoder: image -> ImageEncoder
+2026-07-01 22:07:17 | DEBUG    | PP-MFL | Registered encoder: text -> TextEncoder
+2026-07-01 22:07:17 | DEBUG    | PP-MFL | Registered encoder: audio -> AudioEncoder
+2026-07-01 22:07:17 | DEBUG    | PP-MFL | Registered encoder: sensor -> SensorEncoder
+2026-07-01 22:07:17 | INFO     | PP-MFL | Model saved to C:\Users\ivija\AppData\Local\Temp\tmpjieel45a.pt
+2026-07-01 22:07:17 | INFO     | PP-MFL | Model loaded from C:\Users\ivija\AppData\Local\Temp\tmpjieel45a.pt
+2026-07-01 22:07:20 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=256, params=11,307,840)
+2026-07-01 22:07:20 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=128, params=921,088)
+2026-07-01 22:07:20 | INFO     | PP-MFL | Created audio encoder: AudioEncoder (embed_dim=64, params=552,000)
+2026-07-01 22:07:21 | INFO     | PP-MFL | Created sensor encoder: SensorEncoder (embed_dim=64, params=554,048)
+2026-07-01 22:07:21 | INFO     | PP-MFL | Created fusion: concat (params=0)
+2026-07-01 22:07:21 | INFO     | PP-MFL | Created fusion: attention (params=526,848)
+2026-07-01 22:07:21 | INFO     | PP-MFL | Created fusion: weighted (params=4)
+2026-07-01 22:07:21 | INFO     | PP-MFL | Created projection head: 512->128 (params=329,344)
+2026-07-01 22:07:21 | INFO     | PP-MFL | Created classifier: 128->10 (params=1,290)
+2026-07-01 22:07:21 | DEBUG    | PP-MFL | Registered encoder: test_modality -> TestEncoder
+2026-07-01 22:07:21 | INFO     | PP-MFL | Initialized Sequential with xavier_uniform
+2026-07-01 22:07:21 | INFO     | PP-MFL | Initialized Sequential with xavier_uniform
+2026-07-01 22:07:21 | INFO     | PP-MFL | Model: Linear | Total params: 55 | Trainable: 55 | Non-trainable: 0
+2026-07-01 22:07:21 | INFO     | PP-MFL | Module                         Params          Trainable 
+2026-07-01 22:07:21 | INFO     | PP-MFL | -------------------------------------------------------
+2026-07-01 22:07:21 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=256, params=11,307,840)
+2026-07-01 22:07:21 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=128, params=921,088)
+2026-07-01 22:07:21 | INFO     | PP-MFL | Created fusion: concat (params=0)
+2026-07-01 22:07:21 | INFO     | PP-MFL | Created projection head: 384->64 (params=173,248)
+2026-07-01 22:07:21 | INFO     | PP-MFL | Created classifier: 64->5 (params=325)
+2026-07-01 22:07:22 | INFO     | PP-MFL | Model saved to C:\Users\ivija\AppData\Local\Temp\tmpj0ekjl5z.pt
+2026-07-01 22:07:22 | INFO     | PP-MFL | Model loaded from C:\Users\ivija\AppData\Local\Temp\tmpj0ekjl5z.pt
+2026-07-01 22:07:45 | DEBUG    | PP-MFL | Registered encoder: image -> ImageEncoder
+2026-07-01 22:07:45 | DEBUG    | PP-MFL | Registered encoder: text -> TextEncoder
+2026-07-01 22:07:45 | DEBUG    | PP-MFL | Registered encoder: audio -> AudioEncoder
+2026-07-01 22:07:45 | DEBUG    | PP-MFL | Registered encoder: sensor -> SensorEncoder
+2026-07-01 22:07:45 | INFO     | PP-MFL | Model saved to C:\Users\ivija\AppData\Local\Temp\tmpzeo6xxoi.pt
+2026-07-01 22:07:45 | INFO     | PP-MFL | Model loaded from C:\Users\ivija\AppData\Local\Temp\tmpzeo6xxoi.pt
+2026-07-01 22:07:48 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=256, params=11,307,840)
+2026-07-01 22:07:48 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=128, params=921,088)
+2026-07-01 22:07:48 | INFO     | PP-MFL | Created audio encoder: AudioEncoder (embed_dim=64, params=552,000)
+2026-07-01 22:07:48 | INFO     | PP-MFL | Created sensor encoder: SensorEncoder (embed_dim=64, params=554,048)
+2026-07-01 22:07:48 | INFO     | PP-MFL | Created fusion: concat (params=0)
+2026-07-01 22:07:48 | INFO     | PP-MFL | Created fusion: attention (params=526,848)
+2026-07-01 22:07:48 | INFO     | PP-MFL | Created fusion: weighted (params=4)
+2026-07-01 22:07:48 | INFO     | PP-MFL | Created projection head: 512->128 (params=329,344)
+2026-07-01 22:07:48 | INFO     | PP-MFL | Created classifier: 128->10 (params=1,290)
+2026-07-01 22:07:48 | DEBUG    | PP-MFL | Registered encoder: test_modality -> TestEncoder
+2026-07-01 22:07:48 | INFO     | PP-MFL | Initialized Sequential with xavier_uniform
+2026-07-01 22:07:49 | INFO     | PP-MFL | Initialized Sequential with xavier_uniform
+2026-07-01 22:07:49 | INFO     | PP-MFL | Model: Linear | Total params: 55 | Trainable: 55 | Non-trainable: 0
+2026-07-01 22:07:49 | INFO     | PP-MFL | Module                         Params          Trainable 
+2026-07-01 22:07:49 | INFO     | PP-MFL | -------------------------------------------------------
+2026-07-01 22:07:49 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=256, params=11,307,840)
+2026-07-01 22:07:49 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=128, params=921,088)
+2026-07-01 22:07:49 | INFO     | PP-MFL | Created fusion: concat (params=0)
+2026-07-01 22:07:49 | INFO     | PP-MFL | Created projection head: 384->64 (params=173,248)
+2026-07-01 22:07:49 | INFO     | PP-MFL | Created classifier: 64->5 (params=325)
+2026-07-01 22:07:50 | INFO     | PP-MFL | Model saved to C:\Users\ivija\AppData\Local\Temp\tmpe071j0qy.pt
+2026-07-01 22:07:50 | INFO     | PP-MFL | Model loaded from C:\Users\ivija\AppData\Local\Temp\tmpe071j0qy.pt
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Registered encoder: image -> ImageEncoder
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Registered encoder: text -> TextEncoder
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Registered encoder: audio -> AudioEncoder
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Registered encoder: sensor -> SensorEncoder
+2026-07-01 22:08:12 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:08:12 | INFO     | PP-MFL | Registered dataset: meld
+2026-07-01 22:08:12 | INFO     | PP-MFL | Registered dataset: ptb_xl
+2026-07-01 22:08:12 | INFO     | PP-MFL | Registered dataset: hateful_memes
+2026-07-01 22:08:12 | INFO     | PP-MFL | Registered dataset: generic
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.002s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.002s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.003s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.002s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.004s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataLoader: batch_size=8, shuffle=False, workers=0, pin_memory=False, drop_last=False, seed=42
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.002s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.002s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | Sample uci_har data generated at datasets\sample\uci_har
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.004s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.057s
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.002s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.018s
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 15 samples for uci_har/train in 0.001s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 15 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 5 samples for uci_har/val in 0.000s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/val loaded 5 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 5 samples for uci_har/test in 0.000s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/test loaded 5 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | DataModule.setup(None): train=15, val=5, test=5
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.002s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.017s
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 21 samples for uci_har/train in 0.001s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 21 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/val in 0.000s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/val loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/test in 0.000s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/test loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | DataModule.setup(train): train=21, val=2, test=2
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.003s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.028s
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 21 samples for uci_har/train in 0.002s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 21 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/val in 0.000s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/val loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/test in 0.000s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/test loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | DataModule.setup(val): train=21, val=2, test=2
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.001s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.016s
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 21 samples for uci_har/train in 0.001s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 21 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/val in 0.000s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/val loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/test in 0.000s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/test loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | DataModule.setup(test): train=21, val=2, test=2
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.002s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.018s
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 21 samples for uci_har/train in 0.001s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 21 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/val in 0.000s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/val loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/test in 0.000s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/test loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | DataModule.setup(test): train=21, val=2, test=2
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.002s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.016s
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.002s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.018s
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.002s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.020s
+2026-07-01 22:08:12 | INFO     | PP-MFL | DataModule: uci_har, batch_size=4, workers=0, val_split=0.1, test_split=0.1, num_classes=6
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.003s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.021s
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 21 samples for uci_har/train in 0.000s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 21 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/val in 0.001s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/val loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/test in 0.001s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: uci_har/test loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:12 | INFO     | PP-MFL | DataModule.setup(train): train=21, val=2, test=2
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.003s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:12 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.002s
+2026-07-01 22:08:12 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.004s
+2026-07-01 22:08:13 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | INFO     | PP-MFL | Filtered dataset to 3 samples for test/train client=None
+2026-07-01 22:08:13 | DEBUG    | PP-MFL | Preloaded 3 samples for test/train in 0.001s
+2026-07-01 22:08:13 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 3 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.001s
+2026-07-01 22:08:13 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.003s
+2026-07-01 22:08:13 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.001s
+2026-07-01 22:08:13 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | DEBUG    | PP-MFL | Preloaded 10 samples for test_missing/train in 0.001s
+2026-07-01 22:08:13 | INFO     | PP-MFL | MultimodalDataset: test_missing/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 0.5, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.001s
+2026-07-01 22:08:13 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.006s
+2026-07-01 22:08:13 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.002s
+2026-07-01 22:08:13 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.002s
+2026-07-01 22:08:13 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | DEBUG    | PP-MFL | Preloaded 10 samples for factory_test/train in 0.001s
+2026-07-01 22:08:13 | INFO     | PP-MFL | MultimodalDataset: factory_test/train loaded 10 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:13 | DEBUG    | PP-MFL | Preloaded 10 samples for factory_test/train in 0.003s
+2026-07-01 22:08:13 | INFO     | PP-MFL | MultimodalDataset: factory_test/train loaded 10 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:13 | DEBUG    | PP-MFL | Preloaded 10 samples for factory_test/train in 0.002s
+2026-07-01 22:08:13 | INFO     | PP-MFL | MultimodalDataset: factory_test/train loaded 10 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:13 | INFO     | PP-MFL | Sample uci_har data generated at datasets\sample\uci_har
+2026-07-01 22:08:13 | DEBUG    | PP-MFL | Preloaded 15 samples for uci_har/train in 0.003s
+2026-07-01 22:08:13 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 15 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:13 | INFO     | PP-MFL | DatasetStatistics: 15 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:13 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.040s
+2026-07-01 22:08:13 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.002s
+2026-07-01 22:08:13 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:08:13 | DEBUG    | PP-MFL | Preloaded 20 samples for stats_test/train in 0.004s
+2026-07-01 22:08:13 | INFO     | PP-MFL | MultimodalDataset: stats_test/train loaded 20 samples, 4 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 4 classes, missing_ratio=0.000, modalities={'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | DEBUG    | PP-MFL | Preloaded 20 samples for stats_test/train in 0.003s
+2026-07-01 22:08:13 | INFO     | PP-MFL | MultimodalDataset: stats_test/train loaded 20 samples, 4 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 4 classes, missing_ratio=0.000, modalities={'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | DEBUG    | PP-MFL | Preloaded 20 samples for stats_test/train in 0.005s
+2026-07-01 22:08:13 | INFO     | PP-MFL | MultimodalDataset: stats_test/train loaded 20 samples, 4 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 4 classes, missing_ratio=0.000, modalities={'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | DEBUG    | PP-MFL | Preloaded 20 samples for missing_test/train in 0.005s
+2026-07-01 22:08:13 | INFO     | PP-MFL | MultimodalDataset: missing_test/train loaded 20 samples, 3 classes, modalities: {'image': 1.0, 'text': 0.5, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 3 classes, missing_ratio=0.250, modalities={'image': 1.0, 'text': 0.5, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | DEBUG    | PP-MFL | Preloaded 20 samples for stats_test/train in 0.004s
+2026-07-01 22:08:13 | INFO     | PP-MFL | MultimodalDataset: stats_test/train loaded 20 samples, 4 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 4 classes, missing_ratio=0.000, modalities={'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | DEBUG    | PP-MFL | Preloaded 20 samples for stats_test/train in 0.003s
+2026-07-01 22:08:13 | INFO     | PP-MFL | MultimodalDataset: stats_test/train loaded 20 samples, 4 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 4 classes, missing_ratio=0.000, modalities={'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | DEBUG    | PP-MFL | Preloaded 20 samples for stats_test/train in 0.003s
+2026-07-01 22:08:13 | INFO     | PP-MFL | MultimodalDataset: stats_test/train loaded 20 samples, 4 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 4 classes, missing_ratio=0.000, modalities={'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | DEBUG    | PP-MFL | Preloaded 0 samples for empty/train in 0.000s
+2026-07-01 22:08:13 | INFO     | PP-MFL | MultimodalDataset: empty/train loaded 0 samples, 0 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | INFO     | PP-MFL | DatasetStatistics: 0 samples, 0 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:08:13 | INFO     | PP-MFL | Sample uci_har data generated at C:\Users\ivija\AppData\Local\Temp\pytest-of-ivija\pytest-14\test_uci_har_generate_and_load0\datasets\sample\uci_har
+2026-07-01 22:08:14 | INFO     | PP-MFL | Sample meld data generated at C:\Users\ivija\AppData\Local\Temp\pytest-of-ivija\pytest-14\test_meld_generate_and_load0\datasets\sample\meld
+2026-07-01 22:08:14 | INFO     | PP-MFL | Sample ptb_xl data generated at C:\Users\ivija\AppData\Local\Temp\pytest-of-ivija\pytest-14\test_ptbxl_generate_and_load0\datasets\sample\ptb_xl
+2026-07-01 22:08:14 | INFO     | PP-MFL | Sample hateful_memes data generated at C:\Users\ivija\AppData\Local\Temp\pytest-of-ivija\pytest-14\test_hateful_memes_generate_an0\datasets\sample\hateful_memes
+2026-07-01 22:08:14 | INFO     | PP-MFL | Sample generic dataset 'custom_test' generated at C:\Users\ivija\AppData\Local\Temp\pytest-of-ivija\pytest-14\test_generic_generate_and_load0\datasets\sample\custom_test
+2026-07-01 22:08:14 | INFO     | PP-MFL | Sample uci_har data generated at C:\Users\ivija\AppData\Local\Temp\pytest-of-ivija\pytest-14\test_validate_generated_sample0\datasets\sample\uci_har
+2026-07-01 22:08:14 | INFO     | PP-MFL | Sample uci_har data generated at datasets\sample\uci_har
+2026-07-01 22:08:14 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:08:14 | INFO     | PP-MFL | Registered dataset: meld
+2026-07-01 22:08:14 | INFO     | PP-MFL | Registered dataset: ptb_xl
+2026-07-01 22:08:14 | INFO     | PP-MFL | Registered dataset: hateful_memes
+2026-07-01 22:08:14 | INFO     | PP-MFL | Registered dataset: generic
+2026-07-01 22:08:14 | WARNING  | PP-MFL | HTTP 404: Dataset adapter not registered: 'nonexistent_dataset'. Available: ['generic', 'hateful_memes', 'meld', 'ptb_xl', 'uci_har']
+2026-07-01 22:08:14 | INFO     | PP-MFL | Registered dataset: my_custom_data
+2026-07-01 22:08:14 | INFO     | PP-MFL | Registered dataset: dup_test
+2026-07-01 22:08:14 | WARNING  | PP-MFL | HTTP 409: Dataset 'dup_test' already registered
+2026-07-01 22:08:14 | INFO     | PP-MFL | uci_har already downloaded at datasets\raw\uci_har
+2026-07-01 22:08:14 | WARNING  | PP-MFL | HTTP 404: Dataset adapter not registered: 'nonexistent'. Available: ['generic', 'hateful_memes', 'meld', 'ptb_xl', 'uci_har']
+2026-07-01 22:08:14 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:08:14 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:08:14 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:08:14 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:08:14 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:08:14 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:08:14 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:08:14 | WARNING  | PP-MFL | HTTP 400: Unknown partition strategy: invalid
+2026-07-01 22:08:14 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:08:14 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:08:14 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:08:14 | WARNING  | PP-MFL | HTTP 400: Unknown missing modality strategy: invalid
+2026-07-01 22:08:15 | INFO     | PP-MFL | Registered dataset: to_delete
+2026-07-01 22:08:15 | INFO     | PP-MFL | Unregistered dataset: to_delete
+2026-07-01 22:08:15 | INFO     | PP-MFL | Registered dataset: test_ds_1
+2026-07-01 22:08:15 | INFO     | PP-MFL | Registered dataset: unique_ds
+2026-07-01 22:08:15 | INFO     | PP-MFL | Registered dataset: exists_test
+2026-07-01 22:08:15 | INFO     | PP-MFL | Registered dataset: to_unregister
+2026-07-01 22:08:15 | INFO     | PP-MFL | Unregistered dataset: to_unregister
+2026-07-01 22:08:15 | INFO     | PP-MFL | Registered dataset: status_test
+2026-07-01 22:08:15 | INFO     | PP-MFL | Registered dataset: list_test_a
+2026-07-01 22:08:15 | INFO     | PP-MFL | Registered dataset: list_test_b
+2026-07-01 22:08:15 | INFO     | PP-MFL | Model saved to C:\Users\ivija\AppData\Local\Temp\tmp84joskf6.pt
+2026-07-01 22:08:15 | INFO     | PP-MFL | Model loaded from C:\Users\ivija\AppData\Local\Temp\tmp84joskf6.pt
+2026-07-01 22:08:18 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=256, params=11,307,840)
+2026-07-01 22:08:18 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=128, params=921,088)
+2026-07-01 22:08:18 | INFO     | PP-MFL | Created audio encoder: AudioEncoder (embed_dim=64, params=552,000)
+2026-07-01 22:08:18 | INFO     | PP-MFL | Created sensor encoder: SensorEncoder (embed_dim=64, params=554,048)
+2026-07-01 22:08:18 | INFO     | PP-MFL | Created fusion: concat (params=0)
+2026-07-01 22:08:18 | INFO     | PP-MFL | Created fusion: attention (params=526,848)
+2026-07-01 22:08:18 | INFO     | PP-MFL | Created fusion: weighted (params=4)
+2026-07-01 22:08:18 | INFO     | PP-MFL | Created projection head: 512->128 (params=329,344)
+2026-07-01 22:08:18 | INFO     | PP-MFL | Created classifier: 128->10 (params=1,290)
+2026-07-01 22:08:18 | DEBUG    | PP-MFL | Registered encoder: test_modality -> TestEncoder
+2026-07-01 22:08:18 | INFO     | PP-MFL | Initialized Sequential with xavier_uniform
+2026-07-01 22:08:18 | INFO     | PP-MFL | Initialized Sequential with xavier_uniform
+2026-07-01 22:08:18 | INFO     | PP-MFL | Model: Linear | Total params: 55 | Trainable: 55 | Non-trainable: 0
+2026-07-01 22:08:18 | INFO     | PP-MFL | Module                         Params          Trainable 
+2026-07-01 22:08:18 | INFO     | PP-MFL | -------------------------------------------------------
+2026-07-01 22:08:19 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=256, params=11,307,840)
+2026-07-01 22:08:19 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=128, params=921,088)
+2026-07-01 22:08:19 | INFO     | PP-MFL | Created fusion: concat (params=0)
+2026-07-01 22:08:19 | INFO     | PP-MFL | Created projection head: 384->64 (params=173,248)
+2026-07-01 22:08:19 | INFO     | PP-MFL | Created classifier: 64->5 (params=325)
+2026-07-01 22:08:19 | INFO     | PP-MFL | Model saved to C:\Users\ivija\AppData\Local\Temp\tmp_hpb5_oz.pt
+2026-07-01 22:08:19 | INFO     | PP-MFL | Model loaded from C:\Users\ivija\AppData\Local\Temp\tmp_hpb5_oz.pt
+2026-07-01 22:09:02 | DEBUG    | PP-MFL | Registered encoder: image -> ImageEncoder
+2026-07-01 22:09:02 | DEBUG    | PP-MFL | Registered encoder: text -> TextEncoder
+2026-07-01 22:09:02 | DEBUG    | PP-MFL | Registered encoder: audio -> AudioEncoder
+2026-07-01 22:09:02 | DEBUG    | PP-MFL | Registered encoder: sensor -> SensorEncoder
+2026-07-01 22:09:03 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:09:03 | INFO     | PP-MFL | Registered dataset: meld
+2026-07-01 22:09:03 | INFO     | PP-MFL | Registered dataset: ptb_xl
+2026-07-01 22:09:03 | INFO     | PP-MFL | Registered dataset: hateful_memes
+2026-07-01 22:09:03 | INFO     | PP-MFL | Registered dataset: generic
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataLoader: batch_size=8, shuffle=False, workers=0, pin_memory=False, drop_last=False, seed=42
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.002s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | Sample uci_har data generated at datasets\sample\uci_har
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.003s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.045s
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.013s
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 15 samples for uci_har/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 15 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 5 samples for uci_har/val in 0.000s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/val loaded 5 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 5 samples for uci_har/test in 0.000s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/test loaded 5 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DataModule.setup(None): train=15, val=5, test=5
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.002s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.015s
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 21 samples for uci_har/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 21 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/val in 0.000s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/val loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/test in 0.000s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/test loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DataModule.setup(train): train=21, val=2, test=2
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.014s
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 21 samples for uci_har/train in 0.000s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 21 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/val in 0.000s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/val loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/test in 0.000s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/test loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DataModule.setup(val): train=21, val=2, test=2
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.014s
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 21 samples for uci_har/train in 0.000s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 21 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/val in 0.000s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/val loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/test in 0.000s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/test loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DataModule.setup(test): train=21, val=2, test=2
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.015s
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 21 samples for uci_har/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 21 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/val in 0.000s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/val loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/test in 0.000s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/test loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DataModule.setup(test): train=21, val=2, test=2
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.011s
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.012s
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.002s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.014s
+2026-07-01 22:09:03 | INFO     | PP-MFL | DataModule: uci_har, batch_size=4, workers=0, val_split=0.1, test_split=0.1, num_classes=6
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.002s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.015s
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 21 samples for uci_har/train in 0.000s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 21 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/val in 0.000s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/val loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/test in 0.000s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/test loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DataModule.setup(train): train=21, val=2, test=2
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | Filtered dataset to 3 samples for test/train client=None
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 3 samples for test/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 3 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.002s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 10 samples for test_missing/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: test_missing/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 0.5, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 10 samples for factory_test/train in 0.000s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: factory_test/train loaded 10 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 10 samples for factory_test/train in 0.000s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: factory_test/train loaded 10 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 10 samples for factory_test/train in 0.000s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: factory_test/train loaded 10 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | Sample uci_har data generated at datasets\sample\uci_har
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 15 samples for uci_har/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 15 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DatasetStatistics: 15 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.044s
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 20 samples for stats_test/train in 0.001s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: stats_test/train loaded 20 samples, 4 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 4 classes, missing_ratio=0.000, modalities={'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 20 samples for stats_test/train in 0.002s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: stats_test/train loaded 20 samples, 4 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 4 classes, missing_ratio=0.000, modalities={'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 20 samples for stats_test/train in 0.004s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: stats_test/train loaded 20 samples, 4 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 4 classes, missing_ratio=0.000, modalities={'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 20 samples for missing_test/train in 0.004s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: missing_test/train loaded 20 samples, 3 classes, modalities: {'image': 1.0, 'text': 0.5, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 3 classes, missing_ratio=0.250, modalities={'image': 1.0, 'text': 0.5, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 20 samples for stats_test/train in 0.002s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: stats_test/train loaded 20 samples, 4 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 4 classes, missing_ratio=0.000, modalities={'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 20 samples for stats_test/train in 0.002s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: stats_test/train loaded 20 samples, 4 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:03 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 4 classes, missing_ratio=0.000, modalities={'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:03 | DEBUG    | PP-MFL | Preloaded 20 samples for stats_test/train in 0.002s
+2026-07-01 22:09:03 | INFO     | PP-MFL | MultimodalDataset: stats_test/train loaded 20 samples, 4 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:04 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 4 classes, missing_ratio=0.000, modalities={'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:04 | DEBUG    | PP-MFL | Preloaded 0 samples for empty/train in 0.000s
+2026-07-01 22:09:04 | INFO     | PP-MFL | MultimodalDataset: empty/train loaded 0 samples, 0 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:04 | INFO     | PP-MFL | DatasetStatistics: 0 samples, 0 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-01 22:09:04 | INFO     | PP-MFL | Sample uci_har data generated at C:\Users\ivija\AppData\Local\Temp\pytest-of-ivija\pytest-15\test_uci_har_generate_and_load0\datasets\sample\uci_har
+2026-07-01 22:09:04 | INFO     | PP-MFL | Sample meld data generated at C:\Users\ivija\AppData\Local\Temp\pytest-of-ivija\pytest-15\test_meld_generate_and_load0\datasets\sample\meld
+2026-07-01 22:09:04 | INFO     | PP-MFL | Sample ptb_xl data generated at C:\Users\ivija\AppData\Local\Temp\pytest-of-ivija\pytest-15\test_ptbxl_generate_and_load0\datasets\sample\ptb_xl
+2026-07-01 22:09:04 | INFO     | PP-MFL | Sample hateful_memes data generated at C:\Users\ivija\AppData\Local\Temp\pytest-of-ivija\pytest-15\test_hateful_memes_generate_an0\datasets\sample\hateful_memes
+2026-07-01 22:09:04 | INFO     | PP-MFL | Sample generic dataset 'custom_test' generated at C:\Users\ivija\AppData\Local\Temp\pytest-of-ivija\pytest-15\test_generic_generate_and_load0\datasets\sample\custom_test
+2026-07-01 22:09:04 | INFO     | PP-MFL | Sample uci_har data generated at C:\Users\ivija\AppData\Local\Temp\pytest-of-ivija\pytest-15\test_validate_generated_sample0\datasets\sample\uci_har
+2026-07-01 22:09:04 | INFO     | PP-MFL | Sample uci_har data generated at datasets\sample\uci_har
+2026-07-01 22:09:04 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:09:04 | INFO     | PP-MFL | Registered dataset: meld
+2026-07-01 22:09:04 | INFO     | PP-MFL | Registered dataset: ptb_xl
+2026-07-01 22:09:04 | INFO     | PP-MFL | Registered dataset: hateful_memes
+2026-07-01 22:09:04 | INFO     | PP-MFL | Registered dataset: generic
+2026-07-01 22:09:04 | WARNING  | PP-MFL | HTTP 404: Dataset adapter not registered: 'nonexistent_dataset'. Available: ['generic', 'hateful_memes', 'meld', 'ptb_xl', 'uci_har']
+2026-07-01 22:09:04 | INFO     | PP-MFL | Registered dataset: my_custom_data
+2026-07-01 22:09:04 | INFO     | PP-MFL | Registered dataset: dup_test
+2026-07-01 22:09:04 | WARNING  | PP-MFL | HTTP 409: Dataset 'dup_test' already registered
+2026-07-01 22:09:04 | INFO     | PP-MFL | uci_har already downloaded at datasets\raw\uci_har
+2026-07-01 22:09:04 | WARNING  | PP-MFL | HTTP 404: Dataset adapter not registered: 'nonexistent'. Available: ['generic', 'hateful_memes', 'meld', 'ptb_xl', 'uci_har']
+2026-07-01 22:09:04 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:09:05 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:09:05 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:09:05 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:09:05 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:09:05 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:09:05 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:09:05 | WARNING  | PP-MFL | HTTP 400: Unknown partition strategy: invalid
+2026-07-01 22:09:05 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:09:05 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:09:05 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-01 22:09:05 | WARNING  | PP-MFL | HTTP 400: Unknown missing modality strategy: invalid
+2026-07-01 22:09:05 | INFO     | PP-MFL | Registered dataset: to_delete
+2026-07-01 22:09:05 | INFO     | PP-MFL | Unregistered dataset: to_delete
+2026-07-01 22:09:05 | INFO     | PP-MFL | Registered dataset: test_ds_1
+2026-07-01 22:09:05 | INFO     | PP-MFL | Registered dataset: unique_ds
+2026-07-01 22:09:05 | INFO     | PP-MFL | Registered dataset: exists_test
+2026-07-01 22:09:05 | INFO     | PP-MFL | Registered dataset: to_unregister
+2026-07-01 22:09:05 | INFO     | PP-MFL | Unregistered dataset: to_unregister
+2026-07-01 22:09:05 | INFO     | PP-MFL | Registered dataset: status_test
+2026-07-01 22:09:05 | INFO     | PP-MFL | Registered dataset: list_test_a
+2026-07-01 22:09:05 | INFO     | PP-MFL | Registered dataset: list_test_b
+2026-07-01 22:09:05 | INFO     | PP-MFL | Model saved to C:\Users\ivija\AppData\Local\Temp\tmpobanxpli.pt
+2026-07-01 22:09:05 | INFO     | PP-MFL | Model loaded from C:\Users\ivija\AppData\Local\Temp\tmpobanxpli.pt
+2026-07-01 22:09:09 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=256, params=11,307,840)
+2026-07-01 22:09:09 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=128, params=921,088)
+2026-07-01 22:09:09 | INFO     | PP-MFL | Created audio encoder: AudioEncoder (embed_dim=64, params=552,000)
+2026-07-01 22:09:09 | INFO     | PP-MFL | Created sensor encoder: SensorEncoder (embed_dim=64, params=554,048)
+2026-07-01 22:09:09 | INFO     | PP-MFL | Created fusion: concat (params=0)
+2026-07-01 22:09:09 | INFO     | PP-MFL | Created fusion: attention (params=526,848)
+2026-07-01 22:09:09 | INFO     | PP-MFL | Created fusion: weighted (params=4)
+2026-07-01 22:09:09 | INFO     | PP-MFL | Created projection head: 512->128 (params=329,344)
+2026-07-01 22:09:09 | INFO     | PP-MFL | Created classifier: 128->10 (params=1,290)
+2026-07-01 22:09:09 | DEBUG    | PP-MFL | Registered encoder: test_modality -> TestEncoder
+2026-07-01 22:09:09 | INFO     | PP-MFL | Initialized Sequential with xavier_uniform
+2026-07-01 22:09:09 | INFO     | PP-MFL | Initialized Sequential with xavier_uniform
+2026-07-01 22:09:09 | INFO     | PP-MFL | Model: Linear | Total params: 55 | Trainable: 55 | Non-trainable: 0
+2026-07-01 22:09:09 | INFO     | PP-MFL | Module                         Params          Trainable 
+2026-07-01 22:09:09 | INFO     | PP-MFL | -------------------------------------------------------
+2026-07-01 22:09:10 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=256, params=11,307,840)
+2026-07-01 22:09:10 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=128, params=921,088)
+2026-07-01 22:09:10 | INFO     | PP-MFL | Created fusion: concat (params=0)
+2026-07-01 22:09:10 | INFO     | PP-MFL | Created projection head: 384->64 (params=173,248)
+2026-07-01 22:09:10 | INFO     | PP-MFL | Created classifier: 64->5 (params=325)
+2026-07-01 22:09:10 | INFO     | PP-MFL | Model saved to C:\Users\ivija\AppData\Local\Temp\tmps_kcyz63.pt
+2026-07-01 22:09:10 | INFO     | PP-MFL | Model loaded from C:\Users\ivija\AppData\Local\Temp\tmps_kcyz63.pt
