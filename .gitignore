@@ -1,0 +1,77 @@
+# ----------------------------
+# Python
+# ----------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment Variables
+.env
+.env.*
+
+# ----------------------------
+# Node.js
+# ----------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ----------------------------
+# Build Files
+# ----------------------------
+dist/
+build/
+
+# ----------------------------
+# IDE
+# ----------------------------
+.vscode/
+.idea/
+
+# ----------------------------
+# OS Files
+# ----------------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------------
+# Logs
+# ----------------------------
+*.log
+logs/
+
+# ----------------------------
+# ML Artifacts
+# ----------------------------
+# ----------------------------
+# ML Artifacts
+# ----------------------------
+backend/checkpoints/
+backend/experiments/
+backend/logs/
+backend/datasets/raw/
+backend/datasets/cache/
+
+# ----------------------------
+# Coverage
+# ----------------------------
+.coverage
+htmlcov/
+coverage.xml
+
+# ----------------------------
+# Temporary Files
+# ----------------------------
+*.tmp
+*.bak
