@@ -17,6 +17,7 @@ class Settings(BaseSettings):
     cors_allow_methods: list[str] = ["*"]
     cors_allow_headers: list[str] = ["*"]
 
+    datasets_root: str = "datasets"
     log_level: str = "DEBUG"
     log_format: str = "json"
     log_file: str = "logs/app.log"

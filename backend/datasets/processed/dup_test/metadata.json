@@ -1,0 +1,24 @@
+{
+  "dataset_name": "dup_test",
+  "classes": [
+    "class_0",
+    "class_1"
+  ],
+  "num_classes": 2,
+  "modalities": [
+    "image"
+  ],
+  "input_shapes": {
+    "image": [
+      3,
+      224,
+      224
+    ]
+  },
+  "num_samples": 0,
+  "client_count": 0,
+  "missing_modality_ratio": 0.0,
+  "download_status": "not_downloaded",
+  "preprocessing_status": "not_preprocessed",
+  "partition_status": "not_partitioned"
+}

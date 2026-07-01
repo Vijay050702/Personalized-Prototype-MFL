@@ -1,0 +1,28 @@
+{
+  "dataset_name": "hateful_memes",
+  "classes": [
+    "not_hateful",
+    "hateful"
+  ],
+  "num_classes": 2,
+  "modalities": [
+    "image",
+    "text"
+  ],
+  "input_shapes": {
+    "image": [
+      3,
+      224,
+      224
+    ],
+    "text": [
+      128
+    ]
+  },
+  "num_samples": 12000,
+  "client_count": 0,
+  "missing_modality_ratio": 0.0,
+  "download_status": "not_downloaded",
+  "preprocessing_status": "not_preprocessed",
+  "partition_status": "not_partitioned"
+}

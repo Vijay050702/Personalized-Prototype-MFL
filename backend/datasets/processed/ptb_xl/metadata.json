@@ -1,0 +1,26 @@
+{
+  "dataset_name": "ptb_xl",
+  "classes": [
+    "NORM",
+    "MI",
+    "STTC",
+    "CD",
+    "HYP"
+  ],
+  "num_classes": 5,
+  "modalities": [
+    "sensor"
+  ],
+  "input_shapes": {
+    "sensor": [
+      12,
+      5000
+    ]
+  },
+  "num_samples": 21837,
+  "client_count": 0,
+  "missing_modality_ratio": 0.0,
+  "download_status": "not_downloaded",
+  "preprocessing_status": "not_preprocessed",
+  "partition_status": "not_partitioned"
+}

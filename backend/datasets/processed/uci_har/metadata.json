@@ -1,0 +1,26 @@
+{
+  "dataset_name": "uci_har",
+  "classes": [
+    "walking",
+    "walking_upstairs",
+    "walking_downstairs",
+    "sitting",
+    "standing",
+    "laying"
+  ],
+  "num_classes": 6,
+  "modalities": [
+    "sensor"
+  ],
+  "input_shapes": {
+    "sensor": [
+      561
+    ]
+  },
+  "num_samples": 10299,
+  "client_count": 0,
+  "missing_modality_ratio": 0.0,
+  "download_status": "not_downloaded",
+  "preprocessing_status": "not_preprocessed",
+  "partition_status": "not_partitioned"
+}

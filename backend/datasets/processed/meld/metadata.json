@@ -1,0 +1,32 @@
+{
+  "dataset_name": "meld",
+  "classes": [
+    "anger",
+    "disgust",
+    "fear",
+    "joy",
+    "neutral",
+    "sadness",
+    "surprise"
+  ],
+  "num_classes": 7,
+  "modalities": [
+    "text",
+    "audio"
+  ],
+  "input_shapes": {
+    "text": [
+      128
+    ],
+    "audio": [
+      128,
+      128
+    ]
+  },
+  "num_samples": 13000,
+  "client_count": 0,
+  "missing_modality_ratio": 0.0,
+  "download_status": "not_downloaded",
+  "preprocessing_status": "not_preprocessed",
+  "partition_status": "not_partitioned"
+}
