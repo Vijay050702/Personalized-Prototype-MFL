@@ -3371,3 +3371,1583 @@ ValueError: Unknown missing modality strategy: invalid
 2026-07-01 22:09:10 | INFO     | PP-MFL | Created classifier: 64->5 (params=325)
 2026-07-01 22:09:10 | INFO     | PP-MFL | Model saved to C:\Users\ivija\AppData\Local\Temp\tmps_kcyz63.pt
 2026-07-01 22:09:10 | INFO     | PP-MFL | Model loaded from C:\Users\ivija\AppData\Local\Temp\tmps_kcyz63.pt
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d0b23d25, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=bd9eaf20, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | WARNING  | PP-MFL | Overwriting prototype bd9eaf20-4702-4ca9-9b78-e6d4d660bf4e
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=bd9eaf20, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=344e5463, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Replaced prototype 344e5463-ce6a-4924-8c45-b4d93788f1c7
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=46da589a, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Updated prototype 46da589a-e4ac-438f-865a-eece35d28bf0
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=9ae5472b, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Updated prototype 9ae5472b-73ce-4a51-863a-d61c199f37aa
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=12ef3d3d, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Updated prototype 12ef3d3d-e4d1-4fd3-870b-322807b2700c
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=0abe1a9e, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Removed prototype 0abe1a9e-1bb4-4341-b23c-624341f06cd1
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=fb6d3fa9, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1392cb29, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f8c78919, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e3cc6446, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=fdfedbce, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4f4998a8, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=79d1741e, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=6f2983a5, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4556d85d, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=84a52f59, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c6da7e5a, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f83cb593, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=49c331fd, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b89d579c, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=9740b181, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e90e71f4, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f4cc1c0b, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=3acd68cc, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=767d4377, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ad1a497f, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=730833f9, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=066dff94, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=65613905, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=76742ab0, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=35d2b668, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e4f8b3df, class=0, modality=image, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=181ff008, class=0, modality=audio, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=75f32318, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=9dc0eb83, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1e57a213, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=efbd3441, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a501b2a0, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:48 | DEBUG    | PP-MFL | Stored prototype Prototype(id=63aed583, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=73f521a8, class=0, modality=a, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=49ab5da4, class=0, modality=b, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4b619835, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=651022a8, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=12365371, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=72b8a9bd, class=5, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=6374b33b, class=3, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e5a90c53, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=2c6bfd96, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=298f6ebc, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=884a84de, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8621c97a, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8a53614b, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=20ef753f, class=10, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=34e4973a, class=20, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=20ef753f, class=10, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=34e4973a, class=20, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | INFO     | PP-MFL | Imported 2 prototypes
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8581281a, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:11:49 | INFO     | PP-MFL | Imported 0 prototypes
+2026-07-02 10:11:49 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-02 10:11:49 | INFO     | PP-MFL | Generated prototype for class 0 using weighted_centroid
+2026-07-02 10:11:49 | INFO     | PP-MFL | Generated prototype for class 0 using weighted_centroid
+2026-07-02 10:11:49 | INFO     | PP-MFL | Generated prototype for class 1 using median
+2026-07-02 10:11:49 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-02 10:11:49 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-02 10:11:49 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-02 10:11:49 | INFO     | PP-MFL | Generated 3 prototypes for 3 classes
+2026-07-02 10:11:49 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-02 10:11:49 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-02 10:11:49 | INFO     | PP-MFL | Generated 2 prototypes for 2 classes
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ef82f39e, class=0, modality=shared, dim=8, samples=5, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=351c2b75, class=1, modality=shared, dim=8, samples=5, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1b0d78ff, class=0, modality=shared, dim=8, samples=1, conf=1.000)
+2026-07-02 10:11:49 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-02 10:11:49 | INFO     | PP-MFL | Generated 1 prototypes for 1 classes
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Incremental update for prototype e07f1a2d-ec0d-44dc-9d1a-49a4e4e6cc98
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Incremental update for prototype 45d0c512-4917-4add-9f2d-a4e2e6acf7d7
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Incremental update for prototype ccbe7b6b-eb6f-4c2b-91c4-4ec93fb621d9
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Incremental update for prototype 0babcd48-958c-4e60-8066-793104974cd9
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ede6df6a, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a1ae17a4, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=853aeb9a, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Removed prototype 853aeb9a-9036-4bd0-b95d-b3569fe31d78
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=853aeb9a, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | INFO     | PP-MFL | Promoted prototype 853aeb9a-9036-4bd0-b95d-b3569fe31d78 to global
+2026-07-02 10:11:49 | WARNING  | PP-MFL | Prototype nonexistent not found in local memory
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ef539775, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (1 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:11:49 | INFO     | PP-MFL | Cleared all memory
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (1 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (2 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Cleared all snapshots
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (1 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (2 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (3 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (4 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (5 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (6 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (7 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (8 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (9 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (10 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (11 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (12 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (13 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (14 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (15 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (16 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (17 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (18 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (19 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (20 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (21 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (22 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (23 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (24 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (25 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (26 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (27 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (28 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (29 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (30 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (31 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (32 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (33 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (34 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (35 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (36 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (37 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (38 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (39 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (40 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (41 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (42 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (43 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (44 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (45 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (46 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (47 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (48 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (49 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ec0a9cb7, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=eba65052, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Removed prototype ec0a9cb7-b7df-4df5-92f7-2d152c8171d5
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Evicted prototype ec0a9cb7-b7df-4df5-92f7-2d152c8171d5 (oldest)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=51e8f345, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=3c257a3e, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a5e33633, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Removed prototype 3c257a3e-fb9e-4e40-9a85-002f4356757f
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Evicted prototype 3c257a3e-fb9e-4e40-9a85-002f4356757f (oldest)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4e9014cc, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=32b0d5a6, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Removed prototype 32b0d5a6-b5f1-4ddd-b5f6-94adf06ee106
+2026-07-02 10:11:49 | INFO     | PP-MFL | Aged out 1 prototypes older than -1.0s
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8baea56d, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=5d5f3096, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4d4bf55e, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Stored prototype Prototype(id=2b399b56, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Stored prototype Prototype(id=17597d73, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Snapshot taken (1 total)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:11:50 | INFO     | PP-MFL | Cleared all memory
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ec791adf, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b5ab01fd, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Stored prototype Prototype(id=9ab1cc40, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | EMA update for 09c4193c-47e1-4574-b03b-65465a291f62 (alpha=0.9)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Moving average update for 1ecd4c18-e3d6-40bc-b137-55665ece7eb1
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Replacement update for 5c163f94-728b-47be-b384-7b92964fa98e
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Weighted update for 8f702bb9-1a45-4700-baa5-3b88b7d8fc9f (weight=0.3)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Adaptive update for d7d6a178-88de-42ef-a6de-94bc0c0e717a (alpha=0.4929)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | EMA update for f0e838a0-20e6-40f4-b355-9f74721b8021 (alpha=0.9)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | EMA update for fde617ac-3635-4b0c-82f5-38b9be16ae4d (alpha=0.9)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ea63d695, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8011f757, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ef2f290f, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ede0b2c7, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Stored prototype Prototype(id=340bd2ab, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e02790e2, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Stored prototype Prototype(id=482514a9, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Stored prototype Prototype(id=572de60b, class=0, modality=image, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8bc79a91, class=0, modality=audio, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Stored prototype Prototype(id=5f0f2962, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e25e5286, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Stored prototype Prototype(id=5c90b06e, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Stored prototype Prototype(id=7403bd6d, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a02dcdc9, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Stored prototype Prototype(id=acc50250, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f2673c54, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4bc743bb, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Stored prototype Prototype(id=2d308057, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e90a5e76, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Stored prototype Prototype(id=19dae3b8, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:50 | DEBUG    | PP-MFL | Stored prototype Prototype(id=9339a3f4, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:11:51 | DEBUG    | PP-MFL | Registered prototype component: test_comp
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ef7aa5df, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=509e8020, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | WARNING  | PP-MFL | Overwriting prototype 509e8020-513e-4003-8462-a6dc1a111771
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=509e8020, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=9ae10f0c, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Replaced prototype 9ae10f0c-9874-4875-990b-67f4a0924d7f
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a7bf1f06, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Updated prototype a7bf1f06-8618-4514-b9cb-cdd352c71bf6
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b316f85c, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Updated prototype b316f85c-b95c-41ba-96ea-36be59b06f79
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=9487d06c, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Updated prototype 9487d06c-0a59-4a82-9048-cdc50dad2028
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4f77d18b, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Removed prototype 4f77d18b-ca6c-49b5-8cd1-47f3445ca846
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=0b4e9c5a, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=3ea51e86, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=0290bfad, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d64a6e19, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ffc158c2, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=3abf5545, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=0831433d, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=79b4b333, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a4da0b0d, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a0fbc0b1, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=50d3c293, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=fc3c383c, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=2db13f7e, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=56c25e88, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=7b4dfcc1, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=0dfa39ba, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d2ed2492, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=3e870d46, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b971dd76, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8e2db530, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e63a71dc, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=bf9bd1c4, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=0e1abf8a, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d0f55cc5, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=289e613c, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ffe621f2, class=0, modality=image, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c97cab05, class=0, modality=audio, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=83b370d6, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=128d349e, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=2fda0fc9, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=249a41a2, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=46bbf6e2, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=6e99f93f, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=3e8cbba4, class=0, modality=a, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=6c136649, class=0, modality=b, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=5234e108, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d22644d6, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=fe7e4aab, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c038af86, class=5, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=168848b8, class=3, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=df925021, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ee4529e4, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4a25dfee, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b83db8d6, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=dbc5f559, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=9619373f, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4245eb0a, class=10, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c93cd175, class=20, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4245eb0a, class=10, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c93cd175, class=20, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | INFO     | PP-MFL | Imported 2 prototypes
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d4b53a12, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:13:59 | INFO     | PP-MFL | Imported 0 prototypes
+2026-07-02 10:13:59 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-02 10:13:59 | INFO     | PP-MFL | Generated prototype for class 0 using weighted_centroid
+2026-07-02 10:13:59 | INFO     | PP-MFL | Generated prototype for class 0 using weighted_centroid
+2026-07-02 10:13:59 | INFO     | PP-MFL | Generated prototype for class 1 using median
+2026-07-02 10:13:59 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-02 10:13:59 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-02 10:13:59 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-02 10:13:59 | INFO     | PP-MFL | Generated 3 prototypes for 3 classes
+2026-07-02 10:13:59 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-02 10:13:59 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-02 10:13:59 | INFO     | PP-MFL | Generated 2 prototypes for 2 classes
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4703c519, class=0, modality=shared, dim=8, samples=5, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=eca1aeac, class=1, modality=shared, dim=8, samples=5, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d81e8053, class=0, modality=shared, dim=8, samples=1, conf=1.000)
+2026-07-02 10:13:59 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-02 10:13:59 | INFO     | PP-MFL | Generated 1 prototypes for 1 classes
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Incremental update for prototype 02068b4e-3969-4f05-ab3b-e722bed84286
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Incremental update for prototype f1f0de5a-6554-4a14-84ac-b43e69d93404
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Incremental update for prototype e00b0c4a-6991-4f95-be52-5ea7008a45e8
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Incremental update for prototype 98811304-0337-45a7-8150-0ed97cb4861a
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=75d40f02, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ce53385d, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4e35f9f6, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Removed prototype 4e35f9f6-90a4-4b20-acda-cfe0970bfaf3
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4e35f9f6, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | INFO     | PP-MFL | Promoted prototype 4e35f9f6-90a4-4b20-acda-cfe0970bfaf3 to global
+2026-07-02 10:13:59 | WARNING  | PP-MFL | Prototype nonexistent not found in local memory
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e3d945a3, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (1 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e3d945a3, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | INFO     | PP-MFL | Imported 1 prototypes
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:13:59 | INFO     | PP-MFL | Imported 0 prototypes
+2026-07-02 10:13:59 | INFO     | PP-MFL | Restored snapshot from index -1
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (1 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (2 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Cleared all snapshots
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (1 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (2 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (3 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (4 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (5 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (6 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (7 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (8 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (9 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (10 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (11 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (12 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (13 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (14 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (15 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (16 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (17 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (18 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (19 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (20 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (21 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (22 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (23 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (24 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (25 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (26 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (27 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (28 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (29 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (30 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (31 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (32 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (33 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (34 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (35 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (36 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (37 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (38 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (39 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (40 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (41 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (42 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (43 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (44 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (45 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (46 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (47 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (48 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (49 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=66eedda5, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4d6ea893, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Removed prototype 66eedda5-12dd-4c86-b04a-e0e122c09884
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Evicted prototype 66eedda5-12dd-4c86-b04a-e0e122c09884 (oldest)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=37766367, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c55486a2, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ad9c39b4, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Removed prototype c55486a2-07db-49f8-bafe-625343ebe0f7
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Evicted prototype c55486a2-07db-49f8-bafe-625343ebe0f7 (oldest)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=19fb1cdc, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8fdeffae, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Removed prototype 8fdeffae-38a4-4a9b-8c9a-01611f295418
+2026-07-02 10:13:59 | INFO     | PP-MFL | Aged out 1 prototypes older than -1.0s
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=6e7bcf84, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=aea378d3, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d924c64b, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=68ece37d, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=9511fa46, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Snapshot taken (1 total)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:13:59 | INFO     | PP-MFL | Cleared all memory
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8ff77dd2, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=02317912, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=952f006c, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | EMA update for 58398778-caca-4948-8d9d-d1dd1a0fcdee (alpha=0.9)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Moving average update for d843b646-1e6a-4d39-9c49-0153d2f5bb53
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Replacement update for 1eb0c9a3-a917-44c5-9d83-7c30a4a57f40
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Weighted update for 85f4d5eb-d6e1-4cb9-912c-271cc9d2d6d7 (weight=0.3)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Adaptive update for 1c10608a-295a-49c2-83f1-36ec3edcd8fd (alpha=0.4929)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | EMA update for b1714c61-4f14-42e4-8b8e-8cedd2e20753 (alpha=0.9)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | EMA update for 5eddc40e-fdd5-4266-87b6-f2a7c9d2ec11 (alpha=0.9)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c4739eed, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=51d246f4, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b4a0ffae, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=88e942ee, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=34045de3, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c6318c66, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e8a22de4, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=67ebfec1, class=0, modality=image, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=aedffae3, class=0, modality=audio, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=770a7cfb, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1f3c0c6f, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=7783c702, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=eaf46749, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e7a232ff, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:13:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b3d48b10, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=371872cb, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=89f6b858, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=7d1744ff, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=17eb56bf, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=9a0d7bee, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=667dc77d, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:01 | DEBUG    | PP-MFL | Registered prototype component: test_comp
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=bbcdc398, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=939c8969, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | WARNING  | PP-MFL | Overwriting prototype 939c8969-d1bb-4984-b85b-e6cbc9b44bdf
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=939c8969, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=2f071fb2, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Replaced prototype 2f071fb2-d30a-47f0-b654-21dbcf5f529c
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1a6c18f9, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Updated prototype 1a6c18f9-d4ef-40c0-9abb-75178574acaf
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=3afed60f, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Updated prototype 3afed60f-e56f-4f3b-adec-2ab08c9ebd05
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c7f99beb, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Updated prototype c7f99beb-55cd-4e94-99d4-6a6303ce2469
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=7dbafb5f, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Removed prototype 7dbafb5f-2128-4f57-a9b9-0b66ff702aff
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=81a0f3bf, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=df7c4456, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=801016fe, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=6e916d3e, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ff5fd698, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b1d1c4b9, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=0feb5ee6, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1661f488, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b3845f77, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=803731d6, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8c3bc5fa, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8a657543, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=059f7df2, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=71ca0c00, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c87d5854, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8254d04f, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e338f744, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=71fa5042, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=87c4a846, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ce194458, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=9252f86d, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=0e796ccb, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=533529cc, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=3343f59c, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=57bce84e, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=2ee0e059, class=0, modality=image, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ab372fba, class=0, modality=audio, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=22cda441, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=50ee8723, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a3105d7a, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=9d16252e, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=551eecd6, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=5f94737a, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a699dff4, class=0, modality=a, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=57ecdbb0, class=0, modality=b, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=64e7755f, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b6e1c6b5, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=9e7f2710, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c8c5033b, class=5, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=04220a2c, class=3, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=57a96081, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=6b5f4bba, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=220b3986, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=57ca56f2, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c91439a1, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b710e0c2, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=426ba54e, class=10, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a0f2bb3a, class=20, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=426ba54e, class=10, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a0f2bb3a, class=20, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | INFO     | PP-MFL | Imported 2 prototypes
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=2061806f, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:14:30 | INFO     | PP-MFL | Imported 0 prototypes
+2026-07-02 10:14:30 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-02 10:14:30 | INFO     | PP-MFL | Generated prototype for class 0 using weighted_centroid
+2026-07-02 10:14:30 | INFO     | PP-MFL | Generated prototype for class 0 using weighted_centroid
+2026-07-02 10:14:30 | INFO     | PP-MFL | Generated prototype for class 1 using median
+2026-07-02 10:14:30 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-02 10:14:30 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-02 10:14:30 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-02 10:14:30 | INFO     | PP-MFL | Generated 3 prototypes for 3 classes
+2026-07-02 10:14:30 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-02 10:14:30 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-02 10:14:30 | INFO     | PP-MFL | Generated 2 prototypes for 2 classes
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a000935f, class=0, modality=shared, dim=8, samples=5, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=49eb10cf, class=1, modality=shared, dim=8, samples=5, conf=1.000)
+2026-07-02 10:14:30 | DEBUG    | PP-MFL | Stored prototype Prototype(id=234cbf0e, class=0, modality=shared, dim=8, samples=1, conf=1.000)
+2026-07-02 10:14:30 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-02 10:14:30 | INFO     | PP-MFL | Generated 1 prototypes for 1 classes
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Incremental update for prototype 27f25a12-6554-4a7a-a3e6-286d92d65803
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Incremental update for prototype 725b1d36-8ee7-4f33-942f-5ba8cf368e28
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Incremental update for prototype c3959df9-e3e1-4324-a717-2d217dc3d73e
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Incremental update for prototype 04ce8386-dbdd-483b-af02-8694a416b26f
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=6febd044, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=68d2adac, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=423e4620, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Removed prototype 423e4620-0e49-4706-817b-aeeca284aa39
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=423e4620, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | INFO     | PP-MFL | Promoted prototype 423e4620-0e49-4706-817b-aeeca284aa39 to global
+2026-07-02 10:14:31 | WARNING  | PP-MFL | Prototype nonexistent not found in local memory
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1bd6ab36, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (1 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1bd6ab36, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | INFO     | PP-MFL | Imported 1 prototypes
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:14:31 | INFO     | PP-MFL | Imported 0 prototypes
+2026-07-02 10:14:31 | INFO     | PP-MFL | Restored snapshot from index -1
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (1 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (2 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Cleared all snapshots
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (1 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (2 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (3 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (4 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (5 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (6 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (7 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (8 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (9 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (10 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (11 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (12 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (13 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (14 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (15 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (16 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (17 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (18 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (19 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (20 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (21 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (22 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (23 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (24 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (25 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (26 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (27 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (28 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (29 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (30 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (31 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (32 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (33 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (34 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (35 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (36 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (37 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (38 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (39 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (40 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (41 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (42 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (43 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (44 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (45 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (46 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (47 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (48 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (49 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=388a4da1, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1bff4ddb, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Removed prototype 388a4da1-f9d5-44ac-8692-e39d5aae5227
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Evicted prototype 388a4da1-f9d5-44ac-8692-e39d5aae5227 (oldest)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=6199ae95, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=65dc4a78, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=7ebe589d, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Removed prototype 65dc4a78-809b-47fb-a101-0fd93d4799ab
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Evicted prototype 65dc4a78-809b-47fb-a101-0fd93d4799ab (oldest)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=db1b6eaa, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=2ead3372, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Removed prototype 2ead3372-28e6-4cb2-af89-2641e43be52e
+2026-07-02 10:14:31 | INFO     | PP-MFL | Aged out 1 prototypes older than -1.0s
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=cffa721f, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=23556f3f, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=7090a205, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b06a2f25, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1577b52e, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Snapshot taken (1 total)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:14:31 | INFO     | PP-MFL | Cleared all memory
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=142959c3, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=07d0753b, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=7d00792a, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | EMA update for 556db114-dfcb-4808-aea7-ed0488d6a0ef (alpha=0.9)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Moving average update for a5e6e7c2-952c-46b1-b32f-de410f46239f
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Replacement update for 1487e6a2-7e95-4d16-b76a-a9bb53d38b8d
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Weighted update for 80dfc4e8-94d3-425b-a9d9-fb78284cc2e8 (weight=0.3)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Adaptive update for 7cb1562d-805d-4098-a85d-daa5fc7f2eea (alpha=0.4929)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | EMA update for 7557d978-78f5-4094-9132-0579965692c2 (alpha=0.9)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | EMA update for 5c2d000a-4492-4535-8305-23b439bb4dd1 (alpha=0.9)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e0767ef2, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d9f455a5, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=343ac174, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d6776625, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=30e7068e, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=18d1658e, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=44154fd1, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=31ef44b8, class=0, modality=image, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c368be87, class=0, modality=audio, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f78ed839, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b8f568e2, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=96b10fc1, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=bcbfcaae, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f102157d, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1dec2573, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=0ff1e2b4, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4a230940, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=faed33e7, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=7f93f44c, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ac32bc98, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:31 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1650f365, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:32 | DEBUG    | PP-MFL | Registered prototype component: test_comp
+2026-07-02 10:14:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e82a7b3f, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ccb1ffa7, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:58 | WARNING  | PP-MFL | Overwriting prototype ccb1ffa7-9e16-4662-b0ca-a6f582dbe3c2
+2026-07-02 10:14:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ccb1ffa7, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4a8da73e, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:58 | DEBUG    | PP-MFL | Replaced prototype 4a8da73e-80b2-4111-81e0-d9f159e8f84a
+2026-07-02 10:14:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8e402b2f, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:58 | DEBUG    | PP-MFL | Updated prototype 8e402b2f-015f-4c92-87db-73608788a157
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=0e927247, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Updated prototype 0e927247-9261-4d74-8d0a-8938e12c967d
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c17ff165, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Updated prototype c17ff165-f480-4e26-81d0-d3c101ac871e
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=319e11e0, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Removed prototype 319e11e0-6b38-485f-a0b7-291dc5ea3243
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=33f81efb, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c59c69d9, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b7054a45, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=605d0b8a, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e5c0b4d5, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c45f588d, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c0bbb681, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4e30f58e, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1100cdd0, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=de24f3f8, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f368d276, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=82b71fe2, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a2db294d, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=0321b0a8, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=21ce88d0, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1a3ef4be, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=68944525, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=3b527e3b, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e61904ab, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8687b8ce, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f9666c66, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=843f3c72, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=277f73f7, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=0a793e8d, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f53fea60, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c51f5890, class=0, modality=image, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d8be8a87, class=0, modality=audio, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ed1d71b3, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=83bb5c97, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=84f25652, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=9ce213be, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=65bb93ba, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=869070ca, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d31b450e, class=0, modality=a, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=0cbd446a, class=0, modality=b, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e0cee9cb, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=33cdd228, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1c2e6a9a, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=6323f39f, class=5, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=6aa85e2b, class=3, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8cd3510d, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e38490d8, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ecedfef3, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=567e5052, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e87a3316, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=22f6bc63, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4223c23a, class=10, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b66c265c, class=20, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4223c23a, class=10, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b66c265c, class=20, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | INFO     | PP-MFL | Imported 2 prototypes
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a1f1638a, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:14:59 | INFO     | PP-MFL | Imported 0 prototypes
+2026-07-02 10:14:59 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-02 10:14:59 | INFO     | PP-MFL | Generated prototype for class 0 using weighted_centroid
+2026-07-02 10:14:59 | INFO     | PP-MFL | Generated prototype for class 0 using weighted_centroid
+2026-07-02 10:14:59 | INFO     | PP-MFL | Generated prototype for class 1 using median
+2026-07-02 10:14:59 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-02 10:14:59 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-02 10:14:59 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-02 10:14:59 | INFO     | PP-MFL | Generated 3 prototypes for 3 classes
+2026-07-02 10:14:59 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-02 10:14:59 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-02 10:14:59 | INFO     | PP-MFL | Generated 2 prototypes for 2 classes
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b6b1df01, class=0, modality=shared, dim=8, samples=5, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=3d452466, class=1, modality=shared, dim=8, samples=5, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8b93aaf6, class=0, modality=shared, dim=8, samples=1, conf=1.000)
+2026-07-02 10:14:59 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-02 10:14:59 | INFO     | PP-MFL | Generated 1 prototypes for 1 classes
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Removed prototype 8b93aaf6-2364-44bc-a81e-0f39e41b6e2f
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d45154b1, class=0, modality=shared, dim=8, samples=10, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Incremental update for prototype 83968afc-6614-4173-9c06-c800d8622442
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Incremental update for prototype b9fdb10f-cbc4-46af-a082-e3603aa882c1
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Incremental update for prototype 7608c18f-1fdb-466c-85d1-4f6df7038517
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Incremental update for prototype 184e6de2-06a2-4ee5-b8ae-281f69cc20c7
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d612c666, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ef455e49, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=6c581b40, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Removed prototype 6c581b40-93ec-4259-8475-061159fd4650
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=6c581b40, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | INFO     | PP-MFL | Promoted prototype 6c581b40-93ec-4259-8475-061159fd4650 to global
+2026-07-02 10:14:59 | WARNING  | PP-MFL | Prototype nonexistent not found in local memory
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b91b7d9f, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (1 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b91b7d9f, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | INFO     | PP-MFL | Imported 1 prototypes
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:14:59 | INFO     | PP-MFL | Imported 0 prototypes
+2026-07-02 10:14:59 | INFO     | PP-MFL | Restored snapshot from index -1
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (1 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (2 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Cleared all snapshots
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (1 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (2 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (3 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (4 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (5 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (6 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (7 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (8 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (9 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (10 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (11 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (12 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (13 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (14 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (15 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (16 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (17 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (18 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (19 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (20 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (21 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (22 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (23 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (24 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (25 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (26 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (27 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (28 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (29 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (30 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (31 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (32 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (33 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (34 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (35 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (36 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (37 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (38 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (39 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (40 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (41 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (42 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (43 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (44 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (45 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (46 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (47 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (48 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (49 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=239e9ecf, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=0bdd6df5, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Removed prototype 239e9ecf-613c-446d-bd50-ba98e8533801
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Evicted prototype 239e9ecf-613c-446d-bd50-ba98e8533801 (oldest)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f6b30c32, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e6f130c8, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a912c2ef, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Removed prototype e6f130c8-da76-4095-9c23-1cecb41fbc41
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Evicted prototype e6f130c8-da76-4095-9c23-1cecb41fbc41 (oldest)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a4dbda5c, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8fed0510, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Removed prototype 8fed0510-5b37-49d8-8f9f-795701ff8ecc
+2026-07-02 10:14:59 | INFO     | PP-MFL | Aged out 1 prototypes older than -1.0s
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f352f81f, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=3e43d840, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=0282aa31, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=439a5d93, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8bec5754, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Snapshot taken (1 total)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:14:59 | INFO     | PP-MFL | Cleared all memory
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=0a8a14f0, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=9a1a2475, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f3c81030, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | EMA update for 19708672-7bde-4a50-8c58-e71344054a46 (alpha=0.9)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Moving average update for 0e1a3b48-cbc2-407e-8a01-99f68c59a144
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Replacement update for 22d00f9f-e024-4043-bb2d-080fc8938422
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Weighted update for 6bb25b5d-088f-4464-90af-ffbb5e8d0ccf (weight=0.3)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | Adaptive update for 4907c6bc-228b-4339-a6c8-74f55ee75e3b (alpha=0.4929)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | EMA update for b1ac1c53-0ef6-4760-a5bd-195fe7d5f75a (alpha=0.9)
+2026-07-02 10:14:59 | DEBUG    | PP-MFL | EMA update for 2cf03a62-9ac6-478f-9454-97f5a7d8fdba (alpha=0.9)
+2026-07-02 10:15:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b0b94564, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=71e82fb0, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=9a5a3897, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d6ab9f36, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ef7699bc, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d07a4909, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=422a0a87, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=432226e5, class=0, modality=image, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=586fbffd, class=0, modality=audio, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=dc8f7d59, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=7a293a9c, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=018e38c9, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=48d0636d, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=604cdfee, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e3df81da, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a9e62801, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1eacb2bd, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=cb29e50e, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e4a27ebe, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=12d22aeb, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:00 | DEBUG    | PP-MFL | Stored prototype Prototype(id=87b32a27, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:01 | DEBUG    | PP-MFL | Registered prototype component: test_comp
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=62a0dcb7, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=14179145, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | WARNING  | PP-MFL | Overwriting prototype 14179145-9bd2-4760-ae59-b11cf7eba5e8
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=14179145, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=68eb9e67, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Replaced prototype 68eb9e67-73de-45f5-8467-175e6bbb63c7
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1796c9a7, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Updated prototype 1796c9a7-000b-4567-a9f3-fe38af43c8de
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=2344575d, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Updated prototype 2344575d-2109-430a-8cbf-9f33729f0c1e
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=0c4e8e4e, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Updated prototype 0c4e8e4e-092b-4e4d-af9e-0d52397fe29a
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d92cc8d4, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Removed prototype d92cc8d4-fe8a-4e3e-8612-65fc2f9627f9
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b5dc448c, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4fd306fc, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=6faa3d5e, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ac2ae8fe, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=fa7649bf, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=55f68aba, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=6301c4b8, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4bc1e479, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f438667c, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=dddf9a12, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=7c1bdf25, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=473cee3c, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=bd422e36, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d15d90ad, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8ead0dbe, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=6e56c388, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=6b61c19b, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=819ea7b5, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=78ff2bfe, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=261c4e7b, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=563fc42a, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=30584004, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=cc36140f, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d188d14a, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=170576e2, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=9d7c6895, class=0, modality=image, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c642cba8, class=0, modality=audio, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=90deafeb, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=dd952699, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=0881ad5c, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=3b37504e, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8be74d9f, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c8ee537e, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:34 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f8557f75, class=0, modality=a, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b3946ad5, class=0, modality=b, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4e720c81, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ac6d0178, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=cb17b764, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=6a971d5b, class=5, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4eb70c1e, class=3, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c1014d0d, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=df6842a7, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=68615dc9, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=26626061, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=2b2be213, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=bfce5583, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=30fcc762, class=10, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8318cb04, class=20, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=30fcc762, class=10, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8318cb04, class=20, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | INFO     | PP-MFL | Imported 2 prototypes
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4e2eaec6, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:15:35 | INFO     | PP-MFL | Imported 0 prototypes
+2026-07-02 10:15:35 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-02 10:15:35 | INFO     | PP-MFL | Generated prototype for class 0 using weighted_centroid
+2026-07-02 10:15:35 | INFO     | PP-MFL | Generated prototype for class 0 using weighted_centroid
+2026-07-02 10:15:35 | INFO     | PP-MFL | Generated prototype for class 1 using median
+2026-07-02 10:15:35 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-02 10:15:35 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-02 10:15:35 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-02 10:15:35 | INFO     | PP-MFL | Generated 3 prototypes for 3 classes
+2026-07-02 10:15:35 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-02 10:15:35 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-02 10:15:35 | INFO     | PP-MFL | Generated 2 prototypes for 2 classes
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=0db6fc3e, class=0, modality=shared, dim=8, samples=5, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d67ca848, class=1, modality=shared, dim=8, samples=5, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b8c6922b, class=0, modality=shared, dim=8, samples=1, conf=1.000)
+2026-07-02 10:15:35 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-02 10:15:35 | INFO     | PP-MFL | Generated 1 prototypes for 1 classes
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Removed prototype b8c6922b-c68e-434e-9148-e7991b5d3818
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=368254c3, class=0, modality=shared, dim=8, samples=10, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Incremental update for prototype 43839c38-5148-424a-9ed9-fc66cfe7ab37
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Incremental update for prototype 36473c7a-e53a-49f4-9aff-2606f424ca00
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Incremental update for prototype e0b68609-9acf-42a3-88ce-1f79af91233f
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Incremental update for prototype 708a1db9-0a37-43c6-ac69-c79516293c9c
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=5cc6327b, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8cede7aa, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=faac7dc1, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Removed prototype faac7dc1-9ef4-439c-b72e-d1d437cc2dbe
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=faac7dc1, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | INFO     | PP-MFL | Promoted prototype faac7dc1-9ef4-439c-b72e-d1d437cc2dbe to global
+2026-07-02 10:15:35 | WARNING  | PP-MFL | Prototype nonexistent not found in local memory
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f32a27c5, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (1 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f32a27c5, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | INFO     | PP-MFL | Imported 1 prototypes
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:15:35 | INFO     | PP-MFL | Imported 0 prototypes
+2026-07-02 10:15:35 | INFO     | PP-MFL | Restored snapshot from index -1
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (1 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (2 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Cleared all snapshots
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (1 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (2 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (3 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (4 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (5 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (6 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (7 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (8 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (9 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (10 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (11 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (12 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (13 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (14 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (15 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (16 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (17 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (18 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (19 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (20 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (21 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (22 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (23 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (24 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (25 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (26 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (27 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (28 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (29 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (30 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (31 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (32 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (33 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (34 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (35 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (36 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (37 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (38 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (39 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (40 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (41 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (42 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (43 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (44 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (45 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (46 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (47 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (48 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (49 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f86951ff, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=103afbca, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Removed prototype f86951ff-105a-404e-b64a-aba0d4d84c7d
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Evicted prototype f86951ff-105a-404e-b64a-aba0d4d84c7d (oldest)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e0e8b113, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=fdeb5495, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=2ee6f0f0, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Removed prototype fdeb5495-cee2-44a7-8a45-015cc53cd88d
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Evicted prototype fdeb5495-cee2-44a7-8a45-015cc53cd88d (oldest)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=bed92fcb, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=632aeaa2, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Removed prototype 632aeaa2-0fa8-4ec7-af6d-30d807f3f1ab
+2026-07-02 10:15:35 | INFO     | PP-MFL | Aged out 1 prototypes older than -1.0s
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=14aa4d38, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=7526a61f, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c68e6786, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=64d797b6, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e63a860a, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Snapshot taken (1 total)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:15:35 | INFO     | PP-MFL | Cleared all memory
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=426c51a4, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=798a760b, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4f5dbed7, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | EMA update for 821caede-a28e-4bdf-9b6b-ac0abcb7bee3 (alpha=0.9)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Moving average update for eedb475e-a684-4e8a-b730-357fc403f9c2
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Replacement update for a3c6d082-41b4-478e-adce-d14f7a42b3eb
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Weighted update for d4a68334-3a08-4359-a546-c636053d5bd1 (weight=0.3)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | Adaptive update for 918e57ed-7941-4b4f-8a1c-3181e69ca237 (alpha=0.4929)
+2026-07-02 10:15:35 | DEBUG    | PP-MFL | EMA update for 3cd45282-808e-4a6b-b36a-b91107b6549e (alpha=0.9)
+2026-07-02 10:15:36 | DEBUG    | PP-MFL | EMA update for 8e75426f-a754-4c89-8e05-fbd0d35d54bd (alpha=0.9)
+2026-07-02 10:15:36 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4f714ba7, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:36 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f9fd9521, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:36 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c5c94ba9, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:36 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e6befb81, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:36 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1cfc06e4, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:36 | DEBUG    | PP-MFL | Stored prototype Prototype(id=2ff93a97, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:36 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d0492ba7, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:36 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ef8694b6, class=0, modality=image, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:36 | DEBUG    | PP-MFL | Stored prototype Prototype(id=6d4a179a, class=0, modality=audio, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:36 | DEBUG    | PP-MFL | Stored prototype Prototype(id=9d8aa470, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:36 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b84e27ee, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:36 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d211fcab, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:36 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d8025b41, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:36 | DEBUG    | PP-MFL | Stored prototype Prototype(id=53049a1e, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:36 | DEBUG    | PP-MFL | Stored prototype Prototype(id=72f22355, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:36 | DEBUG    | PP-MFL | Stored prototype Prototype(id=03f48d67, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:36 | DEBUG    | PP-MFL | Stored prototype Prototype(id=325cd840, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:36 | DEBUG    | PP-MFL | Stored prototype Prototype(id=339bc114, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:36 | DEBUG    | PP-MFL | Stored prototype Prototype(id=fd37b4b5, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:36 | DEBUG    | PP-MFL | Stored prototype Prototype(id=395ed8ec, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:36 | DEBUG    | PP-MFL | Stored prototype Prototype(id=29415ce3, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:15:37 | DEBUG    | PP-MFL | Registered prototype component: test_comp
+2026-07-02 10:16:20 | DEBUG    | PP-MFL | Registered encoder: image -> ImageEncoder
+2026-07-02 10:16:20 | DEBUG    | PP-MFL | Registered encoder: text -> TextEncoder
+2026-07-02 10:16:20 | DEBUG    | PP-MFL | Registered encoder: audio -> AudioEncoder
+2026-07-02 10:16:20 | DEBUG    | PP-MFL | Registered encoder: sensor -> SensorEncoder
+2026-07-02 10:16:20 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-02 10:16:20 | INFO     | PP-MFL | Registered dataset: meld
+2026-07-02 10:16:20 | INFO     | PP-MFL | Registered dataset: ptb_xl
+2026-07-02 10:16:20 | INFO     | PP-MFL | Registered dataset: hateful_memes
+2026-07-02 10:16:20 | INFO     | PP-MFL | Registered dataset: generic
+2026-07-02 10:16:21 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.015s
+2026-07-02 10:16:21 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:21 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.006s
+2026-07-02 10:16:21 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:21 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.005s
+2026-07-02 10:16:21 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:21 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.006s
+2026-07-02 10:16:21 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:21 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.006s
+2026-07-02 10:16:21 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:21 | INFO     | PP-MFL | MultimodalDataLoader: batch_size=8, shuffle=False, workers=0, pin_memory=False, drop_last=False, seed=42
+2026-07-02 10:16:21 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.005s
+2026-07-02 10:16:21 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:21 | DEBUG    | PP-MFL | Preloaded 20 samples for test/train in 0.006s
+2026-07-02 10:16:21 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 20 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:21 | INFO     | PP-MFL | Sample uci_har data generated at datasets\sample\uci_har
+2026-07-02 10:16:21 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.007s
+2026-07-02 10:16:21 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:21 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:21 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.134s
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.006s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.061s
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 15 samples for uci_har/train in 0.002s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 15 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 5 samples for uci_har/val in 0.002s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/val loaded 5 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 5 samples for uci_har/test in 0.001s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/test loaded 5 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | INFO     | PP-MFL | DataModule.setup(None): train=15, val=5, test=5
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.006s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.051s
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 21 samples for uci_har/train in 0.005s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 21 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/val in 0.000s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/val loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/test in 0.001s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/test loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | INFO     | PP-MFL | DataModule.setup(train): train=21, val=2, test=2
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.006s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.051s
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 21 samples for uci_har/train in 0.004s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 21 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/val in 0.000s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/val loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/test in 0.000s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/test loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | INFO     | PP-MFL | DataModule.setup(val): train=21, val=2, test=2
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.007s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.052s
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 21 samples for uci_har/train in 0.005s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 21 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/val in 0.001s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/val loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/test in 0.001s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/test loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | INFO     | PP-MFL | DataModule.setup(test): train=21, val=2, test=2
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.006s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.047s
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 21 samples for uci_har/train in 0.005s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 21 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/val in 0.000s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/val loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/test in 0.000s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/test loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | INFO     | PP-MFL | DataModule.setup(test): train=21, val=2, test=2
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.005s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.047s
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.006s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.050s
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.007s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.048s
+2026-07-02 10:16:22 | INFO     | PP-MFL | DataModule: uci_har, batch_size=4, workers=0, val_split=0.1, test_split=0.1, num_classes=6
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 25 samples for uci_har/train in 0.005s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 25 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | INFO     | PP-MFL | DatasetStatistics: 25 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.052s
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 21 samples for uci_har/train in 0.006s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 21 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/val in 0.000s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/val loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 2 samples for uci_har/test in 0.000s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: uci_har/test loaded 2 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:22 | INFO     | PP-MFL | DataModule.setup(train): train=21, val=2, test=2
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.005s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.004s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.006s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:22 | INFO     | PP-MFL | Filtered dataset to 3 samples for test/train client=None
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 3 samples for test/train in 0.002s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 3 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.005s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.004s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.005s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:22 | DEBUG    | PP-MFL | Preloaded 10 samples for test_missing/train in 0.003s
+2026-07-02 10:16:22 | INFO     | PP-MFL | MultimodalDataset: test_missing/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 0.5, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:23 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.004s
+2026-07-02 10:16:23 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:23 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.006s
+2026-07-02 10:16:23 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:23 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.004s
+2026-07-02 10:16:23 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:23 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.005s
+2026-07-02 10:16:23 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:23 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 3 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:23 | DEBUG    | PP-MFL | Preloaded 10 samples for factory_test/train in 0.002s
+2026-07-02 10:16:23 | INFO     | PP-MFL | MultimodalDataset: factory_test/train loaded 10 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:23 | DEBUG    | PP-MFL | Preloaded 10 samples for factory_test/train in 0.003s
+2026-07-02 10:16:23 | INFO     | PP-MFL | MultimodalDataset: factory_test/train loaded 10 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:23 | DEBUG    | PP-MFL | Preloaded 10 samples for factory_test/train in 0.004s
+2026-07-02 10:16:23 | INFO     | PP-MFL | MultimodalDataset: factory_test/train loaded 10 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:23 | INFO     | PP-MFL | Sample uci_har data generated at datasets\sample\uci_har
+2026-07-02 10:16:23 | DEBUG    | PP-MFL | Preloaded 15 samples for uci_har/train in 0.004s
+2026-07-02 10:16:23 | INFO     | PP-MFL | MultimodalDataset: uci_har/train loaded 15 samples, 6 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:23 | INFO     | PP-MFL | DatasetStatistics: 15 samples, 6 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:23 | INFO     | PP-MFL | DataModule.prepare_data() for uci_har completed in 0.099s
+2026-07-02 10:16:23 | DEBUG    | PP-MFL | Preloaded 10 samples for test/train in 0.004s
+2026-07-02 10:16:23 | INFO     | PP-MFL | MultimodalDataset: test/train loaded 10 samples, 2 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 1.0}
+2026-07-02 10:16:24 | DEBUG    | PP-MFL | Preloaded 20 samples for stats_test/train in 0.010s
+2026-07-02 10:16:24 | INFO     | PP-MFL | MultimodalDataset: stats_test/train loaded 20 samples, 4 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:24 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 4 classes, missing_ratio=0.000, modalities={'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:24 | DEBUG    | PP-MFL | Preloaded 20 samples for stats_test/train in 0.010s
+2026-07-02 10:16:24 | INFO     | PP-MFL | MultimodalDataset: stats_test/train loaded 20 samples, 4 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:24 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 4 classes, missing_ratio=0.000, modalities={'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:24 | DEBUG    | PP-MFL | Preloaded 20 samples for stats_test/train in 0.008s
+2026-07-02 10:16:24 | INFO     | PP-MFL | MultimodalDataset: stats_test/train loaded 20 samples, 4 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:24 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 4 classes, missing_ratio=0.000, modalities={'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:24 | DEBUG    | PP-MFL | Preloaded 20 samples for missing_test/train in 0.008s
+2026-07-02 10:16:24 | INFO     | PP-MFL | MultimodalDataset: missing_test/train loaded 20 samples, 3 classes, modalities: {'image': 1.0, 'text': 0.5, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:24 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 3 classes, missing_ratio=0.250, modalities={'image': 1.0, 'text': 0.5, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:24 | DEBUG    | PP-MFL | Preloaded 20 samples for stats_test/train in 0.009s
+2026-07-02 10:16:24 | INFO     | PP-MFL | MultimodalDataset: stats_test/train loaded 20 samples, 4 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:24 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 4 classes, missing_ratio=0.000, modalities={'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:24 | DEBUG    | PP-MFL | Preloaded 20 samples for stats_test/train in 0.009s
+2026-07-02 10:16:24 | INFO     | PP-MFL | MultimodalDataset: stats_test/train loaded 20 samples, 4 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:24 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 4 classes, missing_ratio=0.000, modalities={'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:24 | DEBUG    | PP-MFL | Preloaded 20 samples for stats_test/train in 0.009s
+2026-07-02 10:16:24 | INFO     | PP-MFL | MultimodalDataset: stats_test/train loaded 20 samples, 4 classes, modalities: {'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:24 | INFO     | PP-MFL | DatasetStatistics: 20 samples, 4 classes, missing_ratio=0.000, modalities={'image': 1.0, 'text': 1.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:24 | DEBUG    | PP-MFL | Preloaded 0 samples for empty/train in 0.000s
+2026-07-02 10:16:24 | INFO     | PP-MFL | MultimodalDataset: empty/train loaded 0 samples, 0 classes, modalities: {'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:24 | INFO     | PP-MFL | DatasetStatistics: 0 samples, 0 classes, missing_ratio=0.000, modalities={'image': 0.0, 'text': 0.0, 'audio': 0.0, 'sensor': 0.0}
+2026-07-02 10:16:24 | INFO     | PP-MFL | Sample uci_har data generated at C:\Users\ivija\AppData\Local\Temp\pytest-of-ivija\pytest-17\test_uci_har_generate_and_load0\datasets\sample\uci_har
+2026-07-02 10:16:25 | INFO     | PP-MFL | Sample meld data generated at C:\Users\ivija\AppData\Local\Temp\pytest-of-ivija\pytest-17\test_meld_generate_and_load0\datasets\sample\meld
+2026-07-02 10:16:25 | INFO     | PP-MFL | Sample ptb_xl data generated at C:\Users\ivija\AppData\Local\Temp\pytest-of-ivija\pytest-17\test_ptbxl_generate_and_load0\datasets\sample\ptb_xl
+2026-07-02 10:16:25 | INFO     | PP-MFL | Sample hateful_memes data generated at C:\Users\ivija\AppData\Local\Temp\pytest-of-ivija\pytest-17\test_hateful_memes_generate_an0\datasets\sample\hateful_memes
+2026-07-02 10:16:26 | INFO     | PP-MFL | Sample generic dataset 'custom_test' generated at C:\Users\ivija\AppData\Local\Temp\pytest-of-ivija\pytest-17\test_generic_generate_and_load0\datasets\sample\custom_test
+2026-07-02 10:16:26 | INFO     | PP-MFL | Sample uci_har data generated at C:\Users\ivija\AppData\Local\Temp\pytest-of-ivija\pytest-17\test_validate_generated_sample0\datasets\sample\uci_har
+2026-07-02 10:16:26 | INFO     | PP-MFL | Sample uci_har data generated at datasets\sample\uci_har
+2026-07-02 10:16:26 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-02 10:16:26 | INFO     | PP-MFL | Registered dataset: meld
+2026-07-02 10:16:26 | INFO     | PP-MFL | Registered dataset: ptb_xl
+2026-07-02 10:16:26 | INFO     | PP-MFL | Registered dataset: hateful_memes
+2026-07-02 10:16:26 | INFO     | PP-MFL | Registered dataset: generic
+2026-07-02 10:16:27 | WARNING  | PP-MFL | HTTP 404: Dataset adapter not registered: 'nonexistent_dataset'. Available: ['generic', 'hateful_memes', 'meld', 'ptb_xl', 'uci_har']
+2026-07-02 10:16:27 | INFO     | PP-MFL | Registered dataset: my_custom_data
+2026-07-02 10:16:27 | INFO     | PP-MFL | Registered dataset: dup_test
+2026-07-02 10:16:27 | WARNING  | PP-MFL | HTTP 409: Dataset 'dup_test' already registered
+2026-07-02 10:16:27 | INFO     | PP-MFL | uci_har already downloaded at datasets\raw\uci_har
+2026-07-02 10:16:27 | WARNING  | PP-MFL | HTTP 404: Dataset adapter not registered: 'nonexistent'. Available: ['generic', 'hateful_memes', 'meld', 'ptb_xl', 'uci_har']
+2026-07-02 10:16:27 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-02 10:16:27 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-02 10:16:27 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-02 10:16:27 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-02 10:16:27 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-02 10:16:28 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-02 10:16:28 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-02 10:16:28 | WARNING  | PP-MFL | HTTP 400: Unknown partition strategy: invalid
+2026-07-02 10:16:28 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-02 10:16:28 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-02 10:16:28 | INFO     | PP-MFL | Registered dataset: uci_har
+2026-07-02 10:16:28 | WARNING  | PP-MFL | HTTP 400: Unknown missing modality strategy: invalid
+2026-07-02 10:16:28 | INFO     | PP-MFL | Registered dataset: to_delete
+2026-07-02 10:16:29 | INFO     | PP-MFL | Unregistered dataset: to_delete
+2026-07-02 10:16:29 | INFO     | PP-MFL | Registered dataset: test_ds_1
+2026-07-02 10:16:30 | INFO     | PP-MFL | Registered dataset: unique_ds
+2026-07-02 10:16:30 | INFO     | PP-MFL | Registered dataset: exists_test
+2026-07-02 10:16:30 | INFO     | PP-MFL | Registered dataset: to_unregister
+2026-07-02 10:16:30 | INFO     | PP-MFL | Unregistered dataset: to_unregister
+2026-07-02 10:16:30 | INFO     | PP-MFL | Registered dataset: status_test
+2026-07-02 10:16:30 | INFO     | PP-MFL | Registered dataset: list_test_a
+2026-07-02 10:16:30 | INFO     | PP-MFL | Registered dataset: list_test_b
+2026-07-02 10:16:30 | INFO     | PP-MFL | Model saved to C:\Users\ivija\AppData\Local\Temp\tmp5c2prujq.pt
+2026-07-02 10:16:30 | INFO     | PP-MFL | Model loaded from C:\Users\ivija\AppData\Local\Temp\tmp5c2prujq.pt
+2026-07-02 10:16:39 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=256, params=11,307,840)
+2026-07-02 10:16:39 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=128, params=921,088)
+2026-07-02 10:16:39 | INFO     | PP-MFL | Created audio encoder: AudioEncoder (embed_dim=64, params=552,000)
+2026-07-02 10:16:39 | INFO     | PP-MFL | Created sensor encoder: SensorEncoder (embed_dim=64, params=554,048)
+2026-07-02 10:16:39 | INFO     | PP-MFL | Created fusion: concat (params=0)
+2026-07-02 10:16:39 | INFO     | PP-MFL | Created fusion: attention (params=526,848)
+2026-07-02 10:16:39 | INFO     | PP-MFL | Created fusion: weighted (params=4)
+2026-07-02 10:16:39 | INFO     | PP-MFL | Created projection head: 512->128 (params=329,344)
+2026-07-02 10:16:39 | INFO     | PP-MFL | Created classifier: 128->10 (params=1,290)
+2026-07-02 10:16:39 | DEBUG    | PP-MFL | Registered encoder: test_modality -> TestEncoder
+2026-07-02 10:16:39 | INFO     | PP-MFL | Initialized Sequential with xavier_uniform
+2026-07-02 10:16:39 | INFO     | PP-MFL | Initialized Sequential with xavier_uniform
+2026-07-02 10:16:39 | INFO     | PP-MFL | Model: Linear | Total params: 55 | Trainable: 55 | Non-trainable: 0
+2026-07-02 10:16:39 | INFO     | PP-MFL | Module                         Params          Trainable 
+2026-07-02 10:16:39 | INFO     | PP-MFL | -------------------------------------------------------
+2026-07-02 10:16:41 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=256, params=11,307,840)
+2026-07-02 10:16:41 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=128, params=921,088)
+2026-07-02 10:16:41 | INFO     | PP-MFL | Created fusion: concat (params=0)
+2026-07-02 10:16:41 | INFO     | PP-MFL | Created projection head: 384->64 (params=173,248)
+2026-07-02 10:16:41 | INFO     | PP-MFL | Created classifier: 64->5 (params=325)
+2026-07-02 10:16:41 | INFO     | PP-MFL | Model saved to C:\Users\ivija\AppData\Local\Temp\tmp4jpsbqny.pt
+2026-07-02 10:16:41 | INFO     | PP-MFL | Model loaded from C:\Users\ivija\AppData\Local\Temp\tmp4jpsbqny.pt
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a040d6d8, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=555723e7, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | WARNING  | PP-MFL | Overwriting prototype 555723e7-bc7a-4dbf-8062-b5b482d58aea
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=555723e7, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=112e74a3, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Replaced prototype 112e74a3-1543-4671-a229-116366b68728
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=29355117, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Updated prototype 29355117-7587-487e-9dc9-f17f4704c704
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c058032b, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Updated prototype c058032b-f852-457b-98f5-ed9e2c430d54
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b8d5b5ce, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Updated prototype b8d5b5ce-f2f7-4637-87a5-bf3730728153
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=511b0c90, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Removed prototype 511b0c90-f8a5-41d4-a977-376b48fd3e01
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=7c99071b, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f7863472, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=49bc596d, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=5313fe31, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f9a5917d, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f1d7328a, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d0a47e91, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b7a2936e, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=36239562, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=36bf4266, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=7f42f55f, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=519cce56, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e2c1502c, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f52721bb, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=effbfc45, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b8816daa, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e54b5bbb, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f7d180fe, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4186630f, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=9924b220, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=5bef443d, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d1938c2e, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=de7ed2ed, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4a60d0cf, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1f032fce, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e65ca2fa, class=0, modality=image, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ea32fb83, class=0, modality=audio, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=099defe9, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b8a23b12, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d8982013, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=869ebfbf, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=aad2a63d, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=fc70d413, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=956506ab, class=0, modality=a, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=6722e38e, class=0, modality=b, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=283da4c2, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=377a0174, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=77e2a959, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1907b50d, class=5, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d0b1b43b, class=3, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=7bf55432, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8828fe46, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=afccae18, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=2beea428, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=50e08c93, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=cf2a7045, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=604798fb, class=10, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e42e4783, class=20, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=604798fb, class=10, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e42e4783, class=20, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | INFO     | PP-MFL | Imported 2 prototypes
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=83d33f77, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:17:57 | INFO     | PP-MFL | Imported 0 prototypes
+2026-07-02 10:17:57 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-02 10:17:57 | INFO     | PP-MFL | Generated prototype for class 0 using weighted_centroid
+2026-07-02 10:17:57 | INFO     | PP-MFL | Generated prototype for class 0 using weighted_centroid
+2026-07-02 10:17:57 | INFO     | PP-MFL | Generated prototype for class 1 using median
+2026-07-02 10:17:57 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-02 10:17:57 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-02 10:17:57 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-02 10:17:57 | INFO     | PP-MFL | Generated 3 prototypes for 3 classes
+2026-07-02 10:17:57 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-02 10:17:57 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-02 10:17:57 | INFO     | PP-MFL | Generated 2 prototypes for 2 classes
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f8e28ee1, class=0, modality=shared, dim=8, samples=5, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c44f5f17, class=1, modality=shared, dim=8, samples=5, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=85321024, class=0, modality=shared, dim=8, samples=1, conf=1.000)
+2026-07-02 10:17:57 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-02 10:17:57 | INFO     | PP-MFL | Generated 1 prototypes for 1 classes
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Removed prototype 85321024-718b-42ab-b1ee-fe3d66190e19
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1e048e36, class=0, modality=shared, dim=8, samples=10, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Incremental update for prototype deb7395f-a558-4e5d-9475-7a678dbafc8c
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Incremental update for prototype 38b2d9f3-33ec-4f4b-8f64-5a1af07ee0c0
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Incremental update for prototype 2b33bc13-fa4f-499e-bf3d-59f1006495eb
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Incremental update for prototype 0f2acbd8-fe63-4bec-b685-bd60a76cc5cf
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=42d85cae, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ddad1bbb, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=9e5037d7, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Removed prototype 9e5037d7-9e32-4cef-af77-6475930aac75
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=9e5037d7, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | INFO     | PP-MFL | Promoted prototype 9e5037d7-9e32-4cef-af77-6475930aac75 to global
+2026-07-02 10:17:57 | WARNING  | PP-MFL | Prototype nonexistent not found in local memory
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d8fd77e7, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (1 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d8fd77e7, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:57 | INFO     | PP-MFL | Imported 1 prototypes
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:17:57 | INFO     | PP-MFL | Imported 0 prototypes
+2026-07-02 10:17:57 | INFO     | PP-MFL | Restored snapshot from index -1
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (1 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (2 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Cleared all snapshots
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (1 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (2 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (3 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (4 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (5 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (6 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (7 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (8 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (9 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (10 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (11 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (12 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (13 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (14 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (15 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (16 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (17 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (18 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (19 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (20 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (21 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (22 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (23 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (24 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (25 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (26 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (27 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (28 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (29 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (30 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (31 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (32 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (33 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (34 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (35 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (36 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (37 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (38 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (39 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (40 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (41 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (42 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (43 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (44 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (45 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (46 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (47 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (48 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (49 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:17:57 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Snapshot taken (50 total)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b9c1db35, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ad037c59, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Removed prototype b9c1db35-15d4-446f-a587-fc88b698546a
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Evicted prototype b9c1db35-15d4-446f-a587-fc88b698546a (oldest)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d50bf6bb, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=24cf3905, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=7e0a1144, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Removed prototype 24cf3905-e5d3-4350-b8b7-823bfa3b95b1
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Evicted prototype 24cf3905-e5d3-4350-b8b7-823bfa3b95b1 (oldest)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e68979bc, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=105e3424, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Removed prototype 105e3424-0ba6-4757-ad88-897e4c08a82c
+2026-07-02 10:17:58 | INFO     | PP-MFL | Aged out 1 prototypes older than -1.0s
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ebeaa434, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=94fee102, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=3b820459, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b12c22a6, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c83a1964, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Snapshot taken (1 total)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Cleared all prototypes
+2026-07-02 10:17:58 | INFO     | PP-MFL | Cleared all memory
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f483919d, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a4d9d844, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=26981ca8, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | EMA update for 642c94dc-9c33-4b65-8ca9-a14eb7b62c53 (alpha=0.9)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Moving average update for b1d42d01-62b0-455f-9570-46f065a028c8
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Replacement update for 58f898dc-3cea-4e18-b446-83dea610afe4
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Weighted update for 871af471-d539-4e68-bd91-63bc0dd58d64 (weight=0.3)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Adaptive update for 2633cca2-561a-430c-8946-0bb9704e5e88 (alpha=0.4929)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | EMA update for 47f2b10d-3ccd-49be-aaf7-8d63584fd46a (alpha=0.9)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | EMA update for ecb43997-5652-4757-b8e5-46217dbe7a20 (alpha=0.9)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=05e6a52b, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=0a0bc4cb, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=34a78783, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c210e2f2, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=5cca8f2d, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a7d8f308, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8fb61325, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d313e814, class=0, modality=image, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=2f70af83, class=0, modality=audio, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=87533250, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=317eba38, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a74fae21, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=fc661765, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=0bbbd92e, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=3d80d5c3, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=dc39ebcd, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=75d7d629, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=760a55f9, class=2, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=60577528, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=066e520e, class=0, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=0099a422, class=1, modality=shared, dim=16, samples=1, conf=1.000)
+2026-07-02 10:17:59 | DEBUG    | PP-MFL | Registered prototype component: test_comp

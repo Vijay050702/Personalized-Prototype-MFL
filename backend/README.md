@@ -30,10 +30,25 @@ backend/
 │   │   ├── factory.py               # Registration-based ModelFactory
 │   │   ├── initialization.py        # Weight init strategies
 │   │   └── utils.py                 # Parameter counting, timing, memory
+│   ├── prototypes/     # Prototype Learning Engine (Phase 4)
+│   │   ├── prototype.py              # Prototype data class
+│   │   ├── repository.py             # In-memory store/retrieve/CRUD
+│   │   ├── generator.py              # Centroid/weighted/median generation
+│   │   ├── memory.py                 # Global/local memory, snapshots, aging
+│   │   ├── updater.py                # EMA/moving-average/adaptive update
+│   │   ├── matcher.py                # Nearest/top-k/rank/batch matching
+│   │   ├── similarity.py             # Cosine/euclidean/manhattan/dot
+│   │   ├── confidence.py             # Confidence estimation & stability
+│   │   ├── clustering.py             # KMeans/Hierarchical/DBSCAN
+│   │   ├── visualization.py          # Embedding viz, heatmaps, trajectories
+│   │   ├── losses.py                 # Compactness, Separation, Center, etc.
+│   │   ├── metrics.py                # Intra/inter-class, purity, drift
+│   │   ├── factory.py                # Static factory with default_system
+│   │   └── utils.py                  # Validation, matrix utils, Timer
 │   ├── routers/        # FastAPI routers
 │   ├── schemas/        # Pydantic schemas
 │   └── services/       # Business logic
-├── tests/              # Test suite (374 tests, 1 skipped)
+├── tests/              # Test suite (612 tests, 1 skipped)
 └── sample_data/        # UCI-HAR sample dataset
 ```
 
@@ -143,10 +158,92 @@ shared = proj(fused)                  # (4, 64)  ← used by prototypes
 logits = clf(shared)                  # (4, 5)
 ```
 
+## Phase 4: Prototype Learning Engine
+
+The `app/prototypes/` package provides a complete local prototype learning system that consumes `torch.Tensor` embeddings from Phase 3 encoders/projections and produces prototypes for matching, similarity, confidence, clustering, and metric computation. Designed for future Personalization, Knowledge Transfer, and Federated Learning engines.
+
+### Architecture
+
+```
+ProjectionHead Embeddings ──► PrototypeGenerator ──► PrototypeRepository
+                                      │                      │
+                                      │               ┌──────┴──────┐
+                                      │          PrototypeMemory  PrototypeMatcher
+                                      │           (global/local,   (nearest, top-k,
+                                      │            snapshots,       rank, class match)
+                                      │             aging)
+                                      │
+                              PrototypeUpdater
+                              (EMA, moving_avg,
+                               replacement,
+                               weighted, adaptive)
+```
+
+### Core Components
+
+- **`Prototype`** (`prototype.py`): Data class with `embedding`, `class_id`, `modality`, `sample_count`, `confidence`, `timestamp`, `metadata`. Supports `distance()`, `similarity()`, `normalize()`, `clone()`, `to_dict()`, input validation on creation and setters.
+- **`PrototypeRepository`** (`repository.py`): In-memory CRUD with `store()`, `retrieve()`, `replace()`, `update()`, `remove()`, `filter()`, `by_class()`, `by_modality()`, `get_embeddings_matrix()`, `export_state()` / `import_state()`, `statistics()`.
+- **`PrototypeGenerator`** (`generator.py`): Generates prototype embeddings from grouped class embeddings using `centroid` (mean), `weighted_centroid`, or `median` strategies. Supports `generate_from_embeddings()`, `generate_all()`, `generate_from_repository()`, `incremental_update()`, `batch_update()`.
+- **`PrototypeMemory`** (`memory.py`): Dual-repository memory (global + local) with store, promote local→global, `snapshot()` / `restore_snapshot()`, `age_prototypes()` (time-based eviction), automatic eviction when capacity exceeded, per-prototype `get_history()`, `clear()`.
+- **`PrototypeUpdater`** (`updater.py`): Update strategies — `ema` (exponential moving avg), `moving_average` (cumulative), `replacement`, `weighted`, `adaptive` (distance-scaled alpha). Supports `batch_update()`.
+- **`PrototypeMatcher`** (`matcher.py`): Query engine with `match()` (top-k), `batch_match()`, `nearest_prototype()`, `rank()` (full ordering), `match_to_class()` (class-level aggregation). Supports class and modality filters.
+- **`SimilarityEngine`** (`similarity.py`): Metric computation — `similarity()`, `distance()`, `batch_similarity()`, `pairwise_similarity_matrix()`, `prototype_similarity_matrix()`, `prototype_distance_matrix()`. Metrics: `cosine`, `euclidean`, `manhattan`, `dot`.
+- **`ConfidenceEstimator`** (`confidence.py`): Multi-factor confidence — sample count factor, base confidence, distance factor (sigmoid-scaled similarity). Supports `batch_estimate()`, `stability_score()`, `normalized_confidence()`.
+- **`PrototypeClustering`** (`clustering.py`): Pure-PyTorch clustering — `kmeans` (iterative with convergence), `hierarchical` (agglomerative), `dbscan` (density-based). Supports `cluster_prototypes()` with prototype ID tracking.
+- **`VisualizationSupport`** (`visualization.py`): Data extraction for plotting — `embedding_data()`, `prototype_trajectories()`, `similarity_heatmap()`, `cluster_plot_data()`, `pairwise_distances()`, `prototype_summary()`.
+- **Losses** (`losses.py`): 5 `nn.Module` losses:
+  - `PrototypeCompactnessLoss` — distances between embeddings and same-class prototypes
+  - `PrototypeSeparationLoss` — margin-based separation from different-class prototypes
+  - `CenterLoss` — learned class centers as `nn.Parameter`
+  - `PrototypeConsistencyLoss` — cosine consistency between student/teacher embeddings
+  - `PrototypeDiversityLoss` — pairwise similarity penalty between prototypes
+- **`PrototypeMetrics`** (`metrics.py`): Evaluation — `intra_class_distance()`, `inter_class_distance()`, `prototype_purity()`, `prototype_coverage()`, `prototype_variance()`, `prototype_drift()`, `average_confidence()`, `to_dict()`.
+- **`PrototypeFactory`** (`factory.py`): Static factory — `create_*()` methods for each component, `default_system()` returning wired dictionary, `register()` / `get()` for extensibility.
+- **Utils** (`utils.py`): `validate_embedding()`, `check_nan()`, `validate_class_id()`, `validate_similarity_metric()`, `cosine_similarity_matrix()`, `euclidean_distance_matrix()`, `Timer` context manager.
+
+### Quick Start
+
+```python
+from app.prototypes import PrototypeFactory
+import torch
+
+# Build a wired default system
+system = PrototypeFactory.default_system(metric="cosine")
+
+# Generate prototypes from random embeddings
+generator = system["generator"]
+embeddings = torch.randn(100, 64)
+labels = torch.randint(0, 5, (100,))
+protos = generator.generate_all(embeddings, labels)
+
+# Store and query
+repo = system["repository"]
+for p in protos:
+    repo.store(p)
+
+matcher = system["matcher"]
+result = matcher.match(torch.randn(64), top_k=3)     # [(Prototype, score), ...]
+best = matcher.nearest_prototype(torch.randn(64))     # (Prototype, score) | None
+
+# Prototype updates
+updater = system["updater"]
+updater.update(protos[0], torch.randn(64), alpha=0.9)
+
+# Losses
+from app.prototypes.losses import CenterLoss
+center_loss = CenterLoss(num_classes=5, embedding_dim=64)
+loss = center_loss(embeddings, labels)
+
+# Metrics
+from app.prototypes.metrics import PrototypeMetrics
+metrics = PrototypeMetrics(protos)
+stats = metrics.to_dict()             # intra/inter distance, purity, drift, etc.
+```
+
 ## Tests
 
 ```bash
 cd backend
-python -m pytest                       # Run all 374 tests (374 pass, 1 skip)
-python -m pytest --cov=app.data --cov=app.models  # Coverage (94% overall)
+python -m pytest                       # Run all 612 tests (612 pass, 1 skip)
+python -m pytest --cov=app.data --cov=app.models --cov=app.prototypes  # Coverage (96%+)
 ```
