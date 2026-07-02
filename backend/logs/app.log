@@ -4951,3 +4951,246 @@ ValueError: Unknown missing modality strategy: invalid
 2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=066e520e, class=0, modality=shared, dim=16, samples=1, conf=1.000)
 2026-07-02 10:17:58 | DEBUG    | PP-MFL | Stored prototype Prototype(id=0099a422, class=1, modality=shared, dim=16, samples=1, conf=1.000)
 2026-07-02 10:17:59 | DEBUG    | PP-MFL | Registered prototype component: test_comp
+2026-07-02 10:47:31 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:47:31 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:47:31 | DEBUG    | PP-MFL | Stored global prototype audio_c1 (round 1)
+2026-07-02 10:47:31 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:47:31 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:47:31 | DEBUG    | PP-MFL | Stored round 2
+2026-07-02 10:47:31 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:47:31 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:47:31 | DEBUG    | PP-MFL | Stored round 2
+2026-07-02 10:47:31 | DEBUG    | PP-MFL | Stored 2 client packages for round 1
+2026-07-02 10:47:31 | DEBUG    | PP-MFL | Stored 2 client packages for round 1
+2026-07-02 10:47:31 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:47:31 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 2)
+2026-07-02 10:47:31 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:47:31 | DEBUG    | PP-MFL | Created snapshot version 1
+2026-07-02 10:47:31 | DEBUG    | PP-MFL | Stored global prototype image_c1 (round 1)
+2026-07-02 10:47:31 | INFO     | PP-MFL | Restored snapshot version 1
+2026-07-02 10:47:31 | DEBUG    | PP-MFL | Created snapshot version 1
+2026-07-02 10:47:31 | DEBUG    | PP-MFL | Created snapshot version 2
+2026-07-02 10:47:31 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:47:31 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:47:31 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:47:31 | INFO     | PP-MFL | Imported state: 1 global prototypes, 1 rounds
+2026-07-02 10:47:31 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:47:31 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:47:31 | INFO     | PP-MFL | Cleared federated repository
+2026-07-02 10:47:31 | DEBUG    | PP-MFL | Received package: client=client_a round=1 modality=image class=0
+2026-07-02 10:47:32 | DEBUG    | PP-MFL | Received batch of 2 packages
+2026-07-02 10:47:32 | DEBUG    | PP-MFL | Received package: client=client_a round=1 modality=image class=0
+2026-07-02 10:47:32 | INFO     | PP-MFL | Started round 1 with 3 clients
+2026-07-02 10:47:32 | INFO     | PP-MFL | Started round 1 with 2 clients
+2026-07-02 10:47:32 | INFO     | PP-MFL | Started round 1 with 1 clients
+2026-07-02 10:47:32 | INFO     | PP-MFL | Late client b accepted
+2026-07-02 10:47:32 | INFO     | PP-MFL | Late client c accepted
+2026-07-02 10:47:32 | INFO     | PP-MFL | Started round 1 with 1 clients
+2026-07-02 10:47:32 | WARNING  | PP-MFL | Late client b rejected
+2026-07-02 10:47:32 | INFO     | PP-MFL | Started round 1 with 1 clients
+2026-07-02 10:47:32 | INFO     | PP-MFL | Started round 1 with 1 clients
+2026-07-02 10:47:32 | INFO     | PP-MFL | Started round 1 with 2 clients
+2026-07-02 10:47:32 | INFO     | PP-MFL | Started round 1 with 2 clients
+2026-07-02 10:47:32 | INFO     | PP-MFL | Started round 1 with 2 clients
+2026-07-02 10:47:33 | INFO     | PP-MFL | Started round 1 with 1 clients
+2026-07-02 10:47:33 | INFO     | PP-MFL | Finalized round 1 with 1 clients
+2026-07-02 10:47:33 | INFO     | PP-MFL | Started round 1 with 1 clients
+2026-07-02 10:47:33 | WARNING  | PP-MFL | Aborted round 1
+2026-07-02 10:47:33 | INFO     | PP-MFL | Started round 1 with 3 clients
+2026-07-02 10:47:33 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:47:33 | INFO     | PP-MFL | Started aggregation round 1 with 3 clients
+2026-07-02 10:47:33 | DEBUG    | PP-MFL | Received batch of 2 packages
+2026-07-02 10:47:33 | INFO     | PP-MFL | Started round 1 with 1 clients
+2026-07-02 10:47:33 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:47:33 | INFO     | PP-MFL | Started aggregation round 1 with 1 clients
+2026-07-02 10:47:33 | DEBUG    | PP-MFL | Received batch of 1 packages
+2026-07-02 10:47:33 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:47:33 | INFO     | PP-MFL | Started round 1 with 2 clients
+2026-07-02 10:47:33 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:47:33 | INFO     | PP-MFL | Started aggregation round 1 with 2 clients
+2026-07-02 10:47:33 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:47:33 | INFO     | PP-MFL | Started round 1 with 1 clients
+2026-07-02 10:47:33 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:47:33 | INFO     | PP-MFL | Started aggregation round 1 with 1 clients
+2026-07-02 10:47:33 | INFO     | PP-MFL | Finalized round 1 with 1 clients
+2026-07-02 10:47:33 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:47:33 | INFO     | PP-MFL | Finalized round 1 (1 clients, 0.00s)
+2026-07-02 10:47:34 | INFO     | PP-MFL | Started round 1 with 2 clients
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:47:34 | INFO     | PP-MFL | Started aggregation round 1 with 2 clients
+2026-07-02 10:47:34 | INFO     | PP-MFL | Finalized round 1 with 2 clients
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:47:34 | INFO     | PP-MFL | Finalized round 1 (2 clients, 0.01s)
+2026-07-02 10:47:34 | WARNING  | PP-MFL | Round cannot be finalized yet
+2026-07-02 10:47:34 | INFO     | PP-MFL | Started round 1 with 2 clients
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:47:34 | INFO     | PP-MFL | Started aggregation round 1 with 2 clients
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Received batch of 2 packages
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Received batch of 2 packages
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Stored global prototype audio_c0 (round 1)
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Stored 4 client packages for round 1
+2026-07-02 10:47:34 | INFO     | PP-MFL | Finalized round 1 with 2 clients
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:47:34 | INFO     | PP-MFL | Finalized round 1 (2 clients, 0.01s)
+2026-07-02 10:47:34 | INFO     | PP-MFL | Started round 1 with 1 clients
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:47:34 | INFO     | PP-MFL | Started aggregation round 1 with 1 clients
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Received batch of 1 packages
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Stored 1 client packages for round 1
+2026-07-02 10:47:34 | INFO     | PP-MFL | Finalized round 1 with 1 clients
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:47:34 | INFO     | PP-MFL | Finalized round 1 (1 clients, 0.01s)
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Created snapshot version 1
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Stored global prototype image_c1 (round 1)
+2026-07-02 10:47:34 | INFO     | PP-MFL | Restored snapshot version 1
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:47:34 | INFO     | PP-MFL | Imported state: 1 global prototypes, 0 rounds
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:47:34 | INFO     | PP-MFL | Cleared federated repository
+2026-07-02 10:47:34 | INFO     | PP-MFL | Cleared federated aggregator state
+2026-07-02 10:47:34 | INFO     | PP-MFL | Started round 1 with 2 clients
+2026-07-02 10:47:34 | INFO     | PP-MFL | Started round 1 with 1 clients
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 2)
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Received batch of 0 packages
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Created snapshot version 1
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Created snapshot version 2
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Created snapshot version 3
+2026-07-02 10:47:34 | INFO     | PP-MFL | Restored snapshot version 2
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:47:34 | INFO     | PP-MFL | Started round 1 with 2 clients
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:47:34 | INFO     | PP-MFL | Started aggregation round 1 with 2 clients
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Received batch of 1 packages
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Received batch of 1 packages
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Stored 2 client packages for round 1
+2026-07-02 10:47:34 | INFO     | PP-MFL | Finalized round 1 with 2 clients
+2026-07-02 10:47:34 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:47:34 | INFO     | PP-MFL | Finalized round 1 (2 clients, 0.01s)
+2026-07-02 10:48:26 | INFO     | PP-MFL | Started round 1 with 2 clients
+2026-07-02 10:49:19 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:49:19 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:49:19 | DEBUG    | PP-MFL | Stored global prototype audio_c1 (round 1)
+2026-07-02 10:49:19 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:49:19 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:49:19 | DEBUG    | PP-MFL | Stored round 2
+2026-07-02 10:49:19 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:49:19 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:49:19 | DEBUG    | PP-MFL | Stored round 2
+2026-07-02 10:49:19 | DEBUG    | PP-MFL | Stored 2 client packages for round 1
+2026-07-02 10:49:19 | DEBUG    | PP-MFL | Stored 2 client packages for round 1
+2026-07-02 10:49:19 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:49:19 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 2)
+2026-07-02 10:49:19 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:49:19 | DEBUG    | PP-MFL | Created snapshot version 1
+2026-07-02 10:49:19 | DEBUG    | PP-MFL | Stored global prototype image_c1 (round 1)
+2026-07-02 10:49:19 | INFO     | PP-MFL | Restored snapshot version 1
+2026-07-02 10:49:19 | DEBUG    | PP-MFL | Created snapshot version 1
+2026-07-02 10:49:19 | DEBUG    | PP-MFL | Created snapshot version 2
+2026-07-02 10:49:19 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:49:19 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:49:19 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:49:19 | INFO     | PP-MFL | Imported state: 1 global prototypes, 1 rounds
+2026-07-02 10:49:19 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:49:19 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:49:19 | INFO     | PP-MFL | Cleared federated repository
+2026-07-02 10:49:19 | DEBUG    | PP-MFL | Received package: client=client_a round=1 modality=image class=0
+2026-07-02 10:49:19 | DEBUG    | PP-MFL | Received batch of 2 packages
+2026-07-02 10:49:19 | DEBUG    | PP-MFL | Received package: client=client_a round=1 modality=image class=0
+2026-07-02 10:49:20 | INFO     | PP-MFL | Started round 1 with 3 clients
+2026-07-02 10:49:20 | INFO     | PP-MFL | Started round 1 with 2 clients
+2026-07-02 10:49:20 | INFO     | PP-MFL | Started round 1 with 1 clients
+2026-07-02 10:49:20 | INFO     | PP-MFL | Late client b accepted
+2026-07-02 10:49:20 | INFO     | PP-MFL | Late client c accepted
+2026-07-02 10:49:20 | INFO     | PP-MFL | Started round 1 with 1 clients
+2026-07-02 10:49:20 | WARNING  | PP-MFL | Late client b rejected
+2026-07-02 10:49:20 | INFO     | PP-MFL | Started round 1 with 1 clients
+2026-07-02 10:49:20 | INFO     | PP-MFL | Started round 1 with 1 clients
+2026-07-02 10:49:20 | INFO     | PP-MFL | Started round 1 with 2 clients
+2026-07-02 10:49:20 | INFO     | PP-MFL | Started round 1 with 2 clients
+2026-07-02 10:49:20 | INFO     | PP-MFL | Started round 1 with 2 clients
+2026-07-02 10:49:20 | INFO     | PP-MFL | Started round 1 with 1 clients
+2026-07-02 10:49:20 | INFO     | PP-MFL | Finalized round 1 with 1 clients
+2026-07-02 10:49:20 | INFO     | PP-MFL | Started round 1 with 1 clients
+2026-07-02 10:49:20 | WARNING  | PP-MFL | Aborted round 1
+2026-07-02 10:49:20 | INFO     | PP-MFL | Started round 1 with 3 clients
+2026-07-02 10:49:20 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:49:20 | INFO     | PP-MFL | Started aggregation round 1 with 3 clients
+2026-07-02 10:49:20 | DEBUG    | PP-MFL | Received batch of 2 packages
+2026-07-02 10:49:20 | INFO     | PP-MFL | Started round 1 with 1 clients
+2026-07-02 10:49:20 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:49:20 | INFO     | PP-MFL | Started aggregation round 1 with 1 clients
+2026-07-02 10:49:20 | DEBUG    | PP-MFL | Received batch of 1 packages
+2026-07-02 10:49:20 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:49:21 | INFO     | PP-MFL | Started round 1 with 2 clients
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:49:21 | INFO     | PP-MFL | Started aggregation round 1 with 2 clients
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:49:21 | INFO     | PP-MFL | Started round 1 with 1 clients
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:49:21 | INFO     | PP-MFL | Started aggregation round 1 with 1 clients
+2026-07-02 10:49:21 | INFO     | PP-MFL | Finalized round 1 with 1 clients
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:49:21 | INFO     | PP-MFL | Finalized round 1 (1 clients, 0.00s)
+2026-07-02 10:49:21 | INFO     | PP-MFL | Started round 1 with 2 clients
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:49:21 | INFO     | PP-MFL | Started aggregation round 1 with 2 clients
+2026-07-02 10:49:21 | INFO     | PP-MFL | Finalized round 1 with 2 clients
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:49:21 | INFO     | PP-MFL | Finalized round 1 (2 clients, 0.00s)
+2026-07-02 10:49:21 | WARNING  | PP-MFL | Round cannot be finalized yet
+2026-07-02 10:49:21 | INFO     | PP-MFL | Started round 1 with 2 clients
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:49:21 | INFO     | PP-MFL | Started aggregation round 1 with 2 clients
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Received batch of 2 packages
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Received batch of 2 packages
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored global prototype audio_c0 (round 1)
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored 4 client packages for round 1
+2026-07-02 10:49:21 | INFO     | PP-MFL | Finalized round 1 with 2 clients
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:49:21 | INFO     | PP-MFL | Finalized round 1 (2 clients, 0.02s)
+2026-07-02 10:49:21 | INFO     | PP-MFL | Started round 1 with 1 clients
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:49:21 | INFO     | PP-MFL | Started aggregation round 1 with 1 clients
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Received batch of 1 packages
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored 1 client packages for round 1
+2026-07-02 10:49:21 | INFO     | PP-MFL | Finalized round 1 with 1 clients
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:49:21 | INFO     | PP-MFL | Finalized round 1 (1 clients, 0.01s)
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Created snapshot version 1
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored global prototype image_c1 (round 1)
+2026-07-02 10:49:21 | INFO     | PP-MFL | Restored snapshot version 1
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:49:21 | INFO     | PP-MFL | Imported state: 1 global prototypes, 0 rounds
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:49:21 | INFO     | PP-MFL | Cleared federated repository
+2026-07-02 10:49:21 | INFO     | PP-MFL | Cleared federated aggregator state
+2026-07-02 10:49:21 | INFO     | PP-MFL | Started round 1 with 2 clients
+2026-07-02 10:49:21 | INFO     | PP-MFL | Started round 1 with 1 clients
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 2)
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Received batch of 0 packages
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Created snapshot version 1
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Created snapshot version 2
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Created snapshot version 3
+2026-07-02 10:49:21 | INFO     | PP-MFL | Restored snapshot version 2
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:49:21 | INFO     | PP-MFL | Started round 1 with 2 clients
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:49:21 | INFO     | PP-MFL | Started aggregation round 1 with 2 clients
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Received batch of 1 packages
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Received batch of 1 packages
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored global prototype image_c0 (round 1)
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored 2 client packages for round 1
+2026-07-02 10:49:21 | INFO     | PP-MFL | Finalized round 1 with 2 clients
+2026-07-02 10:49:21 | DEBUG    | PP-MFL | Stored round 1
+2026-07-02 10:49:21 | INFO     | PP-MFL | Finalized round 1 (2 clients, 0.01s)
