@@ -5234,3 +5234,1133 @@ ValueError: Unknown missing modality strategy: invalid
 2026-07-02 19:38:21 | DEBUG    | PP-MFL | Translated a -> b (class=0, conf=0.900, 0.0000s)
 2026-07-02 19:38:21 | DEBUG    | PP-MFL | Loss [test]: 0.100000 (step=0)
 2026-07-02 19:38:21 | DEBUG    | PP-MFL | Translated a -> b (class=0, conf=0.900, 0.0000s)
+2026-07-03 11:11:06 | DEBUG    | PP-MFL | Registered encoder: image -> ImageEncoder
+2026-07-03 11:11:06 | DEBUG    | PP-MFL | Registered encoder: text -> TextEncoder
+2026-07-03 11:11:06 | DEBUG    | PP-MFL | Registered encoder: audio -> AudioEncoder
+2026-07-03 11:11:06 | DEBUG    | PP-MFL | Registered encoder: sensor -> SensorEncoder
+2026-07-03 11:11:38 | DEBUG    | PP-MFL | Registered encoder: image -> ImageEncoder
+2026-07-03 11:11:38 | DEBUG    | PP-MFL | Registered encoder: text -> TextEncoder
+2026-07-03 11:11:38 | DEBUG    | PP-MFL | Registered encoder: audio -> AudioEncoder
+2026-07-03 11:11:38 | DEBUG    | PP-MFL | Registered encoder: sensor -> SensorEncoder
+2026-07-03 11:11:39 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10})
+2026-07-03 11:11:39 | INFO     | PP-MFL | [test] Experiment completed
+2026-07-03 11:11:39 | INFO     | PP-MFL | [test] Round 1 started (num_clients=3)
+2026-07-03 11:11:39 | INFO     | PP-MFL | [test] Round 1 ended (metrics={'acc': 0.9})
+2026-07-03 11:11:39 | DEBUG    | PP-MFL | [test] Client c1 round 1 update (client_id=c1, round_id=1, loss=0.5, accuracy=0.9, num_samples=100)
+2026-07-03 11:11:39 | INFO     | PP-MFL | [test] Aggregation round 1 (num_clients=3, num_prototypes=10)
+2026-07-03 11:11:39 | INFO     | PP-MFL | [test] Knowledge transfer round 1 (num_synthesized=5)
+2026-07-03 11:11:39 | INFO     | PP-MFL | [test] Personalization round 1 (num_personalized=10, fusion_strategy=)
+2026-07-03 11:11:39 | INFO     | PP-MFL | [test] Evaluation round 1 (metrics={'accuracy': 0.9})
+2026-07-03 11:11:39 | INFO     | PP-MFL | [test] Checkpoint saved round 1 (path=/tmp/ckpt.pt, checkpoint_type=latest)
+2026-07-03 11:11:39 | ERROR    | PP-MFL | [test] something went wrong (round_id=1)
+2026-07-03 11:11:39 | WARNING  | PP-MFL | [test] warning
+2026-07-03 11:11:39 | INFO     | PP-MFL | [test] Synchronization round 1 (num_clients=3)
+2026-07-03 11:11:39 | INFO     | PP-MFL | [test] Round 1 started (num_clients=3)
+2026-07-03 11:11:39 | INFO     | PP-MFL | [test] Round 1 ended (metrics=)
+2026-07-03 11:11:39 | ERROR    | PP-MFL | [test] err
+2026-07-03 11:11:39 | ERROR    | PP-MFL | [test] err
+2026-07-03 11:11:39 | WARNING  | PP-MFL | [test] warn
+2026-07-03 11:11:39 | INFO     | PP-MFL | [test] Round 1 started (num_clients=3)
+2026-07-03 11:11:40 | INFO     | PP-MFL | Checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmp5e1k_k82\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:11:40 | INFO     | PP-MFL | Checkpoint loaded from C:\Users\ivija\AppData\Local\Temp\tmp5e1k_k82\test\checkpoint_latest.pt
+2026-07-03 11:11:40 | INFO     | PP-MFL | Best checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpf8p6ui1n\test\checkpoint_best.pt (round 1)
+2026-07-03 11:11:40 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpqzp927wz\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:11:40 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmp4xh9rdg2\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:11:40 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmp4xh9rdg2\test\checkpoint_latest.pt (round 2)
+2026-07-03 11:11:40 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmppcq9o3i6\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:11:40 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpt665z3ow\test\checkpoint_latest.pt (round 5)
+2026-07-03 11:11:40 | INFO     | PP-MFL | Checkpoint loaded from C:\Users\ivija\AppData\Local\Temp\tmpt665z3ow\test\checkpoint_latest.pt
+2026-07-03 11:11:40 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmplaahp4n1\test\checkpoint_latest.pt (round 0)
+2026-07-03 11:11:40 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmplaahp4n1\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:11:40 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmplaahp4n1\test\checkpoint_latest.pt (round 2)
+2026-07-03 11:11:40 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmplaahp4n1\test\checkpoint_latest.pt (round 3)
+2026-07-03 11:11:40 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmplaahp4n1\test\checkpoint_latest.pt (round 4)
+2026-07-03 11:11:40 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpb7sa1yob\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:11:40 | INFO     | PP-MFL | Checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmp46hlr4t0\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:11:40 | INFO     | PP-MFL | Best checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpv3k0ohz_\test\checkpoint_best.pt (round 1)
+2026-07-03 11:11:41 | DEBUG    | PP-MFL | [] Client test_client round 0 update (client_id=test_client, round_id=0, loss=1.5829773664474487, accuracy=0.2400000050663948, num_samples=50)
+2026-07-03 11:11:42 | INFO     | PP-MFL | [] Aggregation round 0 (num_clients=1, num_prototypes=2)
+2026-07-03 11:11:42 | INFO     | PP-MFL | Imported state: 0 global prototypes, 0 rounds
+2026-07-03 11:11:42 | INFO     | PP-MFL | [] Knowledge transfer round 1 (num_synthesized=0)
+2026-07-03 11:11:42 | INFO     | PP-MFL | [] Knowledge transfer round 1 (num_synthesized=0, modalities=['image'])
+2026-07-03 11:11:42 | INFO     | PP-MFL | [] Evaluation round 1 (metrics={'loss': 0.1, 'accuracy': 0.9, 'precision': 0.0, 'recall': 0.0, 'f1_score': 0.0, 'personalization_gain': -1.1920928955078125e-07, 'prototype_drift': 0.0, 'alignment_score': 1.0000001192092896, 'fusion_quality': 1.0, 'client_diversity': 0.0, 'confidence_trend': 0.0, 'prototype_stability': 0.0})
+2026-07-03 11:11:42 | INFO     | PP-MFL | [] Evaluation round 1 (metrics={'loss': 0.1, 'accuracy': 0.9, 'precision': 0.0, 'recall': 0.0, 'f1_score': 0.0})
+2026-07-03 11:11:42 | INFO     | PP-MFL | [] Evaluation round 1 (metrics={'loss': 0.0, 'accuracy': 0.0, 'precision': 0.0, 'recall': 0.0, 'f1_score': 0.0})
+2026-07-03 11:11:42 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.6638291597366333, accuracy=0.22000000327825547, num_samples=50)
+2026-07-03 11:11:42 | INFO     | PP-MFL | [] Experiment started (config_summary={})
+2026-07-03 11:11:42 | INFO     | PP-MFL | Coordinator initialized with 2 clients, 3 rounds
+2026-07-03 11:11:42 | INFO     | PP-MFL | [] Experiment started (config_summary={})
+2026-07-03 11:11:42 | INFO     | PP-MFL | Coordinator initialized with 2 clients, 3 rounds
+2026-07-03 11:11:42 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.6515932083129883, accuracy=0.18000000566244126, num_samples=50)
+2026-07-03 11:11:42 | ERROR    | PP-MFL | Round 1 failed: PrototypeGenerator not configured
+2026-07-03 11:11:42 | INFO     | PP-MFL | [] Experiment completed
+2026-07-03 11:11:42 | INFO     | PP-MFL | Experiment completed: 3 rounds, 2 clients, best round 0 (acc=0.0000)
+2026-07-03 11:11:42 | INFO     | PP-MFL | [] Experiment started (config_summary={})
+2026-07-03 11:11:42 | INFO     | PP-MFL | Coordinator initialized with 2 clients, 3 rounds
+2026-07-03 11:11:42 | INFO     | PP-MFL | [] Experiment completed
+2026-07-03 11:11:42 | INFO     | PP-MFL | Experiment completed: 3 rounds, 2 clients, best round 0 (acc=0.0000)
+2026-07-03 11:11:42 | INFO     | PP-MFL | [] Experiment started (config_summary={})
+2026-07-03 11:11:42 | INFO     | PP-MFL | Coordinator initialized with 2 clients, 10 rounds
+2026-07-03 11:11:42 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.667392945289612, accuracy=0.1600000038743019, num_samples=50)
+2026-07-03 11:11:42 | ERROR    | PP-MFL | Round 1 failed: PrototypeGenerator not configured
+2026-07-03 11:11:42 | INFO     | PP-MFL | [] Experiment completed
+2026-07-03 11:11:42 | INFO     | PP-MFL | Experiment completed: 10 rounds, 2 clients, best round 0 (acc=0.0000)
+2026-07-03 11:11:46 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:11:46 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:11:46 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:11:46 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:11:46 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:11:46 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:11:46 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpllfda0vg'})
+2026-07-03 11:11:46 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:11:46 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:11:46 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:11:46 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:11:46 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:11:46 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:11:46 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:11:46 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmprm_95vzc'})
+2026-07-03 11:11:46 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:11:46 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmprm_95vzc'})
+2026-07-03 11:11:46 | INFO     | PP-MFL | Coordinator initialized with 3 clients, 10 rounds
+2026-07-03 11:11:46 | DEBUG    | PP-MFL | [test] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.6749449968338013, accuracy=0.1875, num_samples=100)
+2026-07-03 11:11:46 | ERROR    | PP-MFL | Round 1 failed: PrototypeGenerator not configured
+2026-07-03 11:11:46 | INFO     | PP-MFL | [test] Experiment completed
+2026-07-03 11:11:46 | INFO     | PP-MFL | Experiment completed: 10 rounds, 3 clients, best round 0 (acc=0.0000)
+2026-07-03 11:11:47 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:11:47 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:11:47 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:11:47 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:11:47 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:11:47 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:11:47 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpcesmmy5m'})
+2026-07-03 11:11:47 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:11:47 | WARNING  | PP-MFL | No checkpoint found at C:\Users\ivija\AppData\Local\Temp\tmpcesmmy5m\test\checkpoint_latest.pt, starting fresh
+2026-07-03 11:11:47 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpcesmmy5m'})
+2026-07-03 11:11:47 | INFO     | PP-MFL | Coordinator initialized with 3 clients, 10 rounds
+2026-07-03 11:11:47 | DEBUG    | PP-MFL | [test] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.6386343921933855, accuracy=0.20535714285714285, num_samples=100)
+2026-07-03 11:11:47 | ERROR    | PP-MFL | Round 1 failed: PrototypeGenerator not configured
+2026-07-03 11:11:47 | INFO     | PP-MFL | [test] Experiment completed
+2026-07-03 11:11:47 | INFO     | PP-MFL | Experiment completed: 10 rounds, 3 clients, best round 0 (acc=0.0000)
+2026-07-03 11:11:48 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:11:48 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:11:48 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:11:48 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:11:48 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:11:48 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:11:48 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpm5mdnxqn'})
+2026-07-03 11:11:48 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:11:48 | INFO     | PP-MFL | Experiment test cleaned up
+2026-07-03 11:11:48 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:11:48 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:11:48 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:11:48 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:11:48 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:11:48 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:11:48 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpmq8dk3cc'})
+2026-07-03 11:11:48 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:11:49 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:11:49 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:11:49 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:11:49 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:11:49 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:11:49 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:11:49 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmp6olw9izk', 'early_stopping': {'enabled': True, 'patience': 5, 'metric': 'accuracy'}})
+2026-07-03 11:11:49 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:11:50 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:11:50 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:11:50 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:11:50 | WARNING  | PP-MFL | Dataset 'nonexistent' not found, creating synthetic loaders
+2026-07-03 11:11:50 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'nonexistent', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpn__y56od'})
+2026-07-03 11:11:50 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:12:33 | DEBUG    | PP-MFL | Registered encoder: image -> ImageEncoder
+2026-07-03 11:12:33 | DEBUG    | PP-MFL | Registered encoder: text -> TextEncoder
+2026-07-03 11:12:33 | DEBUG    | PP-MFL | Registered encoder: audio -> AudioEncoder
+2026-07-03 11:12:33 | DEBUG    | PP-MFL | Registered encoder: sensor -> SensorEncoder
+2026-07-03 11:12:34 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpywo940rn\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:12:34 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpywo940rn\test\checkpoint_latest.pt (round 2)
+2026-07-03 11:12:34 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpl97oz2me\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:12:34 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.6817555189132691, accuracy=0.20000000298023224, num_samples=50)
+2026-07-03 11:14:05 | DEBUG    | PP-MFL | Registered encoder: image -> ImageEncoder
+2026-07-03 11:14:05 | DEBUG    | PP-MFL | Registered encoder: text -> TextEncoder
+2026-07-03 11:14:05 | DEBUG    | PP-MFL | Registered encoder: audio -> AudioEncoder
+2026-07-03 11:14:05 | DEBUG    | PP-MFL | Registered encoder: sensor -> SensorEncoder
+2026-07-03 11:14:05 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10})
+2026-07-03 11:14:06 | INFO     | PP-MFL | [test] Experiment completed
+2026-07-03 11:14:06 | INFO     | PP-MFL | [test] Round 1 started (num_clients=3)
+2026-07-03 11:14:06 | INFO     | PP-MFL | [test] Round 1 ended (metrics={'acc': 0.9})
+2026-07-03 11:14:06 | DEBUG    | PP-MFL | [test] Client c1 round 1 update (client_id=c1, round_id=1, loss=0.5, accuracy=0.9, num_samples=100)
+2026-07-03 11:14:06 | INFO     | PP-MFL | [test] Aggregation round 1 (num_clients=3, num_prototypes=10)
+2026-07-03 11:14:06 | INFO     | PP-MFL | [test] Knowledge transfer round 1 (num_synthesized=5)
+2026-07-03 11:14:06 | INFO     | PP-MFL | [test] Personalization round 1 (num_personalized=10, fusion_strategy=)
+2026-07-03 11:14:06 | INFO     | PP-MFL | [test] Evaluation round 1 (metrics={'accuracy': 0.9})
+2026-07-03 11:14:06 | INFO     | PP-MFL | [test] Checkpoint saved round 1 (path=/tmp/ckpt.pt, checkpoint_type=latest)
+2026-07-03 11:14:06 | ERROR    | PP-MFL | [test] something went wrong (round_id=1)
+2026-07-03 11:14:06 | WARNING  | PP-MFL | [test] warning
+2026-07-03 11:14:06 | INFO     | PP-MFL | [test] Synchronization round 1 (num_clients=3)
+2026-07-03 11:14:06 | INFO     | PP-MFL | [test] Round 1 started (num_clients=3)
+2026-07-03 11:14:06 | INFO     | PP-MFL | [test] Round 1 ended (metrics=)
+2026-07-03 11:14:06 | ERROR    | PP-MFL | [test] err
+2026-07-03 11:14:06 | ERROR    | PP-MFL | [test] err
+2026-07-03 11:14:06 | WARNING  | PP-MFL | [test] warn
+2026-07-03 11:14:06 | INFO     | PP-MFL | [test] Round 1 started (num_clients=3)
+2026-07-03 11:14:06 | INFO     | PP-MFL | Checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmp_usj55za\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:14:06 | INFO     | PP-MFL | Checkpoint loaded from C:\Users\ivija\AppData\Local\Temp\tmp_usj55za\test\checkpoint_latest.pt
+2026-07-03 11:14:06 | INFO     | PP-MFL | Best checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpajrdaezb\test\checkpoint_best.pt (round 1)
+2026-07-03 11:14:06 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmppbrwqi8a\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:14:06 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmp5p1a5eme\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:14:06 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmp5p1a5eme\test\checkpoint_latest.pt (round 2)
+2026-07-03 11:14:06 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpwxmcz2q3\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:14:06 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpli334ut8\test\checkpoint_latest.pt (round 5)
+2026-07-03 11:14:06 | INFO     | PP-MFL | Checkpoint loaded from C:\Users\ivija\AppData\Local\Temp\tmpli334ut8\test\checkpoint_latest.pt
+2026-07-03 11:14:06 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpfwrr73co\test\checkpoint_latest.pt (round 0)
+2026-07-03 11:14:06 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpfwrr73co\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:14:06 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpfwrr73co\test\checkpoint_latest.pt (round 2)
+2026-07-03 11:14:06 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpfwrr73co\test\checkpoint_latest.pt (round 3)
+2026-07-03 11:14:06 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpfwrr73co\test\checkpoint_latest.pt (round 4)
+2026-07-03 11:14:06 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmppmt_gl0w\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:14:07 | INFO     | PP-MFL | Checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmp1u2b_4nx\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:14:07 | INFO     | PP-MFL | Best checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmptsg1dgio\test\checkpoint_best.pt (round 1)
+2026-07-03 11:14:07 | DEBUG    | PP-MFL | [] Client test_client round 0 update (client_id=test_client, round_id=0, loss=1.652898406982422, accuracy=0.180000002682209, num_samples=50)
+2026-07-03 11:14:07 | DEBUG    | PP-MFL | Fused image/c1 for test [weighted_sum] weights={'local': 0.6, 'global': 0.4} conf=0.860
+2026-07-03 11:14:07 | INFO     | PP-MFL | [] Aggregation round 0 (num_clients=1, num_prototypes=2)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Imported state: 0 global prototypes, 0 rounds
+2026-07-03 11:14:08 | INFO     | PP-MFL | [] Knowledge transfer round 1 (num_synthesized=0)
+2026-07-03 11:14:08 | INFO     | PP-MFL | [] Knowledge transfer round 1 (num_synthesized=0, modalities=['image'])
+2026-07-03 11:14:08 | INFO     | PP-MFL | [] Evaluation round 1 (metrics={'loss': 0.1, 'accuracy': 0.9, 'precision': 0.0, 'recall': 0.0, 'f1_score': 0.0, 'personalization_gain': -1.1920928955078125e-07, 'prototype_drift': 0.0, 'alignment_score': 1.0000001192092896, 'fusion_quality': 1.0, 'client_diversity': 0.0, 'confidence_trend': 0.0, 'prototype_stability': 0.0})
+2026-07-03 11:14:08 | INFO     | PP-MFL | [] Evaluation round 1 (metrics={'loss': 0.1, 'accuracy': 0.9, 'precision': 0.0, 'recall': 0.0, 'f1_score': 0.0})
+2026-07-03 11:14:08 | INFO     | PP-MFL | [] Evaluation round 1 (metrics={'loss': 0.0, 'accuracy': 0.0, 'precision': 0.0, 'recall': 0.0, 'f1_score': 0.0})
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.6612784385681152, accuracy=0.20000000149011612, num_samples=50)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4adb11f0, class=2, modality=image, dim=30, samples=8, conf=1.000)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=7fea89cb, class=0, modality=image, dim=30, samples=12, conf=1.000)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a97d2edb, class=3, modality=image, dim=30, samples=10, conf=1.000)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a63aa06e, class=4, modality=image, dim=30, samples=11, conf=1.000)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=bcac8060, class=1, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, num_samples=0)
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, loss=1.6612784385681152, accuracy=0.20000000149011612, num_samples=50)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=23efafe0, class=2, modality=image, dim=30, samples=8, conf=1.000)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=cbbb21f0, class=0, modality=image, dim=30, samples=12, conf=1.000)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ee32ef82, class=3, modality=image, dim=30, samples=10, conf=1.000)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=5c8b3f7a, class=4, modality=image, dim=30, samples=11, conf=1.000)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d7c8d92e, class=1, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, num_samples=0)
+2026-07-03 11:14:08 | INFO     | PP-MFL | [] Aggregation round 0 (num_clients=2, num_prototypes=10)
+2026-07-03 11:14:08 | INFO     | PP-MFL | [] Experiment started (config_summary={})
+2026-07-03 11:14:08 | INFO     | PP-MFL | Coordinator initialized with 2 clients, 3 rounds
+2026-07-03 11:14:08 | INFO     | PP-MFL | [] Experiment started (config_summary={})
+2026-07-03 11:14:08 | INFO     | PP-MFL | Coordinator initialized with 2 clients, 3 rounds
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.6383831739425658, accuracy=0.14000000506639482, num_samples=50)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=74202479, class=2, modality=image, dim=30, samples=8, conf=1.000)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=20c3d8c1, class=3, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1e6c345f, class=1, modality=image, dim=30, samples=15, conf=1.000)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ce90df71, class=0, modality=image, dim=30, samples=7, conf=1.000)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b44dd754, class=4, modality=image, dim=30, samples=11, conf=1.000)
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, num_samples=0)
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, loss=1.6383831739425658, accuracy=0.14000000506639482, num_samples=50)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=781e3119, class=2, modality=image, dim=30, samples=8, conf=1.000)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e202c685, class=3, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1b796d0c, class=1, modality=image, dim=30, samples=15, conf=1.000)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=7524f220, class=0, modality=image, dim=30, samples=7, conf=1.000)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a5ebdd4c, class=4, modality=image, dim=30, samples=11, conf=1.000)
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, num_samples=0)
+2026-07-03 11:14:08 | INFO     | PP-MFL | [] Aggregation round 0 (num_clients=2, num_prototypes=10)
+2026-07-03 11:14:08 | ERROR    | PP-MFL | Round 1 failed: FederatedAggregator not configured
+2026-07-03 11:14:08 | INFO     | PP-MFL | [] Experiment completed
+2026-07-03 11:14:08 | INFO     | PP-MFL | Experiment completed: 3 rounds, 2 clients, best round 0 (acc=0.0000)
+2026-07-03 11:14:08 | INFO     | PP-MFL | [] Experiment started (config_summary={})
+2026-07-03 11:14:08 | INFO     | PP-MFL | Coordinator initialized with 2 clients, 3 rounds
+2026-07-03 11:14:08 | INFO     | PP-MFL | [] Experiment completed
+2026-07-03 11:14:08 | INFO     | PP-MFL | Experiment completed: 3 rounds, 2 clients, best round 0 (acc=0.0000)
+2026-07-03 11:14:08 | INFO     | PP-MFL | [] Experiment started (config_summary={})
+2026-07-03 11:14:08 | INFO     | PP-MFL | Coordinator initialized with 2 clients, 10 rounds
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.6914945602416993, accuracy=0.24000000804662705, num_samples=50)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=09cc338b, class=2, modality=image, dim=30, samples=11, conf=1.000)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=64e4b920, class=4, modality=image, dim=30, samples=10, conf=1.000)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=96821486, class=0, modality=image, dim=30, samples=11, conf=1.000)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b6582694, class=3, modality=image, dim=30, samples=6, conf=1.000)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b9feaa58, class=1, modality=image, dim=30, samples=12, conf=1.000)
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, num_samples=0)
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, loss=1.6914945602416993, accuracy=0.24000000804662705, num_samples=50)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=359f4c84, class=2, modality=image, dim=30, samples=11, conf=1.000)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=5f3c22d9, class=4, modality=image, dim=30, samples=10, conf=1.000)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=155e9c4f, class=0, modality=image, dim=30, samples=11, conf=1.000)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ca25266b, class=3, modality=image, dim=30, samples=6, conf=1.000)
+2026-07-03 11:14:08 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=928dbf74, class=1, modality=image, dim=30, samples=12, conf=1.000)
+2026-07-03 11:14:08 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, num_samples=0)
+2026-07-03 11:14:08 | INFO     | PP-MFL | [] Aggregation round 0 (num_clients=2, num_prototypes=10)
+2026-07-03 11:14:08 | ERROR    | PP-MFL | Round 1 failed: FederatedAggregator not configured
+2026-07-03 11:14:08 | INFO     | PP-MFL | [] Experiment completed
+2026-07-03 11:14:08 | INFO     | PP-MFL | Experiment completed: 10 rounds, 2 clients, best round 0 (acc=0.0000)
+2026-07-03 11:14:09 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:14:09 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:14:09 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:14:09 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:14:09 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:14:09 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:14:09 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpigfwjlko'})
+2026-07-03 11:14:09 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:14:10 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:14:10 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:14:10 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:14:10 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:14:10 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:14:10 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:14:10 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpc8k5lpjl'})
+2026-07-03 11:14:10 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:14:10 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpc8k5lpjl'})
+2026-07-03 11:14:10 | INFO     | PP-MFL | Coordinator initialized with 3 clients, 10 rounds
+2026-07-03 11:14:10 | DEBUG    | PP-MFL | [test] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.637611014502389, accuracy=0.20535714285714285, num_samples=100)
+2026-07-03 11:14:10 | ERROR    | PP-MFL | Round 1 failed: PrototypeGenerator not configured
+2026-07-03 11:14:10 | INFO     | PP-MFL | [test] Experiment completed
+2026-07-03 11:14:10 | INFO     | PP-MFL | Experiment completed: 10 rounds, 3 clients, best round 0 (acc=0.0000)
+2026-07-03 11:14:10 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:14:10 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:14:10 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:14:10 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:14:10 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:14:10 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:14:10 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpvqpxib4t'})
+2026-07-03 11:14:10 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:14:10 | WARNING  | PP-MFL | No checkpoint found at C:\Users\ivija\AppData\Local\Temp\tmpvqpxib4t\test\checkpoint_latest.pt, starting fresh
+2026-07-03 11:14:10 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpvqpxib4t'})
+2026-07-03 11:14:10 | INFO     | PP-MFL | Coordinator initialized with 3 clients, 10 rounds
+2026-07-03 11:14:10 | DEBUG    | PP-MFL | [test] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.6390962089811052, accuracy=0.21428571428571427, num_samples=100)
+2026-07-03 11:14:10 | ERROR    | PP-MFL | Round 1 failed: PrototypeGenerator not configured
+2026-07-03 11:14:10 | INFO     | PP-MFL | [test] Experiment completed
+2026-07-03 11:14:10 | INFO     | PP-MFL | Experiment completed: 10 rounds, 3 clients, best round 0 (acc=0.0000)
+2026-07-03 11:14:11 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:14:11 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:14:11 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:14:11 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:14:11 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:14:11 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:14:11 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmp9yt0nf1w'})
+2026-07-03 11:14:11 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:14:11 | INFO     | PP-MFL | Experiment test cleaned up
+2026-07-03 11:14:12 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:14:12 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:14:12 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:14:12 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:14:12 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:14:12 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:14:12 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpdoty6097'})
+2026-07-03 11:14:12 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:14:13 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:14:13 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:14:13 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:14:13 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:14:13 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:14:13 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:14:13 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpmlhw1_7z', 'early_stopping': {'enabled': True, 'patience': 5, 'metric': 'accuracy'}})
+2026-07-03 11:14:13 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:14:14 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:14:14 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:14:14 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:14:14 | WARNING  | PP-MFL | Dataset 'nonexistent' not found, creating synthetic loaders
+2026-07-03 11:14:14 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'nonexistent', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpmjnsp_kh'})
+2026-07-03 11:14:14 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:14:40 | DEBUG    | PP-MFL | Registered encoder: image -> ImageEncoder
+2026-07-03 11:14:40 | DEBUG    | PP-MFL | Registered encoder: text -> TextEncoder
+2026-07-03 11:14:40 | DEBUG    | PP-MFL | Registered encoder: audio -> AudioEncoder
+2026-07-03 11:14:40 | DEBUG    | PP-MFL | Registered encoder: sensor -> SensorEncoder
+2026-07-03 11:14:40 | DEBUG    | PP-MFL | Fused image/c1 for test [weighted_sum] weights={'local': 0.6, 'global': 0.4} conf=0.860
+2026-07-03 11:14:40 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.643851637840271, accuracy=0.12000000178813934, num_samples=50)
+2026-07-03 11:14:40 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:14:40 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1be300cd, class=4, modality=image, dim=30, samples=11, conf=1.000)
+2026-07-03 11:14:40 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:14:40 | DEBUG    | PP-MFL | Stored prototype Prototype(id=afd6fa6d, class=2, modality=image, dim=30, samples=11, conf=1.000)
+2026-07-03 11:14:40 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:14:40 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1c3d847c, class=3, modality=image, dim=30, samples=12, conf=1.000)
+2026-07-03 11:14:40 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:14:40 | DEBUG    | PP-MFL | Stored prototype Prototype(id=7f35112f, class=1, modality=image, dim=30, samples=10, conf=1.000)
+2026-07-03 11:14:40 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:14:40 | DEBUG    | PP-MFL | Stored prototype Prototype(id=63402c68, class=0, modality=image, dim=30, samples=6, conf=1.000)
+2026-07-03 11:14:40 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, num_samples=0)
+2026-07-03 11:14:40 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, loss=1.643851637840271, accuracy=0.12000000178813934, num_samples=50)
+2026-07-03 11:14:40 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:14:40 | DEBUG    | PP-MFL | Stored prototype Prototype(id=3977e9e7, class=4, modality=image, dim=30, samples=11, conf=1.000)
+2026-07-03 11:14:40 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:14:40 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d3ece34f, class=2, modality=image, dim=30, samples=11, conf=1.000)
+2026-07-03 11:14:40 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:14:40 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e7a2ef76, class=3, modality=image, dim=30, samples=12, conf=1.000)
+2026-07-03 11:14:40 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:14:40 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d3975f95, class=1, modality=image, dim=30, samples=10, conf=1.000)
+2026-07-03 11:14:40 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:14:40 | DEBUG    | PP-MFL | Stored prototype Prototype(id=99e3b6dc, class=0, modality=image, dim=30, samples=6, conf=1.000)
+2026-07-03 11:14:40 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, num_samples=0)
+2026-07-03 11:14:40 | INFO     | PP-MFL | [] Aggregation round 0 (num_clients=2, num_prototypes=10)
+2026-07-03 11:15:03 | DEBUG    | PP-MFL | Registered encoder: image -> ImageEncoder
+2026-07-03 11:15:03 | DEBUG    | PP-MFL | Registered encoder: text -> TextEncoder
+2026-07-03 11:15:03 | DEBUG    | PP-MFL | Registered encoder: audio -> AudioEncoder
+2026-07-03 11:15:03 | DEBUG    | PP-MFL | Registered encoder: sensor -> SensorEncoder
+2026-07-03 11:15:03 | DEBUG    | PP-MFL | Fused image/c1 for test [weighted_sum] weights={'local': 0.6, 'global': 0.4} conf=0.860
+2026-07-03 11:19:05 | DEBUG    | PP-MFL | Registered encoder: image -> ImageEncoder
+2026-07-03 11:19:05 | DEBUG    | PP-MFL | Registered encoder: text -> TextEncoder
+2026-07-03 11:19:05 | DEBUG    | PP-MFL | Registered encoder: audio -> AudioEncoder
+2026-07-03 11:19:05 | DEBUG    | PP-MFL | Registered encoder: sensor -> SensorEncoder
+2026-07-03 11:19:05 | DEBUG    | PP-MFL | Fused image/c1 for test [weighted_sum] weights={'local': 0.5, 'global': 0.5} conf=0.850
+2026-07-03 11:19:05 | DEBUG    | PP-MFL | Fused text/c1 for test [weighted_sum] weights={'cross_modal': 1.0} conf=0.700
+2026-07-03 11:19:05 | DEBUG    | PP-MFL | [] Client test round 0 update (client_id=test, round_id=0, num_samples=0)
+2026-07-03 11:19:28 | DEBUG    | PP-MFL | Registered encoder: image -> ImageEncoder
+2026-07-03 11:19:28 | DEBUG    | PP-MFL | Registered encoder: text -> TextEncoder
+2026-07-03 11:19:28 | DEBUG    | PP-MFL | Registered encoder: audio -> AudioEncoder
+2026-07-03 11:19:28 | DEBUG    | PP-MFL | Registered encoder: sensor -> SensorEncoder
+2026-07-03 11:19:28 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.5952754974365235, accuracy=0.20000000298023224, num_samples=50)
+2026-07-03 11:19:28 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:19:28 | DEBUG    | PP-MFL | Stored prototype Prototype(id=47897aad, class=1, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:19:28 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:19:28 | DEBUG    | PP-MFL | Stored prototype Prototype(id=64bc5958, class=2, modality=image, dim=30, samples=11, conf=1.000)
+2026-07-03 11:19:28 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:19:28 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d52eb7a8, class=3, modality=image, dim=30, samples=10, conf=1.000)
+2026-07-03 11:19:28 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:19:28 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e9a87bec, class=0, modality=image, dim=30, samples=10, conf=1.000)
+2026-07-03 11:19:28 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:19:28 | DEBUG    | PP-MFL | Stored prototype Prototype(id=47d914bc, class=4, modality=image, dim=30, samples=10, conf=1.000)
+2026-07-03 11:19:28 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, num_samples=0)
+2026-07-03 11:19:28 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, loss=1.5952754974365235, accuracy=0.20000000298023224, num_samples=50)
+2026-07-03 11:19:28 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:19:28 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e2cff8bf, class=1, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:19:28 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:19:28 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c44c9a1f, class=2, modality=image, dim=30, samples=11, conf=1.000)
+2026-07-03 11:19:28 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:19:28 | DEBUG    | PP-MFL | Stored prototype Prototype(id=2b613abf, class=3, modality=image, dim=30, samples=10, conf=1.000)
+2026-07-03 11:19:28 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:19:28 | DEBUG    | PP-MFL | Stored prototype Prototype(id=5e979342, class=0, modality=image, dim=30, samples=10, conf=1.000)
+2026-07-03 11:19:28 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:19:28 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1fa82026, class=4, modality=image, dim=30, samples=10, conf=1.000)
+2026-07-03 11:19:28 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, num_samples=0)
+2026-07-03 11:19:28 | INFO     | PP-MFL | [] Aggregation round 0 (num_clients=2, num_prototypes=10)
+2026-07-03 11:20:05 | DEBUG    | PP-MFL | Registered encoder: image -> ImageEncoder
+2026-07-03 11:20:05 | DEBUG    | PP-MFL | Registered encoder: text -> TextEncoder
+2026-07-03 11:20:05 | DEBUG    | PP-MFL | Registered encoder: audio -> AudioEncoder
+2026-07-03 11:20:05 | DEBUG    | PP-MFL | Registered encoder: sensor -> SensorEncoder
+2026-07-03 11:20:06 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10})
+2026-07-03 11:20:06 | INFO     | PP-MFL | [test] Experiment completed
+2026-07-03 11:20:06 | INFO     | PP-MFL | [test] Round 1 started (num_clients=3)
+2026-07-03 11:20:06 | INFO     | PP-MFL | [test] Round 1 ended (metrics={'acc': 0.9})
+2026-07-03 11:20:06 | DEBUG    | PP-MFL | [test] Client c1 round 1 update (client_id=c1, round_id=1, loss=0.5, accuracy=0.9, num_samples=100)
+2026-07-03 11:20:06 | INFO     | PP-MFL | [test] Aggregation round 1 (num_clients=3, num_prototypes=10)
+2026-07-03 11:20:06 | INFO     | PP-MFL | [test] Knowledge transfer round 1 (num_synthesized=5)
+2026-07-03 11:20:06 | INFO     | PP-MFL | [test] Personalization round 1 (num_personalized=10, fusion_strategy=)
+2026-07-03 11:20:06 | INFO     | PP-MFL | [test] Evaluation round 1 (metrics={'accuracy': 0.9})
+2026-07-03 11:20:06 | INFO     | PP-MFL | [test] Checkpoint saved round 1 (path=/tmp/ckpt.pt, checkpoint_type=latest)
+2026-07-03 11:20:06 | ERROR    | PP-MFL | [test] something went wrong (round_id=1)
+2026-07-03 11:20:06 | WARNING  | PP-MFL | [test] warning
+2026-07-03 11:20:06 | INFO     | PP-MFL | [test] Synchronization round 1 (num_clients=3)
+2026-07-03 11:20:06 | INFO     | PP-MFL | [test] Round 1 started (num_clients=3)
+2026-07-03 11:20:06 | INFO     | PP-MFL | [test] Round 1 ended (metrics=)
+2026-07-03 11:20:06 | ERROR    | PP-MFL | [test] err
+2026-07-03 11:20:06 | ERROR    | PP-MFL | [test] err
+2026-07-03 11:20:06 | WARNING  | PP-MFL | [test] warn
+2026-07-03 11:20:06 | INFO     | PP-MFL | [test] Round 1 started (num_clients=3)
+2026-07-03 11:20:07 | INFO     | PP-MFL | Checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpw7ww1u7q\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:20:07 | INFO     | PP-MFL | Checkpoint loaded from C:\Users\ivija\AppData\Local\Temp\tmpw7ww1u7q\test\checkpoint_latest.pt
+2026-07-03 11:20:07 | INFO     | PP-MFL | Best checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpid5_aqjh\test\checkpoint_best.pt (round 1)
+2026-07-03 11:20:07 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpkpy7una0\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:20:07 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpcy7waqd9\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:20:07 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpcy7waqd9\test\checkpoint_latest.pt (round 2)
+2026-07-03 11:20:07 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpirmempjn\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:20:07 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpwoyw49tz\test\checkpoint_latest.pt (round 5)
+2026-07-03 11:20:07 | INFO     | PP-MFL | Checkpoint loaded from C:\Users\ivija\AppData\Local\Temp\tmpwoyw49tz\test\checkpoint_latest.pt
+2026-07-03 11:20:07 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmprutmjsih\test\checkpoint_latest.pt (round 0)
+2026-07-03 11:20:07 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmprutmjsih\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:20:07 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmprutmjsih\test\checkpoint_latest.pt (round 2)
+2026-07-03 11:20:07 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmprutmjsih\test\checkpoint_latest.pt (round 3)
+2026-07-03 11:20:07 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmprutmjsih\test\checkpoint_latest.pt (round 4)
+2026-07-03 11:20:07 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpdgeav9c3\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:20:07 | INFO     | PP-MFL | Checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmp91i4_tv3\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:20:07 | INFO     | PP-MFL | Best checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmp_b30si1y\test\checkpoint_best.pt (round 1)
+2026-07-03 11:20:07 | DEBUG    | PP-MFL | [] Client test_client round 0 update (client_id=test_client, round_id=0, loss=1.592212152481079, accuracy=0.3000000059604645, num_samples=50)
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Fused image/c1 for test [weighted_sum] weights={'local': 0.5, 'global': 0.5} conf=0.850
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Fused text/c1 for test [weighted_sum] weights={'cross_modal': 1.0} conf=0.700
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | [] Client test round 0 update (client_id=test, round_id=0, num_samples=0)
+2026-07-03 11:20:08 | INFO     | PP-MFL | [] Aggregation round 0 (num_clients=1, num_prototypes=2)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Imported state: 0 global prototypes, 0 rounds
+2026-07-03 11:20:08 | INFO     | PP-MFL | [] Knowledge transfer round 1 (num_synthesized=0)
+2026-07-03 11:20:08 | INFO     | PP-MFL | [] Knowledge transfer round 1 (num_synthesized=0, modalities=['image'])
+2026-07-03 11:20:08 | INFO     | PP-MFL | [] Evaluation round 1 (metrics={'loss': 0.1, 'accuracy': 0.9, 'precision': 0.0, 'recall': 0.0, 'f1_score': 0.0, 'personalization_gain': -1.1920928955078125e-07, 'prototype_drift': 0.0, 'alignment_score': 1.0000001192092896, 'fusion_quality': 1.0, 'client_diversity': 0.0, 'confidence_trend': 0.0, 'prototype_stability': 0.0})
+2026-07-03 11:20:08 | INFO     | PP-MFL | [] Evaluation round 1 (metrics={'loss': 0.1, 'accuracy': 0.9, 'precision': 0.0, 'recall': 0.0, 'f1_score': 0.0})
+2026-07-03 11:20:08 | INFO     | PP-MFL | [] Evaluation round 1 (metrics={'loss': 0.0, 'accuracy': 0.0, 'precision': 0.0, 'recall': 0.0, 'f1_score': 0.0})
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.653750729560852, accuracy=0.22000000327825547, num_samples=50)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ec5c3223, class=4, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=9ff9d6d7, class=2, modality=image, dim=30, samples=12, conf=1.000)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=30e81f62, class=0, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f19750c4, class=1, modality=image, dim=30, samples=10, conf=1.000)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=70cffca0, class=3, modality=image, dim=30, samples=10, conf=1.000)
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, num_samples=0)
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, loss=1.653750729560852, accuracy=0.22000000327825547, num_samples=50)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=36226ab6, class=4, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4cae803c, class=2, modality=image, dim=30, samples=12, conf=1.000)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=0d6d39e0, class=0, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c440bb1f, class=1, modality=image, dim=30, samples=10, conf=1.000)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a44f2414, class=3, modality=image, dim=30, samples=10, conf=1.000)
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, num_samples=0)
+2026-07-03 11:20:08 | INFO     | PP-MFL | [] Aggregation round 0 (num_clients=2, num_prototypes=10)
+2026-07-03 11:20:08 | INFO     | PP-MFL | [] Experiment started (config_summary={})
+2026-07-03 11:20:08 | INFO     | PP-MFL | Coordinator initialized with 2 clients, 3 rounds
+2026-07-03 11:20:08 | INFO     | PP-MFL | [] Experiment started (config_summary={})
+2026-07-03 11:20:08 | INFO     | PP-MFL | Coordinator initialized with 2 clients, 3 rounds
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.7099430799484252, accuracy=0.14000000357627868, num_samples=50)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=80f2af2f, class=1, modality=image, dim=30, samples=5, conf=1.000)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=886e55f4, class=0, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8bc4f0a6, class=3, modality=image, dim=30, samples=15, conf=1.000)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=edda25cb, class=4, modality=image, dim=30, samples=12, conf=1.000)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=7e159de1, class=2, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, num_samples=0)
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, loss=1.7099430799484252, accuracy=0.14000000357627868, num_samples=50)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=05cfc530, class=1, modality=image, dim=30, samples=5, conf=1.000)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=811e3b52, class=0, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ebe3e43e, class=3, modality=image, dim=30, samples=15, conf=1.000)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c61d9b61, class=4, modality=image, dim=30, samples=12, conf=1.000)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=19cd6cd7, class=2, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, num_samples=0)
+2026-07-03 11:20:08 | INFO     | PP-MFL | [] Aggregation round 0 (num_clients=2, num_prototypes=10)
+2026-07-03 11:20:08 | ERROR    | PP-MFL | Round 1 failed: FederatedAggregator not configured
+2026-07-03 11:20:08 | INFO     | PP-MFL | [] Experiment completed
+2026-07-03 11:20:08 | INFO     | PP-MFL | Experiment completed: 3 rounds, 2 clients, best round 0 (acc=0.0000)
+2026-07-03 11:20:08 | INFO     | PP-MFL | [] Experiment started (config_summary={})
+2026-07-03 11:20:08 | INFO     | PP-MFL | Coordinator initialized with 2 clients, 3 rounds
+2026-07-03 11:20:08 | INFO     | PP-MFL | [] Experiment completed
+2026-07-03 11:20:08 | INFO     | PP-MFL | Experiment completed: 3 rounds, 2 clients, best round 0 (acc=0.0000)
+2026-07-03 11:20:08 | INFO     | PP-MFL | [] Experiment started (config_summary={})
+2026-07-03 11:20:08 | INFO     | PP-MFL | Coordinator initialized with 2 clients, 10 rounds
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.6953056812286378, accuracy=0.14000000357627868, num_samples=50)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=611be1b6, class=4, modality=image, dim=30, samples=8, conf=1.000)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ca3bfea8, class=2, modality=image, dim=30, samples=13, conf=1.000)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f2520cf8, class=1, modality=image, dim=30, samples=15, conf=1.000)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=7f5c3964, class=0, modality=image, dim=30, samples=7, conf=1.000)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=43e95bd1, class=3, modality=image, dim=30, samples=7, conf=1.000)
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, num_samples=0)
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, loss=1.6953056812286378, accuracy=0.14000000357627868, num_samples=50)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=37d4a311, class=4, modality=image, dim=30, samples=8, conf=1.000)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=9e2ff202, class=2, modality=image, dim=30, samples=13, conf=1.000)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=37db1004, class=1, modality=image, dim=30, samples=15, conf=1.000)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=92c1c514, class=0, modality=image, dim=30, samples=7, conf=1.000)
+2026-07-03 11:20:08 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | Stored prototype Prototype(id=94528e8a, class=3, modality=image, dim=30, samples=7, conf=1.000)
+2026-07-03 11:20:08 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, num_samples=0)
+2026-07-03 11:20:08 | INFO     | PP-MFL | [] Aggregation round 0 (num_clients=2, num_prototypes=10)
+2026-07-03 11:20:08 | ERROR    | PP-MFL | Round 1 failed: FederatedAggregator not configured
+2026-07-03 11:20:08 | INFO     | PP-MFL | [] Experiment completed
+2026-07-03 11:20:08 | INFO     | PP-MFL | Experiment completed: 10 rounds, 2 clients, best round 0 (acc=0.0000)
+2026-07-03 11:20:09 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:20:09 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:20:09 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:20:09 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:20:09 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:20:09 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:20:09 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpof3zh_3p'})
+2026-07-03 11:20:09 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:20:10 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:20:10 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:20:10 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:20:10 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:20:10 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:20:10 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:20:10 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpcwmb8_qh'})
+2026-07-03 11:20:10 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:20:10 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpcwmb8_qh'})
+2026-07-03 11:20:10 | INFO     | PP-MFL | Coordinator initialized with 3 clients, 10 rounds
+2026-07-03 11:20:10 | DEBUG    | PP-MFL | [test] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.595327411379133, accuracy=0.24107142857142858, num_samples=100)
+2026-07-03 11:20:10 | ERROR    | PP-MFL | Round 1 failed: PrototypeGenerator not configured
+2026-07-03 11:20:10 | INFO     | PP-MFL | [test] Experiment completed
+2026-07-03 11:20:10 | INFO     | PP-MFL | Experiment completed: 10 rounds, 3 clients, best round 0 (acc=0.0000)
+2026-07-03 11:20:11 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:20:11 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:20:11 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:20:11 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:20:11 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:20:11 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:20:11 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmp06fa_xvj'})
+2026-07-03 11:20:11 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:20:11 | WARNING  | PP-MFL | No checkpoint found at C:\Users\ivija\AppData\Local\Temp\tmp06fa_xvj\test\checkpoint_latest.pt, starting fresh
+2026-07-03 11:20:11 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmp06fa_xvj'})
+2026-07-03 11:20:11 | INFO     | PP-MFL | Coordinator initialized with 3 clients, 10 rounds
+2026-07-03 11:20:11 | DEBUG    | PP-MFL | [test] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.6681096042905534, accuracy=0.14285714285714285, num_samples=100)
+2026-07-03 11:20:11 | ERROR    | PP-MFL | Round 1 failed: PrototypeGenerator not configured
+2026-07-03 11:20:11 | INFO     | PP-MFL | [test] Experiment completed
+2026-07-03 11:20:11 | INFO     | PP-MFL | Experiment completed: 10 rounds, 3 clients, best round 0 (acc=0.0000)
+2026-07-03 11:20:11 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:20:12 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:20:12 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:20:12 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:20:12 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:20:12 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:20:12 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpf0lvflrx'})
+2026-07-03 11:20:12 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:20:12 | INFO     | PP-MFL | Experiment test cleaned up
+2026-07-03 11:20:12 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:20:12 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:20:12 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:20:12 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:20:12 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:20:12 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:20:12 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmp745kw5d3'})
+2026-07-03 11:20:12 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:20:13 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:20:13 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:20:13 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:20:13 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:20:13 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:20:13 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:20:13 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpfjidsv2a', 'early_stopping': {'enabled': True, 'patience': 5, 'metric': 'accuracy'}})
+2026-07-03 11:20:13 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:20:14 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:20:14 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:20:14 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:20:14 | WARNING  | PP-MFL | Dataset 'nonexistent' not found, creating synthetic loaders
+2026-07-03 11:20:14 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'nonexistent', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpykpsce19'})
+2026-07-03 11:20:14 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:21:25 | DEBUG    | PP-MFL | Registered encoder: image -> ImageEncoder
+2026-07-03 11:21:25 | DEBUG    | PP-MFL | Registered encoder: text -> TextEncoder
+2026-07-03 11:21:25 | DEBUG    | PP-MFL | Registered encoder: audio -> AudioEncoder
+2026-07-03 11:21:25 | DEBUG    | PP-MFL | Registered encoder: sensor -> SensorEncoder
+2026-07-03 11:21:25 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.6462242364883424, accuracy=0.20000000298023224, num_samples=50)
+2026-07-03 11:21:25 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:21:25 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d6391526, class=2, modality=image, dim=30, samples=14, conf=1.000)
+2026-07-03 11:21:25 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:21:25 | DEBUG    | PP-MFL | Stored prototype Prototype(id=719c82dd, class=0, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:21:25 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:21:25 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ea07e5fc, class=4, modality=image, dim=30, samples=8, conf=1.000)
+2026-07-03 11:21:25 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:21:25 | DEBUG    | PP-MFL | Stored prototype Prototype(id=60f36211, class=1, modality=image, dim=30, samples=12, conf=1.000)
+2026-07-03 11:21:25 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:21:25 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b48dee30, class=3, modality=image, dim=30, samples=7, conf=1.000)
+2026-07-03 11:21:25 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, num_samples=0)
+2026-07-03 11:21:26 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, loss=1.6462242364883424, accuracy=0.20000000298023224, num_samples=50)
+2026-07-03 11:21:26 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:21:26 | DEBUG    | PP-MFL | Stored prototype Prototype(id=1d89e09a, class=2, modality=image, dim=30, samples=14, conf=1.000)
+2026-07-03 11:21:26 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:21:26 | DEBUG    | PP-MFL | Stored prototype Prototype(id=64e859ab, class=0, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:21:26 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:21:26 | DEBUG    | PP-MFL | Stored prototype Prototype(id=aeb89944, class=4, modality=image, dim=30, samples=8, conf=1.000)
+2026-07-03 11:21:26 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:21:26 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a8410b9c, class=1, modality=image, dim=30, samples=12, conf=1.000)
+2026-07-03 11:21:26 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:21:26 | DEBUG    | PP-MFL | Stored prototype Prototype(id=3487e31c, class=3, modality=image, dim=30, samples=7, conf=1.000)
+2026-07-03 11:21:26 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, num_samples=0)
+2026-07-03 11:21:26 | INFO     | PP-MFL | [] Aggregation round 0 (num_clients=2, num_prototypes=10)
+2026-07-03 11:21:26 | INFO     | PP-MFL | [] Aggregation round 1 (num_clients=2, num_prototypes=0)
+2026-07-03 11:21:26 | INFO     | PP-MFL | [] Knowledge transfer round 1 (num_synthesized=0)
+2026-07-03 11:21:26 | DEBUG    | PP-MFL | Fused image/c0 for client_0 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:21:26 | DEBUG    | PP-MFL | Fused image/c1 for client_0 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:21:26 | DEBUG    | PP-MFL | Fused image/c2 for client_0 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:21:26 | DEBUG    | PP-MFL | Fused image/c3 for client_0 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:21:26 | DEBUG    | PP-MFL | Fused image/c4 for client_0 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:21:26 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, num_samples=0)
+2026-07-03 11:21:26 | DEBUG    | PP-MFL | Fused image/c0 for client_1 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:21:26 | DEBUG    | PP-MFL | Fused image/c1 for client_1 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:21:26 | DEBUG    | PP-MFL | Fused image/c2 for client_1 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:21:26 | DEBUG    | PP-MFL | Fused image/c3 for client_1 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:21:26 | DEBUG    | PP-MFL | Fused image/c4 for client_1 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:21:26 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, num_samples=0)
+2026-07-03 11:21:26 | INFO     | PP-MFL | [] Evaluation round 1 (metrics={'loss': 0.0, 'accuracy': 0.0, 'precision': 0.0, 'recall': 0.0, 'f1_score': 0.0, 'personalization_gain': 0.0, 'prototype_drift': 0.0, 'alignment_score': 0.9999999761581421, 'fusion_quality': 1.0, 'client_diversity': 0.36505276627010774, 'confidence_trend': 0.0, 'prototype_stability': 0.0})
+2026-07-03 11:21:53 | DEBUG    | PP-MFL | Registered encoder: image -> ImageEncoder
+2026-07-03 11:21:53 | DEBUG    | PP-MFL | Registered encoder: text -> TextEncoder
+2026-07-03 11:21:53 | DEBUG    | PP-MFL | Registered encoder: audio -> AudioEncoder
+2026-07-03 11:21:53 | DEBUG    | PP-MFL | Registered encoder: sensor -> SensorEncoder
+2026-07-03 11:21:53 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10})
+2026-07-03 11:21:53 | INFO     | PP-MFL | [test] Experiment completed
+2026-07-03 11:21:53 | INFO     | PP-MFL | [test] Round 1 started (num_clients=3)
+2026-07-03 11:21:53 | INFO     | PP-MFL | [test] Round 1 ended (metrics={'acc': 0.9})
+2026-07-03 11:21:53 | DEBUG    | PP-MFL | [test] Client c1 round 1 update (client_id=c1, round_id=1, loss=0.5, accuracy=0.9, num_samples=100)
+2026-07-03 11:21:54 | INFO     | PP-MFL | [test] Aggregation round 1 (num_clients=3, num_prototypes=10)
+2026-07-03 11:21:54 | INFO     | PP-MFL | [test] Knowledge transfer round 1 (num_synthesized=5)
+2026-07-03 11:21:54 | INFO     | PP-MFL | [test] Personalization round 1 (num_personalized=10, fusion_strategy=)
+2026-07-03 11:21:54 | INFO     | PP-MFL | [test] Evaluation round 1 (metrics={'accuracy': 0.9})
+2026-07-03 11:21:54 | INFO     | PP-MFL | [test] Checkpoint saved round 1 (path=/tmp/ckpt.pt, checkpoint_type=latest)
+2026-07-03 11:21:54 | ERROR    | PP-MFL | [test] something went wrong (round_id=1)
+2026-07-03 11:21:54 | WARNING  | PP-MFL | [test] warning
+2026-07-03 11:21:54 | INFO     | PP-MFL | [test] Synchronization round 1 (num_clients=3)
+2026-07-03 11:21:54 | INFO     | PP-MFL | [test] Round 1 started (num_clients=3)
+2026-07-03 11:21:54 | INFO     | PP-MFL | [test] Round 1 ended (metrics=)
+2026-07-03 11:21:54 | ERROR    | PP-MFL | [test] err
+2026-07-03 11:21:54 | ERROR    | PP-MFL | [test] err
+2026-07-03 11:21:54 | WARNING  | PP-MFL | [test] warn
+2026-07-03 11:21:54 | INFO     | PP-MFL | [test] Round 1 started (num_clients=3)
+2026-07-03 11:21:54 | INFO     | PP-MFL | Checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmph86ma0hu\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:21:54 | INFO     | PP-MFL | Checkpoint loaded from C:\Users\ivija\AppData\Local\Temp\tmph86ma0hu\test\checkpoint_latest.pt
+2026-07-03 11:21:54 | INFO     | PP-MFL | Best checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmp51fycfaj\test\checkpoint_best.pt (round 1)
+2026-07-03 11:21:54 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmphnfvgp57\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:21:54 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmp0l006mx3\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:21:54 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmp0l006mx3\test\checkpoint_latest.pt (round 2)
+2026-07-03 11:21:54 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpyyi5gk8y\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:21:54 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpantvjsn8\test\checkpoint_latest.pt (round 5)
+2026-07-03 11:21:54 | INFO     | PP-MFL | Checkpoint loaded from C:\Users\ivija\AppData\Local\Temp\tmpantvjsn8\test\checkpoint_latest.pt
+2026-07-03 11:21:54 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpgmk4jqld\test\checkpoint_latest.pt (round 0)
+2026-07-03 11:21:54 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpgmk4jqld\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:21:55 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpgmk4jqld\test\checkpoint_latest.pt (round 2)
+2026-07-03 11:21:55 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpgmk4jqld\test\checkpoint_latest.pt (round 3)
+2026-07-03 11:21:55 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpgmk4jqld\test\checkpoint_latest.pt (round 4)
+2026-07-03 11:21:55 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmp5jl14mmk\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:21:55 | INFO     | PP-MFL | Checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpza27kicf\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:21:55 | INFO     | PP-MFL | Best checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpiu58gsc1\test\checkpoint_best.pt (round 1)
+2026-07-03 11:21:55 | DEBUG    | PP-MFL | [] Client test_client round 0 update (client_id=test_client, round_id=0, loss=1.5655824184417724, accuracy=0.3000000089406967, num_samples=50)
+2026-07-03 11:21:55 | DEBUG    | PP-MFL | Fused image/c1 for test [weighted_sum] weights={'local': 0.5, 'global': 0.5} conf=0.850
+2026-07-03 11:21:55 | DEBUG    | PP-MFL | Fused text/c1 for test [weighted_sum] weights={'cross_modal': 1.0} conf=0.700
+2026-07-03 11:21:55 | DEBUG    | PP-MFL | [] Client test round 0 update (client_id=test, round_id=0, num_samples=0)
+2026-07-03 11:21:55 | INFO     | PP-MFL | [] Aggregation round 0 (num_clients=1, num_prototypes=2)
+2026-07-03 11:21:55 | INFO     | PP-MFL | Imported state: 0 global prototypes, 0 rounds
+2026-07-03 11:21:55 | INFO     | PP-MFL | [] Knowledge transfer round 1 (num_synthesized=0)
+2026-07-03 11:21:55 | INFO     | PP-MFL | [] Knowledge transfer round 1 (num_synthesized=0, modalities=['image'])
+2026-07-03 11:21:55 | INFO     | PP-MFL | [] Evaluation round 1 (metrics={'loss': 0.1, 'accuracy': 0.9, 'precision': 0.0, 'recall': 0.0, 'f1_score': 0.0, 'personalization_gain': -1.1920928955078125e-07, 'prototype_drift': 0.0, 'alignment_score': 1.0000001192092896, 'fusion_quality': 1.0, 'client_diversity': 0.0, 'confidence_trend': 0.0, 'prototype_stability': 0.0})
+2026-07-03 11:21:55 | INFO     | PP-MFL | [] Evaluation round 1 (metrics={'loss': 0.1, 'accuracy': 0.9, 'precision': 0.0, 'recall': 0.0, 'f1_score': 0.0})
+2026-07-03 11:21:56 | INFO     | PP-MFL | [] Evaluation round 1 (metrics={'loss': 0.0, 'accuracy': 0.0, 'precision': 0.0, 'recall': 0.0, 'f1_score': 0.0})
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.6279775619506835, accuracy=0.24000000804662705, num_samples=50)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=6f29a87c, class=4, modality=image, dim=30, samples=10, conf=1.000)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=86df2edc, class=1, modality=image, dim=30, samples=7, conf=1.000)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=93a22e9a, class=2, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d175d10a, class=0, modality=image, dim=30, samples=12, conf=1.000)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=cc813f55, class=3, modality=image, dim=30, samples=12, conf=1.000)
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, num_samples=0)
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, loss=1.6279775619506835, accuracy=0.24000000804662705, num_samples=50)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b5bc99db, class=4, modality=image, dim=30, samples=10, conf=1.000)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=15cfb647, class=1, modality=image, dim=30, samples=7, conf=1.000)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=d0d172f3, class=2, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=4fc10a68, class=0, modality=image, dim=30, samples=12, conf=1.000)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=39c432d3, class=3, modality=image, dim=30, samples=12, conf=1.000)
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, num_samples=0)
+2026-07-03 11:21:56 | INFO     | PP-MFL | [] Aggregation round 0 (num_clients=2, num_prototypes=10)
+2026-07-03 11:21:56 | INFO     | PP-MFL | [] Aggregation round 1 (num_clients=2, num_prototypes=0)
+2026-07-03 11:21:56 | INFO     | PP-MFL | [] Knowledge transfer round 1 (num_synthesized=0)
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Fused image/c0 for client_0 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Fused image/c1 for client_0 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Fused image/c2 for client_0 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Fused image/c3 for client_0 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Fused image/c4 for client_0 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, num_samples=0)
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Fused image/c0 for client_1 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Fused image/c1 for client_1 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Fused image/c2 for client_1 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Fused image/c3 for client_1 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Fused image/c4 for client_1 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, num_samples=0)
+2026-07-03 11:21:56 | INFO     | PP-MFL | [] Evaluation round 1 (metrics={'loss': 0.0, 'accuracy': 0.0, 'precision': 0.0, 'recall': 0.0, 'f1_score': 0.0, 'personalization_gain': 0.0, 'prototype_drift': 0.0, 'alignment_score': 1.000000035762787, 'fusion_quality': 1.0, 'client_diversity': 0.2714350925551521, 'confidence_trend': 0.0, 'prototype_stability': 0.0})
+2026-07-03 11:21:56 | INFO     | PP-MFL | [] Experiment started (config_summary={})
+2026-07-03 11:21:56 | INFO     | PP-MFL | Coordinator initialized with 2 clients, 3 rounds
+2026-07-03 11:21:56 | INFO     | PP-MFL | [] Experiment started (config_summary={})
+2026-07-03 11:21:56 | INFO     | PP-MFL | Coordinator initialized with 2 clients, 3 rounds
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.6137742042541503, accuracy=0.22000000327825547, num_samples=50)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=64a60aad, class=2, modality=image, dim=30, samples=13, conf=1.000)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=38509006, class=1, modality=image, dim=30, samples=7, conf=1.000)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=e6c64fec, class=0, modality=image, dim=30, samples=7, conf=1.000)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=3aa219b2, class=3, modality=image, dim=30, samples=11, conf=1.000)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a55b59cc, class=4, modality=image, dim=30, samples=12, conf=1.000)
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, num_samples=0)
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, loss=1.6137742042541503, accuracy=0.22000000327825547, num_samples=50)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8c33e7e3, class=2, modality=image, dim=30, samples=13, conf=1.000)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=3d48f976, class=1, modality=image, dim=30, samples=7, conf=1.000)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b5dfd18a, class=0, modality=image, dim=30, samples=7, conf=1.000)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c72f1377, class=3, modality=image, dim=30, samples=11, conf=1.000)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=97a2efd3, class=4, modality=image, dim=30, samples=12, conf=1.000)
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, num_samples=0)
+2026-07-03 11:21:56 | INFO     | PP-MFL | [] Aggregation round 0 (num_clients=2, num_prototypes=10)
+2026-07-03 11:21:56 | ERROR    | PP-MFL | Round 1 failed: FederatedAggregator not configured
+2026-07-03 11:21:56 | INFO     | PP-MFL | [] Experiment completed
+2026-07-03 11:21:56 | INFO     | PP-MFL | Experiment completed: 3 rounds, 2 clients, best round 0 (acc=0.0000)
+2026-07-03 11:21:56 | INFO     | PP-MFL | [] Experiment started (config_summary={})
+2026-07-03 11:21:56 | INFO     | PP-MFL | Coordinator initialized with 2 clients, 3 rounds
+2026-07-03 11:21:56 | INFO     | PP-MFL | [] Experiment completed
+2026-07-03 11:21:56 | INFO     | PP-MFL | Experiment completed: 3 rounds, 2 clients, best round 0 (acc=0.0000)
+2026-07-03 11:21:56 | INFO     | PP-MFL | [] Experiment started (config_summary={})
+2026-07-03 11:21:56 | INFO     | PP-MFL | Coordinator initialized with 2 clients, 10 rounds
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.660447120666504, accuracy=0.14000000357627868, num_samples=50)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=6b727037, class=3, modality=image, dim=30, samples=12, conf=1.000)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c26f3f24, class=0, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=de74b0ec, class=1, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=74b7c2b9, class=2, modality=image, dim=30, samples=11, conf=1.000)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=18903506, class=4, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, num_samples=0)
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, loss=1.660447120666504, accuracy=0.14000000357627868, num_samples=50)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=80636253, class=3, modality=image, dim=30, samples=12, conf=1.000)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=2e2cfb07, class=0, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=246b0897, class=1, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=def44b8d, class=2, modality=image, dim=30, samples=11, conf=1.000)
+2026-07-03 11:21:56 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | Stored prototype Prototype(id=bb2686ba, class=4, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:21:56 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, num_samples=0)
+2026-07-03 11:21:56 | INFO     | PP-MFL | [] Aggregation round 0 (num_clients=2, num_prototypes=10)
+2026-07-03 11:21:56 | ERROR    | PP-MFL | Round 1 failed: FederatedAggregator not configured
+2026-07-03 11:21:56 | INFO     | PP-MFL | [] Experiment completed
+2026-07-03 11:21:56 | INFO     | PP-MFL | Experiment completed: 10 rounds, 2 clients, best round 0 (acc=0.0000)
+2026-07-03 11:21:57 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:21:57 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:21:57 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:21:57 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:21:57 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:21:57 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:21:57 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmp0p7300o2'})
+2026-07-03 11:21:57 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:21:57 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:21:58 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:21:58 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:21:58 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:21:58 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:21:58 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:21:58 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpn_vd1omj'})
+2026-07-03 11:21:58 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:21:58 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpn_vd1omj'})
+2026-07-03 11:21:58 | INFO     | PP-MFL | Coordinator initialized with 3 clients, 10 rounds
+2026-07-03 11:21:58 | DEBUG    | PP-MFL | [test] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.6728695971625192, accuracy=0.1875, num_samples=100)
+2026-07-03 11:21:58 | ERROR    | PP-MFL | Round 1 failed: PrototypeGenerator not configured
+2026-07-03 11:21:58 | INFO     | PP-MFL | [test] Experiment completed
+2026-07-03 11:21:58 | INFO     | PP-MFL | Experiment completed: 10 rounds, 3 clients, best round 0 (acc=0.0000)
+2026-07-03 11:21:58 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:21:58 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:21:58 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:21:58 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:21:58 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:21:58 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:21:58 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmp5rxmpsun'})
+2026-07-03 11:21:58 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:21:58 | WARNING  | PP-MFL | No checkpoint found at C:\Users\ivija\AppData\Local\Temp\tmp5rxmpsun\test\checkpoint_latest.pt, starting fresh
+2026-07-03 11:21:58 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmp5rxmpsun'})
+2026-07-03 11:21:58 | INFO     | PP-MFL | Coordinator initialized with 3 clients, 10 rounds
+2026-07-03 11:21:58 | DEBUG    | PP-MFL | [test] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.665514383997236, accuracy=0.1875, num_samples=100)
+2026-07-03 11:21:58 | ERROR    | PP-MFL | Round 1 failed: PrototypeGenerator not configured
+2026-07-03 11:21:58 | INFO     | PP-MFL | [test] Experiment completed
+2026-07-03 11:21:58 | INFO     | PP-MFL | Experiment completed: 10 rounds, 3 clients, best round 0 (acc=0.0000)
+2026-07-03 11:21:59 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:21:59 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:21:59 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:21:59 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:21:59 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:21:59 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:21:59 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpfcycm5fb'})
+2026-07-03 11:21:59 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:21:59 | INFO     | PP-MFL | Experiment test cleaned up
+2026-07-03 11:22:00 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:22:00 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:22:00 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:22:00 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:22:00 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:22:00 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:22:00 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpa71ph45d'})
+2026-07-03 11:22:00 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:22:00 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:22:01 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:22:01 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:22:01 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:22:01 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:22:01 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:22:01 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpvjxfympp', 'early_stopping': {'enabled': True, 'patience': 5, 'metric': 'accuracy'}})
+2026-07-03 11:22:01 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:22:01 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:22:01 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:22:01 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:22:01 | WARNING  | PP-MFL | Dataset 'nonexistent' not found, creating synthetic loaders
+2026-07-03 11:22:01 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'nonexistent', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpx_8173n6'})
+2026-07-03 11:22:01 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:22:33 | DEBUG    | PP-MFL | Registered encoder: image -> ImageEncoder
+2026-07-03 11:22:33 | DEBUG    | PP-MFL | Registered encoder: text -> TextEncoder
+2026-07-03 11:22:33 | DEBUG    | PP-MFL | Registered encoder: audio -> AudioEncoder
+2026-07-03 11:22:33 | DEBUG    | PP-MFL | Registered encoder: sensor -> SensorEncoder
+2026-07-03 11:22:47 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10})
+2026-07-03 11:22:47 | INFO     | PP-MFL | [test] Experiment completed
+2026-07-03 11:22:47 | INFO     | PP-MFL | [test] Round 1 started (num_clients=3)
+2026-07-03 11:22:47 | INFO     | PP-MFL | [test] Round 1 ended (metrics={'acc': 0.9})
+2026-07-03 11:22:47 | DEBUG    | PP-MFL | [test] Client c1 round 1 update (client_id=c1, round_id=1, loss=0.5, accuracy=0.9, num_samples=100)
+2026-07-03 11:22:47 | INFO     | PP-MFL | [test] Aggregation round 1 (num_clients=3, num_prototypes=10)
+2026-07-03 11:22:47 | INFO     | PP-MFL | [test] Knowledge transfer round 1 (num_synthesized=5)
+2026-07-03 11:22:47 | INFO     | PP-MFL | [test] Personalization round 1 (num_personalized=10, fusion_strategy=)
+2026-07-03 11:22:47 | INFO     | PP-MFL | [test] Evaluation round 1 (metrics={'accuracy': 0.9})
+2026-07-03 11:22:47 | INFO     | PP-MFL | [test] Checkpoint saved round 1 (path=/tmp/ckpt.pt, checkpoint_type=latest)
+2026-07-03 11:22:47 | ERROR    | PP-MFL | [test] something went wrong (round_id=1)
+2026-07-03 11:22:47 | WARNING  | PP-MFL | [test] warning
+2026-07-03 11:22:47 | INFO     | PP-MFL | [test] Synchronization round 1 (num_clients=3)
+2026-07-03 11:22:47 | INFO     | PP-MFL | [test] Round 1 started (num_clients=3)
+2026-07-03 11:22:47 | INFO     | PP-MFL | [test] Round 1 ended (metrics=)
+2026-07-03 11:22:47 | ERROR    | PP-MFL | [test] err
+2026-07-03 11:22:47 | ERROR    | PP-MFL | [test] err
+2026-07-03 11:22:47 | WARNING  | PP-MFL | [test] warn
+2026-07-03 11:22:47 | INFO     | PP-MFL | [test] Round 1 started (num_clients=3)
+2026-07-03 11:22:48 | INFO     | PP-MFL | Checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmprsm2vdnf\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:22:48 | INFO     | PP-MFL | Checkpoint loaded from C:\Users\ivija\AppData\Local\Temp\tmprsm2vdnf\test\checkpoint_latest.pt
+2026-07-03 11:22:48 | INFO     | PP-MFL | Best checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmp1d6nbole\test\checkpoint_best.pt (round 1)
+2026-07-03 11:22:48 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmp2373kakv\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:22:48 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmp0rn5nywj\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:22:48 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmp0rn5nywj\test\checkpoint_latest.pt (round 2)
+2026-07-03 11:22:48 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmp80ho4x9i\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:22:48 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpbpgh1943\test\checkpoint_latest.pt (round 5)
+2026-07-03 11:22:48 | INFO     | PP-MFL | Checkpoint loaded from C:\Users\ivija\AppData\Local\Temp\tmpbpgh1943\test\checkpoint_latest.pt
+2026-07-03 11:22:48 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpmyqs75iz\test\checkpoint_latest.pt (round 0)
+2026-07-03 11:22:48 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpmyqs75iz\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:22:48 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpmyqs75iz\test\checkpoint_latest.pt (round 2)
+2026-07-03 11:22:48 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpmyqs75iz\test\checkpoint_latest.pt (round 3)
+2026-07-03 11:22:48 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpmyqs75iz\test\checkpoint_latest.pt (round 4)
+2026-07-03 11:22:48 | INFO     | PP-MFL | Latest checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpcdey2wsi\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:22:48 | INFO     | PP-MFL | Checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmpjynwd86b\test\checkpoint_latest.pt (round 1)
+2026-07-03 11:22:48 | INFO     | PP-MFL | Best checkpoint saved to C:\Users\ivija\AppData\Local\Temp\tmp_zh59w98\test\checkpoint_best.pt (round 1)
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | [] Client test_client round 0 update (client_id=test_client, round_id=0, loss=1.6163156986236573, accuracy=0.2200000062584877, num_samples=50)
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Fused image/c1 for test [weighted_sum] weights={'local': 0.5, 'global': 0.5} conf=0.850
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Fused text/c1 for test [weighted_sum] weights={'cross_modal': 1.0} conf=0.700
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | [] Client test round 0 update (client_id=test, round_id=0, num_samples=0)
+2026-07-03 11:22:49 | INFO     | PP-MFL | [] Aggregation round 0 (num_clients=1, num_prototypes=2)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Imported state: 0 global prototypes, 0 rounds
+2026-07-03 11:22:49 | INFO     | PP-MFL | [] Knowledge transfer round 1 (num_synthesized=0)
+2026-07-03 11:22:49 | INFO     | PP-MFL | [] Knowledge transfer round 1 (num_synthesized=0, modalities=['image'])
+2026-07-03 11:22:49 | INFO     | PP-MFL | [] Evaluation round 1 (metrics={'loss': 0.1, 'accuracy': 0.9, 'precision': 0.0, 'recall': 0.0, 'f1_score': 0.0, 'personalization_gain': -1.1920928955078125e-07, 'prototype_drift': 0.0, 'alignment_score': 1.0000001192092896, 'fusion_quality': 1.0, 'client_diversity': 0.0, 'confidence_trend': 0.0, 'prototype_stability': 0.0})
+2026-07-03 11:22:49 | INFO     | PP-MFL | [] Evaluation round 1 (metrics={'loss': 0.1, 'accuracy': 0.9, 'precision': 0.0, 'recall': 0.0, 'f1_score': 0.0})
+2026-07-03 11:22:49 | INFO     | PP-MFL | [] Evaluation round 1 (metrics={'loss': 0.0, 'accuracy': 0.0, 'precision': 0.0, 'recall': 0.0, 'f1_score': 0.0})
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.620627474784851, accuracy=0.28000000268220904, num_samples=50)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=5e8f6d72, class=4, modality=image, dim=30, samples=12, conf=1.000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=8c8e27dc, class=3, modality=image, dim=30, samples=14, conf=1.000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=df6551d1, class=0, modality=image, dim=30, samples=11, conf=1.000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=0da22a09, class=2, modality=image, dim=30, samples=5, conf=1.000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=2fe3c33f, class=1, modality=image, dim=30, samples=8, conf=1.000)
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, num_samples=0)
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, loss=1.620627474784851, accuracy=0.28000000268220904, num_samples=50)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c0f417f4, class=4, modality=image, dim=30, samples=12, conf=1.000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=39cc7999, class=3, modality=image, dim=30, samples=14, conf=1.000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=7c29e307, class=0, modality=image, dim=30, samples=11, conf=1.000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=93fd3249, class=2, modality=image, dim=30, samples=5, conf=1.000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=752545b2, class=1, modality=image, dim=30, samples=8, conf=1.000)
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, num_samples=0)
+2026-07-03 11:22:49 | INFO     | PP-MFL | [] Aggregation round 0 (num_clients=2, num_prototypes=10)
+2026-07-03 11:22:49 | INFO     | PP-MFL | [] Aggregation round 1 (num_clients=2, num_prototypes=0)
+2026-07-03 11:22:49 | INFO     | PP-MFL | [] Knowledge transfer round 1 (num_synthesized=0)
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Fused image/c0 for client_0 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Fused image/c1 for client_0 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Fused image/c2 for client_0 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Fused image/c3 for client_0 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Fused image/c4 for client_0 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, num_samples=0)
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Fused image/c0 for client_1 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Fused image/c1 for client_1 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Fused image/c2 for client_1 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Fused image/c3 for client_1 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Fused image/c4 for client_1 [weighted_sum] weights={'local': 1.0} conf=0.900
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, num_samples=0)
+2026-07-03 11:22:49 | INFO     | PP-MFL | [] Evaluation round 1 (metrics={'loss': 0.0, 'accuracy': 0.0, 'precision': 0.0, 'recall': 0.0, 'f1_score': 0.0, 'personalization_gain': 0.0, 'prototype_drift': 0.0, 'alignment_score': 0.9999999761581421, 'fusion_quality': 1.0, 'client_diversity': 0.39503112104203963, 'confidence_trend': 0.0, 'prototype_stability': 0.0})
+2026-07-03 11:22:49 | INFO     | PP-MFL | [] Experiment started (config_summary={})
+2026-07-03 11:22:49 | INFO     | PP-MFL | Coordinator initialized with 2 clients, 3 rounds
+2026-07-03 11:22:49 | INFO     | PP-MFL | [] Experiment started (config_summary={})
+2026-07-03 11:22:49 | INFO     | PP-MFL | Coordinator initialized with 2 clients, 3 rounds
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.6202780961990357, accuracy=0.2200000047683716, num_samples=50)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=91ed6d20, class=2, modality=image, dim=30, samples=8, conf=1.000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=c8b6adbb, class=0, modality=image, dim=30, samples=14, conf=1.000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=13340f08, class=4, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=75f06d1f, class=1, modality=image, dim=30, samples=8, conf=1.000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f2ab6124, class=3, modality=image, dim=30, samples=11, conf=1.000)
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, num_samples=0)
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, loss=1.6202780961990357, accuracy=0.2200000047683716, num_samples=50)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=58289b3c, class=2, modality=image, dim=30, samples=8, conf=1.000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=acfbd57f, class=0, modality=image, dim=30, samples=14, conf=1.000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=29e91be9, class=4, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=6967e855, class=1, modality=image, dim=30, samples=8, conf=1.000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=f77919e3, class=3, modality=image, dim=30, samples=11, conf=1.000)
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, num_samples=0)
+2026-07-03 11:22:49 | INFO     | PP-MFL | [] Aggregation round 0 (num_clients=2, num_prototypes=10)
+2026-07-03 11:22:49 | ERROR    | PP-MFL | Round 1 failed: FederatedAggregator not configured
+2026-07-03 11:22:49 | INFO     | PP-MFL | [] Experiment completed
+2026-07-03 11:22:49 | INFO     | PP-MFL | Experiment completed: 3 rounds, 2 clients, best round 0 (acc=0.0000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | [] Experiment started (config_summary={})
+2026-07-03 11:22:49 | INFO     | PP-MFL | Coordinator initialized with 2 clients, 3 rounds
+2026-07-03 11:22:49 | INFO     | PP-MFL | [] Experiment completed
+2026-07-03 11:22:49 | INFO     | PP-MFL | Experiment completed: 3 rounds, 2 clients, best round 0 (acc=0.0000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | [] Experiment started (config_summary={})
+2026-07-03 11:22:49 | INFO     | PP-MFL | Coordinator initialized with 2 clients, 10 rounds
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.6150891542434693, accuracy=0.18000000417232515, num_samples=50)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=a42a890c, class=2, modality=image, dim=30, samples=10, conf=1.000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=93694de7, class=4, modality=image, dim=30, samples=5, conf=1.000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=68839be8, class=0, modality=image, dim=30, samples=12, conf=1.000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=0c2083e8, class=1, modality=image, dim=30, samples=14, conf=1.000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=b30d6bd1, class=3, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | [] Client client_0 round 1 update (client_id=client_0, round_id=1, num_samples=0)
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, loss=1.6150891542434693, accuracy=0.18000000417232515, num_samples=50)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 2 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=2ce188ab, class=2, modality=image, dim=30, samples=10, conf=1.000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 4 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=ab0efc66, class=4, modality=image, dim=30, samples=5, conf=1.000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 0 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=70ba38be, class=0, modality=image, dim=30, samples=12, conf=1.000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 1 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=40074411, class=1, modality=image, dim=30, samples=14, conf=1.000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Generated prototype for class 3 using centroid
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | Stored prototype Prototype(id=2c4904d7, class=3, modality=image, dim=30, samples=9, conf=1.000)
+2026-07-03 11:22:49 | DEBUG    | PP-MFL | [] Client client_1 round 1 update (client_id=client_1, round_id=1, num_samples=0)
+2026-07-03 11:22:49 | INFO     | PP-MFL | [] Aggregation round 0 (num_clients=2, num_prototypes=10)
+2026-07-03 11:22:49 | ERROR    | PP-MFL | Round 1 failed: FederatedAggregator not configured
+2026-07-03 11:22:49 | INFO     | PP-MFL | [] Experiment completed
+2026-07-03 11:22:49 | INFO     | PP-MFL | Experiment completed: 10 rounds, 2 clients, best round 0 (acc=0.0000)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:22:49 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:22:49 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:22:49 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:22:49 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:22:49 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmp2g88p_61'})
+2026-07-03 11:22:49 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:22:50 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:22:50 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:22:50 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:22:50 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:22:50 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:22:50 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:22:50 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmp6ut2p095'})
+2026-07-03 11:22:50 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:22:50 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmp6ut2p095'})
+2026-07-03 11:22:50 | INFO     | PP-MFL | Coordinator initialized with 3 clients, 10 rounds
+2026-07-03 11:22:50 | DEBUG    | PP-MFL | [test] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.6563597917556763, accuracy=0.14285714285714285, num_samples=100)
+2026-07-03 11:22:50 | ERROR    | PP-MFL | Round 1 failed: PrototypeGenerator not configured
+2026-07-03 11:22:50 | INFO     | PP-MFL | [test] Experiment completed
+2026-07-03 11:22:50 | INFO     | PP-MFL | Experiment completed: 10 rounds, 3 clients, best round 0 (acc=0.0000)
+2026-07-03 11:22:50 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:22:50 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:22:50 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:22:50 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:22:50 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:22:50 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:22:50 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpn59e2x5n'})
+2026-07-03 11:22:50 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:22:50 | WARNING  | PP-MFL | No checkpoint found at C:\Users\ivija\AppData\Local\Temp\tmpn59e2x5n\test\checkpoint_latest.pt, starting fresh
+2026-07-03 11:22:50 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpn59e2x5n'})
+2026-07-03 11:22:50 | INFO     | PP-MFL | Coordinator initialized with 3 clients, 10 rounds
+2026-07-03 11:22:50 | DEBUG    | PP-MFL | [test] Client client_0 round 1 update (client_id=client_0, round_id=1, loss=1.6466506549290247, accuracy=0.14285714285714285, num_samples=100)
+2026-07-03 11:22:50 | ERROR    | PP-MFL | Round 1 failed: PrototypeGenerator not configured
+2026-07-03 11:22:50 | INFO     | PP-MFL | [test] Experiment completed
+2026-07-03 11:22:50 | INFO     | PP-MFL | Experiment completed: 10 rounds, 3 clients, best round 0 (acc=0.0000)
+2026-07-03 11:22:50 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:22:50 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:22:50 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:22:50 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:22:50 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:22:50 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:22:50 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmposbqjrhu'})
+2026-07-03 11:22:50 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:22:50 | INFO     | PP-MFL | Experiment test cleaned up
+2026-07-03 11:22:51 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:22:51 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:22:51 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:22:51 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:22:51 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:22:51 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:22:51 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmprfew3eah'})
+2026-07-03 11:22:51 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:22:51 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:22:51 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:22:51 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:22:51 | WARNING  | PP-MFL | Failed to load dataset for client 0: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:22:51 | WARNING  | PP-MFL | Failed to load dataset for client 1: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:22:51 | WARNING  | PP-MFL | Failed to load dataset for client 2: No data found for generic dataset 'generic'. Place {split}_data.npy and {split}_labels.npy in one of: [WindowsPath('datasets/generic/processed/generic'), WindowsPath('datasets/generic/raw/generic'), WindowsPath('datasets/generic/sample/generic')]
+2026-07-03 11:22:51 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'generic', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmpi25vov_7', 'early_stopping': {'enabled': True, 'patience': 5, 'metric': 'accuracy'}})
+2026-07-03 11:22:51 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
+2026-07-03 11:22:52 | INFO     | PP-MFL | Created image encoder: ImageEncoder (embed_dim=64, params=11,209,344)
+2026-07-03 11:22:52 | INFO     | PP-MFL | Created text encoder: TextEncoder (embed_dim=64, params=2,285,440)
+2026-07-03 11:22:52 | INFO     | PP-MFL | Created classifier: 128->5 (params=645)
+2026-07-03 11:22:52 | WARNING  | PP-MFL | Dataset 'nonexistent' not found, creating synthetic loaders
+2026-07-03 11:22:52 | INFO     | PP-MFL | [test] Experiment started (config_summary={'rounds': 10, 'clients': {'num_clients': 3}, 'model': {'type': 'simple'}, 'dataset': {'name': 'nonexistent', 'batch_size': 16}, 'modalities': {'image': 64, 'text': 64}, 'mappings': [('image', 'text')], 'num_classes': 5, 'optimizer': {'type': 'adam', 'lr': 0.001}, 'scheduler': {'type': 'cosine_annealing', 'kwargs': {'t_max': 10}}, 'personalization': {'fusion': {'strategy': 'weighted_sum'}, 'selector': {'confidence_threshold': 0.3}, 'adaptation': {'strategy': 'ema'}}, 'federated': {}, 'checkpoint_dir': 'C:\\Users\\ivija\\AppData\\Local\\Temp\\tmp1eu0c6jb'})
+2026-07-03 11:22:52 | INFO     | PP-MFL | Experiment test initialized: 3 clients, 10 rounds
