@@ -46,3 +46,22 @@ export interface ActivityLog {
   message: string;
   user?: string;
 }
+
+export interface DashboardResponse {
+  active_clients: number;
+  total_clients: number;
+  current_round: number;
+  total_rounds: number;
+  global_accuracy: number;
+  global_loss: number;
+  training_status: string;
+  experiments_running: number;
+  uptime_hours: number;
+  last_updated: string;
+}
+
+export interface DashboardSummary {
+  status: string;
+  message: string;
+  data: DashboardResponse;
+}
