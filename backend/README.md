@@ -45,10 +45,24 @@ backend/
 │   │   ├── metrics.py                # Intra/inter-class, purity, drift
 │   │   ├── factory.py                # Static factory with default_system
 │   │   └── utils.py                  # Validation, matrix utils, Timer
+│   ├── evaluation/     # Research Evaluation & Paper Reproduction (Phase 9)
+│   │   ├── registry.py               # MetricRegistry, BaselineRegistry, AblationRegistry, ExperimentRegistry
+│   │   ├── factory.py                # EvaluationFactory, MetricFactory
+│   │   ├── metrics.py                # Classification, Communication, Training, Prototype, KnowledgeTransfer, Personalization metrics
+│   │   ├── baselines.py              # FedAvg, FedProx, SCAFFOLD, stub baselines
+│   │   ├── ablation.py               # Ablation study configurations
+│   │   ├── statistical_analysis.py   # T-test, Wilcoxon, Cohen's d, Hedges' g
+│   │   ├── evaluator.py              # EvaluationEngine (training/validation/testing)
+│   │   ├── experiment_runner.py      # Single/batch/ablation/baseline/multi-seed runs
+│   │   ├── benchmark.py              # Model/baseline benchmarking, inference/training speed
+│   │   ├── visualization_data.py     # Structured JSON data for plotting
+│   │   ├── exporter.py               # JSON, CSV, Excel, Markdown, LaTeX export
+│   │   ├── report_generator.py       # Auto-generated experiment reports
+│   │   └── leaderboard.py            # Ranking by accuracy, F1, cost, time, quality
 │   ├── routers/        # FastAPI routers
 │   ├── schemas/        # Pydantic schemas
 │   └── services/       # Business logic
-├── tests/              # Test suite (612 tests, 1 skipped)
+├── tests/              # Test suite (1750 tests, 1 skipped)
 └── sample_data/        # UCI-HAR sample dataset
 ```
 
@@ -240,10 +254,168 @@ metrics = PrototypeMetrics(protos)
 stats = metrics.to_dict()             # intra/inter distance, purity, drift, etc.
 ```
 
+## Phase 9: Research Evaluation & Paper Reproduction
+
+The `app/evaluation/` package provides a comprehensive evaluation framework for validating the PP-MFL system against research paper methodology. It integrates with the Phase 8 training engine to run baselines, ablations, statistical analysis, and generate paper-ready reports and exports.
+
+### Architecture
+
+```
+EvaluationFactory ──► EvaluationEngine ──► ExperimentRunner ──► Benchmark ──► Leaderboard
+       │                      │                    │                │              │
+       │               ┌──────┴──────┐            │                │              │
+       │          Metrics Registry   │      AblationStudy         │              │
+       │               │             │            │                │              │
+       │        ClassificationMetrics│     BaselineRegistry       │              │
+       │        CommunicationMetrics │            │                │              │
+       │        TrainingMetrics      │     FedAvgBaseline         │              │
+       │        PrototypeMetrics     │     FedProxBaseline        │              │
+       │    KnowledgeTransferMetrics │     SCAFFOLDBaseline       │              │
+       │    PersonalizationMetrics   │     (8 baselines total)    │              │
+       │                            │                            │              │
+       └──────────► StatisticalAnalysis ◄─────────────────────────┘              │
+       ┌──────────► Exporter ◄──────────────────────────────────────────────────┘
+       │            (JSON/CSV/Excel/MD/LaTeX)
+       └──────────► ReportGenerator
+                    (auto-generated reports)
+```
+
+### Key Components
+
+- **`MetricRegistry` / `BaselineRegistry` / `AblationRegistry` / `ExperimentRegistry`** (`registry.py`): Module-level registries with `register()`, `get()`, `list()`, `unregister()`, `contains()`, `clear()`.
+- **`EvaluationFactory` / `MetricFactory`** (`factory.py`): Factory pattern for creating engines, metrics, baselines, ablations, and experiment runners from config dicts.
+- **Metrics** (`metrics.py`): 7 metric families with static methods:
+  - `ClassificationMetrics` — accuracy, precision, recall, F1 (macro/micro/weighted), balanced accuracy, confusion matrix, ROC-AUC
+  - `CommunicationMetrics` — communication cost, bandwidth, latency, bytes transferred
+  - `TrainingMetrics` — training time, inference time
+  - `PrototypeMetrics` — drift, diversity, stability, similarity, compactness
+  - `KnowledgeTransferMetrics` — alignment score, transfer accuracy, success rate, cross-modal similarity
+  - `PersonalizationMetrics` — personalization gain, client adaptation score, fusion quality, confidence calibration (ECE)
+  - Each family has `compute_all()` returning a dict of all metrics
+- **Baselines** (`baselines.py`): 8 baseline implementations registered in `BaselineRegistry`:
+  - `FedAvgBaseline`, `FedProxBaseline`, `SCAFFOLDBaseline` (full training+aggregation)
+  - `PrototypeOnlyBaseline`, `WithoutPersonalizationBaseline`, `WithoutKnowledgeTransferBaseline`, `WithoutAdaptiveAggregationBaseline`, `FullPPMFLLBaseline` (stub baselines)
+  - `BaselineFactory` for creating baselines by name
+- **`AblationStudy`** (`ablation.py`): 6 ablation functions registered in `AblationRegistry`: `without_prototypes`, `without_aggregation`, `without_knowledge_transfer`, `without_personalization`, `without_adaptive_weighting`, `without_prototype_memory`.
+- **`StatisticalAnalysis`** (`statistical_analysis.py`): Statistical tools — mean, median, variance, std, confidence interval, paired t-test, Wilcoxon signed-rank test, Cohen's d, Hedges' g, group comparison with relative improvement.
+- **`EvaluationEngine`** (`evaluator.py`): Core evaluation with training/validation/testing, single/multi-client, single/multi-modality, missing modality tests, personalized evaluation, prototype evaluation, knowledge transfer evaluation, communication evaluation, resource tracking.
+- **`ExperimentRunner`** (`experiment_runner.py`): Run single/batch/ablation/baseline/multi-seed/multi-dataset experiments. Save/load results as JSON. Select best experiment by metric.
+- **`Benchmark`** (`benchmark.py`): Model and baseline benchmarking — inference speed, training speed, throughput, memory usage, parameter count.
+- **`VisualizationDataGenerator`** (`visualization_data.py`): Generates structured JSON data for: training loss curves, accuracy curves, communication rounds, prototype drift, prototype evolution, client participation, knowledge transfer quality, personalization gain.
+- **`Exporter`** (`exporter.py`): Multi-format export — JSON, CSV, Excel (via openpyxl), Markdown tables, LaTeX tables.
+- **`ReportGenerator`** (`report_generator.py`): Auto-generated experiment reports with sections: summary, dataset, configuration, metrics, communication, prototype, knowledge transfer, personalization, best model, conclusions.
+- **`Leaderboard`** (`leaderboard.py`): Ranking of experiment results by accuracy, F1, communication cost, training time, prototype quality, personalization gain. Supports `get_best()` for top-ranked result.
+
+### Quick Start
+
+```python
+from app.evaluation import EvaluationFactory, MetricFactory
+from app.evaluation.metrics import ClassificationMetrics
+import torch
+
+# Compute metrics
+outputs = torch.tensor([[0.1, 0.9], [0.8, 0.2]])
+targets = torch.tensor([1, 0])
+acc = ClassificationMetrics.accuracy(outputs, targets)   # 1.0
+f1 = ClassificationMetrics.f1_score(outputs, targets)    # 1.0
+auc = ClassificationMetrics.roc_auc(outputs, targets)    # 1.0
+
+# Use MetricFactory
+fn = MetricFactory.create("accuracy")                    # returns callable
+acc2 = fn(outputs, targets)                              # 1.0
+acc3 = MetricFactory.compute("accuracy", outputs, targets)  # 1.0
+
+# Create evaluation engine
+engine = EvaluationFactory.create_engine({"rounds": 10})
+
+# Run baselines
+baseline = EvaluationFactory.create_baseline("fedavg", {"lr": 0.01})
+
+# From config
+setup = EvaluationFactory.from_config({
+    "metrics": ["accuracy", "f1_score", "roc_auc"],
+    "rounds": 20,
+})
+
+# List available
+EvaluationFactory.list_available_metrics()    # ["accuracy", "balanced_accuracy", ...]
+EvaluationFactory.list_available_baselines()  # ["fedavg", "fedprox", "scaffold", ...]
+```
+
+### Running Experiments
+
+```python
+from app.evaluation import ExperimentRunner, EvaluationFactory, AblationStudy
+
+runner = ExperimentRunner({"rounds": 5, "num_clients": 3})
+
+# Single experiment
+result = runner.run_single(experiment_id="exp_001")
+
+# Batch experiments
+results = runner.run_batch([
+    {"experiment_id": "exp_001", "rounds": 5},
+    {"experiment_id": "exp_002", "rounds": 10},
+])
+
+# Ablation study
+ablated = runner.run_ablation("without_prototypes")
+
+# Baseline comparison
+baseline_results = runner.run_baseline("fedavg")
+
+# Full ablation suite
+all_ablations = AblationStudy.run_all()
+```
+
+### Statistical Analysis
+
+```python
+from app.evaluation import StatisticalAnalysis
+import numpy as np
+
+baseline_scores = np.random.randn(10) * 0.1 + 0.8
+proposed_scores = np.random.randn(10) * 0.1 + 0.85
+
+t_stat, p_value = StatisticalAnalysis.paired_ttest(baseline_scores, proposed_scores)
+w_stat, p_wilcoxon = StatisticalAnalysis.wilcoxon_test(baseline_scores, proposed_scores)
+effect_size = StatisticalAnalysis.cohens_d(baseline_scores, proposed_scores)
+ci = StatisticalAnalysis.confidence_interval(proposed_scores)  # 95% CI
+```
+
+### Exporting Results
+
+```python
+from app.evaluation import Exporter
+
+exporter = Exporter(output_dir="./results")
+exporter.export_json(results, "experiment_results.json")
+exporter.export_csv(results, "experiment_results.csv")
+exporter.export_excel(results, "experiment_results.xlsx")
+exporter.export_markdown(results, "experiment_results.md")
+exporter.export_latex(results, "experiment_results.tex")
+```
+
+### Generating Reports
+
+```python
+from app.evaluation import ReportGenerator
+
+report_gen = ReportGenerator(output_dir="./reports")
+report = report_gen.generate_report(
+    train_results=train_metrics,
+    test_results=test_metrics,
+    config={"rounds": 10},
+    baseline_results=baseline_metrics,
+    ablation_results=ablated_metrics,
+)
+# report is a dict with all sections; can be exported or printed
+```
+
 ## Tests
 
 ```bash
 cd backend
-python -m pytest                       # Run all 612 tests (612 pass, 1 skip)
-python -m pytest --cov=app.data --cov=app.models --cov=app.prototypes  # Coverage (96%+)
+python -m pytest                       # Run all 1750 tests (1750 pass, 1 skip)
+python -m pytest --cov=app.data --cov=app.models --cov=app.prototypes --cov=app.evaluation  # Coverage (96%+)
 ```
