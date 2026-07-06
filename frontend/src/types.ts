@@ -11,6 +11,27 @@ export interface Client {
   accuracy: number;
 }
 
+export interface ClientResponse {
+  id: string;
+  name: string;
+  status: string;
+  accuracy: number;
+  loss: number;
+  data_size: number;
+  last_round: number;
+  device: string;
+  region: string;
+  joined_at: string;
+  last_communication: string;
+}
+
+export interface ClientListResponse {
+  status: string;
+  message: string;
+  data: ClientResponse[];
+  total: number;
+}
+
 export interface DatasetResponse {
   id: string;
   name: string;
