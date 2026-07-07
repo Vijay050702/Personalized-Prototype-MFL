@@ -22,7 +22,8 @@ src/
 │   ├── dashboard.ts        # Dashboard API functions
 │   ├── datasets.ts         # Dataset API functions
 │   ├── clients.ts          # Client API functions
-│   └── training.ts         # Training API functions
+│   ├── training.ts         # Training API functions
+│   └── knowledgeTransfer.ts # Knowledge Transfer API functions
 ├── components/
 │   ├── layout/             # Header, Sidebar, MainLayout
 │   └── ui/                 # Card, StatCard, StatusBadge
@@ -30,7 +31,8 @@ src/
 │   ├── Dashboard.tsx       # Dashboard with React Query, auto-refresh, error/loading states
 │   ├── Clients.tsx
 │   ├── Datasets.tsx
-│   └── Training.tsx        # Full training dashboard with live backend integration
+│   ├── Training.tsx        # Full training dashboard with live backend integration
+│   └── KnowledgeTransfer.tsx # Cross-modal knowledge transfer page with 6 visualizations
 ├── services/               # Legacy mock services (migrated to api/)
 ├── test/                   # Test infrastructure
 │   ├── setup.ts            # Vitest setup (jest-dom matchers)
@@ -180,3 +182,74 @@ Tests use **Vitest** + **@testing-library/react** with mocked Axios.
 - Round execution history table
 - Empty history state
 - Round tracking across status updates
+
+### Knowledge Transfer test coverage (27 tests):
+- Loading skeleton renders
+- Error states (server error, backend unavailable)
+- Error retry button
+- Empty data state with refresh
+- Statistics cards with backend data and fallback values
+- Data table with row rendering and mount call
+- Auto-refresh behavior
+- Sorting (single click changes order, double click reverses)
+- Filtering (status select, clear filters)
+- Pagination (many items, page size selector)
+- Detail panel (open, section headings present, similarity metrics, close)
+- Visualizations (Cross-Modal Transfer Graph, Similarity Heatmap, Transfer Timeline, Transfer Success Distribution, Transfer Loss Curve, Modality Interaction Matrix)
+- Last updated timestamp
+
+## Knowledge Transfer Page
+
+The Knowledge Transfer page (`/knowledge-transfer`) displays cross-modal knowledge transfer operations across clients and modalities.
+
+### API Layer (`src/api/knowledgeTransfer.ts`)
+
+Six functions:
+
+| Function | Method | Endpoint | Purpose |
+|---|---|---|---|
+| `fetchKnowledgeTransfers()` | GET | `/api/v1/knowledge-transfer` | List all knowledge transfer records |
+| `fetchKnowledgeTransferDetail(id)` | GET | `/api/v1/knowledge-transfer/{id}` | Single transfer details |
+| `fetchKnowledgeTransferStatistics()` | GET | `/api/v1/knowledge-transfer/statistics` | Aggregate statistics |
+| `startKnowledgeTransfer(data)` | POST | `/api/v1/knowledge-transfer/start` | Initiate a new transfer |
+| `stopKnowledgeTransfer(id)` | POST | `/api/v1/knowledge-transfer/{id}/stop` | Stop a running transfer |
+| `fetchKnowledgeTransferHistory()` | GET | `/api/v1/knowledge-transfer/history` | Transfer history timeline |
+
+All functions return typed responses matching the `KnowledgeTransfer*Response` interfaces in `types.ts`.
+
+### Page Features
+
+1. **Header**: Title, description, last-updated timestamp, manual refresh button
+2. **Search**: Text input filtering by transfer ID, client, modality, strategy
+3. **Filters**: 7 dropdowns — Status, Strategy, Source Client, Target Client, Source Modality, Target Modality, Communication Round range
+4. **Statistics Cards**: 8 cards — Total Transfers, Successful, Failed, Avg Similarity, Avg Confidence, Avg Loss, Avg Exec Time, Comm Efficiency
+5. **Sortable Data Table**: 10 sortable columns with ascending/descending toggle
+6. **Pagination**: Configurable page size (5/10/20/50) with prev/next navigation
+7. **Visualizations** (6 charts):
+   - **Cross-Modal Transfer Graph**: Bar chart — transfer count by modality pair
+   - **Similarity Heatmap**: Bar chart — average similarity by modality pair
+   - **Transfer Timeline**: Line chart — similarity and transfer count per round
+   - **Transfer Success Distribution**: Pie chart — transfers by status
+   - **Transfer Loss Curve**: Area chart — transfer loss across transfers
+   - **Modality Interaction Matrix**: Table — average similarity by source-target modality with color intensity
+8. **Detail Panel**: Slide-in overlay with Transfer Metadata, Alignment Information (cross-modal mapping, alignment method), Similarity Metrics (score, confidence, loss, execution time), Associated Prototypes, Knowledge Transfer History (communication round, created time)
+9. **Auto-Refresh**: Polls every 5 seconds; pauses when browser tab is hidden (Page Visibility API)
+
+### Data Flow
+
+1. **Mount**: Two `useQuery` hooks fire `fetchKnowledgeTransfers()` and `fetchKnowledgeTransferStatistics()`
+2. **Loading**: Skeleton cards pulse for statistics area
+3. **Success**: Full page with filters, table, stats, charts
+4. **Error**: Friendly UI with icon, error message, and "Try Again" button
+5. **Empty**: "No knowledge transfers found" message with "Refresh" button
+
+### Types (`src/types.ts`)
+
+| Type | Description |
+|---|---|
+| `KnowledgeTransferResponse` | Single transfer record (id, clients, modalities, strategy, similarity, confidence, loss, status, etc.) |
+| `KnowledgeTransferListResponse` | Paginated list wrapper |
+| `KnowledgeTransferStatistics` | Aggregate stats (totals, averages, efficiency) |
+| `KnowledgeTransferStatisticsResponse` | Statistics API response wrapper |
+| `KnowledgeTransferStartRequest` | Request body for starting a transfer |
+| `KnowledgeTransferHistoryResponse` | History timeline wrapper |

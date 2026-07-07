@@ -11,6 +11,8 @@ export const Header = () => {
     if (path === '/clients') return 'Client Network';
     if (path === '/datasets') return 'Data Repository';
     if (path === '/training') return 'Training Intelligence';
+    if (path === '/prototypes') return 'Prototype Repository';
+    if (path === '/knowledge-transfer') return 'Knowledge Transfer';
     if (path === '/settings') return 'System Configuration';
     return 'Dashboard';
   };

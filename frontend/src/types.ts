@@ -239,3 +239,62 @@ export interface PrototypeListResponse {
   data: PrototypeResponse[];
   total: number;
 }
+
+export interface KnowledgeTransferResponse {
+  transfer_id: string;
+  source_client: string;
+  target_client: string;
+  source_prototype: string;
+  target_prototype: string;
+  source_modality: string;
+  target_modality: string;
+  transfer_strategy: string;
+  cross_modal_mapping: string;
+  alignment_method: string;
+  transfer_loss: number;
+  similarity_score: number;
+  confidence: number;
+  communication_round: number;
+  transfer_status: string;
+  execution_time: number;
+  created_at: string;
+}
+
+export interface KnowledgeTransferListResponse {
+  status: string;
+  message: string;
+  data: KnowledgeTransferResponse[];
+  total: number;
+}
+
+export interface KnowledgeTransferStatistics {
+  total_transfers: number;
+  successful_transfers: number;
+  failed_transfers: number;
+  average_similarity: number;
+  average_confidence: number;
+  average_transfer_loss: number;
+  average_execution_time: number;
+  communication_efficiency: number;
+}
+
+export interface KnowledgeTransferStatisticsResponse {
+  status: string;
+  message: string;
+  data: KnowledgeTransferStatistics;
+}
+
+export interface KnowledgeTransferStartRequest {
+  source_client: string;
+  target_client: string;
+  source_modality: string;
+  target_modality: string;
+  transfer_strategy: string;
+}
+
+export interface KnowledgeTransferHistoryResponse {
+  status: string;
+  message: string;
+  data: KnowledgeTransferResponse[];
+  total: number;
+}

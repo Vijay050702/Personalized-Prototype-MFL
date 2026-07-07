@@ -11,6 +11,7 @@ import {
   ChevronRight,
   Zap,
   Layers,
+  ArrowRightLeft,
 } from 'lucide-react';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
@@ -25,6 +26,7 @@ const navItems = [
   { icon: Database, label: 'Datasets', path: '/datasets' },
   { icon: Cpu, label: 'Training', path: '/training' },
   { icon: Layers, label: 'Prototypes', path: '/prototypes' },
+  { icon: ArrowRightLeft, label: 'Knowledge Transfer', path: '/knowledge-transfer' },
 ];
 
 export const Sidebar = () => {
