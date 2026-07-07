@@ -19,7 +19,10 @@ Frontend dashboard for the Personalized Prototype-Based Multimodal Federated Lea
 src/
 ├── api/                    # API layer
 │   ├── axios.ts            # Reusable Axios client (base URL, interceptors, error handling)
-│   └── dashboard.ts        # Dashboard API functions
+│   ├── dashboard.ts        # Dashboard API functions
+│   ├── datasets.ts         # Dataset API functions
+│   ├── clients.ts          # Client API functions
+│   └── training.ts         # Training API functions
 ├── components/
 │   ├── layout/             # Header, Sidebar, MainLayout
 │   └── ui/                 # Card, StatCard, StatusBadge
@@ -27,8 +30,8 @@ src/
 │   ├── Dashboard.tsx       # Dashboard with React Query, auto-refresh, error/loading states
 │   ├── Clients.tsx
 │   ├── Datasets.tsx
-│   └── Training.tsx
-├── services/               # Legacy mock services (being migrated to api/)
+│   └── Training.tsx        # Full training dashboard with live backend integration
+├── services/               # Legacy mock services (migrated to api/)
 ├── test/                   # Test infrastructure
 │   ├── setup.ts            # Vitest setup (jest-dom matchers)
 │   └── __tests__/          # Component tests
@@ -54,26 +57,80 @@ The `src/api/` directory replaces the legacy `src/services/` mock layer.
   - 404 → `"Resource not found."`
   - 500+ → `"Server error. Please try again later."`
 
-### Dashboard API (`src/api/dashboard.ts`)
+### Training API (`src/api/training.ts`)
 
-```typescript
-import { fetchDashboard } from '../api/dashboard';
-const summary = await fetchDashboard();
-// summary.data.active_clients, summary.data.global_accuracy, etc.
-```
+Eight endpoints:
 
-- Endpoint: `GET /api/v1/dashboard`
-- Returns typed `DashboardSummary` matching backend Pydantic schema
+| Function | Method | Endpoint | Purpose |
+|---|---|---|---|
+| `fetchTrainingStatus()` | GET | `/api/v1/training/status` | Current training state, metrics, and progress |
+| `fetchTrainingConfig()` | GET | `/api/v1/training/config` | Training hyperparameter configuration |
+| `startTraining()` | POST | `/api/v1/training/start` | Begin training run |
+| `pauseTraining()` | POST | `/api/v1/training/pause` | Pause active training |
+| `resumeTraining()` | POST | `/api/v1/training/resume` | Resume paused training |
+| `stopTraining()` | POST | `/api/v1/training/stop` | Stop training entirely |
+| `saveCheckpoint()` | POST | `/api/v1/training/checkpoint` | Save a training checkpoint |
+| `updateTrainingConfig(data)` | PUT | `/api/v1/training/config` | Update training configuration |
 
-## Dashboard Page Flow
+All functions return typed responses matching backend Pydantic schemas.
 
-1. **Mount**: `useQuery` fires `fetchDashboard()` via Axios
-2. **Loading**: Skeleton cards (4 animated pulse placeholders) + spinner on charts
-3. **Success**: 4 stat cards (Active Clients, Current Round, Global Accuracy, Training Loss) + System Status panel + Round Progress
+## Training Page Flow
+
+1. **Mount**: `useQuery` fires `fetchTrainingStatus()` via Axios
+2. **Loading**: Skeleton cards + spinner for charts
+3. **Success**: Full training dashboard with status cards, controls, config panel, progress bars, and round history
 4. **Error**: Friendly error UI with icon, message, and "Try Again" button
-5. **Empty**: "No dashboard data available" state with Retry
-6. **Auto-refresh**: Every 5 seconds (`refetchInterval: 5000`)
-7. **Manual refresh**: Header button with spinning icon during refetch
+5. **Empty**: "No training data available" state with Retry
+
+### Configuration Flow
+
+1. Click "Config" button to toggle the configuration panel open
+2. `fetchTrainingConfig()` loads current parameters from the backend
+3. Edit fields in the form (text, number, select, toggle)
+4. Client-side validation runs on save:
+   - Learning rate > 0
+   - Client count ≥ 1
+   - Communication rounds ≥ 1
+   - Local epochs ≥ 1
+   - Batch size ≥ 1
+   - Dataset name required
+5. Click "Save Configuration" → `updateTrainingConfig()` mutation
+6. Success invalidates both config and status queries
+7. "Reset" reverts to the last loaded values
+8. "Reload Config" refetches from backend
+
+### Polling Strategy
+
+- Status query uses conditional `refetchInterval`:
+  - **2 seconds** when training status is `"running"`
+  - **Disabled** (no polling) when idle, paused, completed, or failed
+- Interval is evaluated reactively via React Query's callback form: `refetchInterval: (query) => query.state.data?.data?.status === 'running' ? 2000 : false`
+- Automatic stop when training completes or pauses (no wasted requests)
+- Manual "Refresh" button always available for on-demand updates
+
+### Training Controls
+
+Button enable/disable logic based on current training phase:
+
+| Button | Idle | Running | Paused | Completed | Failed |
+|---|---|---|---|---|---|
+| Start | ✅ | ❌ | ❌ | ✅ | ✅ |
+| Pause | ❌ | ✅ | ❌ | ❌ | ❌ |
+| Resume | ❌ | ❌ | ✅ | ❌ | ❌ |
+| Stop | ❌ | ✅ | ✅ | ❌ | ❌ |
+| Checkpoint | ❌ | ✅ | ❌ | ❌ | ❌ |
+| Reload Config | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+- All buttons disable during any pending mutation (prevents double-clicks)
+- Mutations invalidate the status query on success to trigger immediate refresh
+- Success/error notifications appear as toast in the bottom-right corner (auto-dismiss after 5 seconds)
+
+### Convergence Data
+
+- Accumulated in-memory from polled status responses
+- New data point appended when `current_round` changes
+- Displayed in the Convergence Analysis chart and Round Execution History table
+- Lost on page refresh (repopulates as polling resumes)
 
 ## Configuration
 
@@ -103,14 +160,23 @@ npm run test:watch   # Watch mode
 
 Tests use **Vitest** + **@testing-library/react** with mocked Axios.
 
-### Dashboard test coverage:
+### Training test coverage:
 - Loading skeleton renders
-- Stat cards with real API data
-- System status section
-- Round progress section
 - Error states (server error, backend unavailable)
 - Empty data state
-- API call on mount
-- Retry on error (Try Again button)
-- Manual refresh
-- Last updated timestamp
+- Stat cards with all phases (idle, running, paused, completed)
+- Current status section
+- Live progress bars and metrics
+- Manual refresh button
+- Disabled button states for all 5 phases
+- Start/Pause/Resume/Stop/Checkpoint mutation calls
+- Success notifications
+- Error notifications
+- Configuration panel open/close
+- Configuration load from backend
+- Configuration save mutation
+- Input validation (learning rate)
+- Convergence data accumulation
+- Round execution history table
+- Empty history state
+- Round tracking across status updates

@@ -176,3 +176,49 @@ export interface DashboardSummary {
   message: string;
   data: DashboardResponse;
 }
+
+export interface TrainingStatusData {
+  status: string;
+  current_round: number;
+  total_rounds: number;
+  epochs_completed: number;
+  total_epochs: number;
+  current_loss: number;
+  current_accuracy: number;
+  learning_rate: number;
+  clients_participating: number;
+  aggregation_algorithm: string;
+  time_elapsed_seconds: number;
+  estimated_time_remaining: number;
+}
+
+export interface TrainingStatusSummary {
+  status: string;
+  message: string;
+  data: TrainingStatusData;
+}
+
+export interface TrainingConfigData {
+  dataset: string;
+  client_count: number;
+  communication_rounds: number;
+  local_epochs: number;
+  batch_size: number;
+  learning_rate: number;
+  optimizer: string;
+  scheduler: string;
+  aggregation_strategy: string;
+  knowledge_transfer_enabled: boolean;
+  personalization_enabled: boolean;
+}
+
+export interface TrainingConfigSummary {
+  status: string;
+  message: string;
+  data: TrainingConfigData;
+}
+
+export interface TrainingControlResponse {
+  status: string;
+  message: string;
+}
