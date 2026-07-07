@@ -222,3 +222,20 @@ export interface TrainingControlResponse {
   status: string;
   message: string;
 }
+
+export interface PrototypeResponse {
+  id: string;
+  modality: string;
+  dimension: number;
+  cluster_id: number;
+  quality_score: number;
+  client_id: string;
+  created_round: number;
+}
+
+export interface PrototypeListResponse {
+  status: string;
+  message: string;
+  data: PrototypeResponse[];
+  total: number;
+}

@@ -9,7 +9,8 @@ import {
   Bell, 
   Search,
   ChevronRight,
-  Zap
+  Zap,
+  Layers,
 } from 'lucide-react';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
@@ -23,6 +24,7 @@ const navItems = [
   { icon: Users, label: 'Clients', path: '/clients' },
   { icon: Database, label: 'Datasets', path: '/datasets' },
   { icon: Cpu, label: 'Training', path: '/training' },
+  { icon: Layers, label: 'Prototypes', path: '/prototypes' },
 ];
 
 export const Sidebar = () => {
