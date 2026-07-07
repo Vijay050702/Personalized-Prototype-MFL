@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { 
+import {
   LayoutDashboard, 
   Users, 
   Database, 
@@ -12,6 +12,7 @@ import {
   Zap,
   Layers,
   ArrowRightLeft,
+  Activity,
 } from 'lucide-react';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
@@ -27,6 +28,7 @@ const navItems = [
   { icon: Cpu, label: 'Training', path: '/training' },
   { icon: Layers, label: 'Prototypes', path: '/prototypes' },
   { icon: ArrowRightLeft, label: 'Knowledge Transfer', path: '/knowledge-transfer' },
+  { icon: Activity, label: 'Similarity Analysis', path: '/similarity' },
 ];
 
 export const Sidebar = () => {

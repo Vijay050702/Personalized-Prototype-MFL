@@ -13,6 +13,7 @@ export const Header = () => {
     if (path === '/training') return 'Training Intelligence';
     if (path === '/prototypes') return 'Prototype Repository';
     if (path === '/knowledge-transfer') return 'Knowledge Transfer';
+    if (path === '/similarity') return 'Similarity Analysis';
     if (path === '/settings') return 'System Configuration';
     return 'Dashboard';
   };

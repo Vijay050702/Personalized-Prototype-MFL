@@ -298,3 +298,66 @@ export interface KnowledgeTransferHistoryResponse {
   data: KnowledgeTransferResponse[];
   total: number;
 }
+
+export interface SimilarityAnalysis {
+  analysis_id: string;
+  source_client: string;
+  target_client: string;
+  source_prototype: string;
+  target_prototype: string;
+  source_modality: string;
+  target_modality: string;
+  similarity_metric: string;
+  cosine_similarity: number;
+  euclidean_distance: number;
+  prototype_distance: number;
+  transfer_confidence: number;
+  aggregation_round: number;
+  cluster_id: number;
+  analysis_status: string;
+  created_at: string;
+}
+
+export interface SimilarityListResponse {
+  status: string;
+  message: string;
+  data: SimilarityAnalysis[];
+  total: number;
+}
+
+export interface SimilarityMatrixEntry {
+  source: string;
+  target: string;
+  similarity: number;
+  count: number;
+}
+
+export interface SimilarityMatrixResponse {
+  status: string;
+  message: string;
+  data: SimilarityMatrixEntry[];
+}
+
+export interface SimilarityStatistics {
+  average_similarity: number;
+  maximum_similarity: number;
+  minimum_similarity: number;
+  average_distance: number;
+  cluster_count: number;
+  client_groups: number;
+  prototype_groups: number;
+  communication_round: number;
+}
+
+export interface SimilarityStatisticsResponse {
+  status: string;
+  message: string;
+  data: SimilarityStatistics;
+}
+
+export interface SimilarityHistoryResponse {
+  status: string;
+  message: string;
+  data: SimilarityAnalysis[];
+  total: number;
+}
