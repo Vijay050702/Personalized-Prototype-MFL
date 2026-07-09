@@ -398,3 +398,39 @@ export interface ExperimentListResponse {
   data: ExperimentResponse[];
   total: number;
 }
+
+export interface SettingsResponse {
+  federation_strategy: string;
+  aggregation_algorithm: string;
+  learning_rate: number;
+  batch_size: number;
+  local_epochs: number;
+  total_rounds: number;
+  clients_per_round: number;
+  min_clients: number;
+  model_architecture: string;
+  prototype_dimension: number;
+  communication_protocol: string;
+  encryption_enabled: boolean;
+}
+
+export interface SettingsSummary {
+  status: string;
+  message: string;
+  data: SettingsResponse;
+}
+
+export interface SettingsUpdateRequest {
+  federation_strategy?: string;
+  aggregation_algorithm?: string;
+  learning_rate?: number;
+  batch_size?: number;
+  local_epochs?: number;
+  total_rounds?: number;
+  clients_per_round?: number;
+  min_clients?: number;
+  model_architecture?: string;
+  prototype_dimension?: number;
+  communication_protocol?: string;
+  encryption_enabled?: boolean;
+}
