@@ -12,7 +12,8 @@ import {
   Radar, Cell,
 } from 'recharts';
 
-import { fetchEvaluation, fetchExperiments } from '../api/evaluation';
+import { fetchEvaluation } from '../api/evaluation';
+import { fetchExperiments } from '../api/experiments';
 import { Card } from '../components/ui/Card';
 import { StatusBadge } from '../components/ui/StatusBadge';
 import type {

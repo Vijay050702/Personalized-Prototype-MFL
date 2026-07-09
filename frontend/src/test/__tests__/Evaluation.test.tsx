@@ -9,9 +9,11 @@ import * as evaluationApi from '../../api/evaluation';
 import type { EvaluationSummary, ExperimentListResponse } from '../../types';
 
 vi.mock('../../api/evaluation');
+vi.mock('../../api/experiments');
+import * as experimentsApi from '../../api/experiments';
 
 const mockFetchEval = evaluationApi.fetchEvaluation as ReturnType<typeof vi.fn>;
-const mockFetchExp = evaluationApi.fetchExperiments as ReturnType<typeof vi.fn>;
+const mockFetchExp = experimentsApi.fetchExperiments as ReturnType<typeof vi.fn>;
 
 const mockEvalData: EvaluationSummary = {
   status: 'success',

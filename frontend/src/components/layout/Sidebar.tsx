@@ -14,6 +14,7 @@ import {
   ArrowRightLeft,
   Activity,
   BarChart3 as BarChartIcon,
+  FlaskConical,
 } from 'lucide-react';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
@@ -30,6 +31,7 @@ const navItems = [
   { icon: Layers, label: 'Prototypes', path: '/prototypes' },
   { icon: ArrowRightLeft, label: 'Knowledge Transfer', path: '/knowledge-transfer' },
   { icon: Activity, label: 'Similarity Analysis', path: '/similarity' },
+  { icon: FlaskConical, label: 'Experiments', path: '/experiments' },
   { icon: BarChartIcon, label: 'Model Evaluation', path: '/evaluation' },
 ];
 

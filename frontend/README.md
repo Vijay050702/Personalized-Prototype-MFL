@@ -263,7 +263,7 @@ The Evaluation page (`/evaluation`) displays live model evaluation metrics from 
 | Function | Method | Endpoint | Purpose |
 |---|---|---|---|
 | `fetchEvaluation()` | GET | `/api/v1/evaluation` | Core evaluation metrics (accuracy, precision, recall, f1, auc_roc) |
-| `fetchExperiments()` | GET | `/api/v1/experiments` | Experiment runs for baseline comparison |
+| `fetchExperiments()` | GET | `/api/v1/experiments` | Experiment runs for baseline comparison and Experiments page |
 
 ### Data Flow
 
@@ -345,3 +345,103 @@ The Baseline Comparison section uses experiment data from `GET /api/v1/experimen
 - Manual refresh button
 - Last updated timestamp
 - Multiple query error handling
+
+## Experiments Page
+
+The Experiments page (`/experiments`) provides a comprehensive view of all experiment runs in the system.
+
+### API Layer (`src/api/experiments.ts`)
+
+| Function | Method | Endpoint | Purpose |
+|---|---|---|---|
+| `fetchExperiments()` | GET | `/api/v1/experiments` | All experiment runs with status, accuracy, rounds, etc. |
+
+### Data Flow
+
+1. **Mount**: `useQuery` fires `fetchExperiments()` via Axios
+2. **Loading**: 8 skeleton cards + spinner placeholders for charts
+3. **Success**: Full experiments dashboard with stats, charts, timeline, and table
+4. **Error**: Friendly UI with icon, message, and "Try Again" button  
+5. **Empty**: "No experiments available" state with Retry
+
+### Statistics Cards (8 cards)
+
+- **Total** — Total number of experiments
+- **Running** — Currently active experiments
+- **Completed** — Successfully finished experiments
+- **Failed** — Failed experiments
+- **Avg Accuracy** — Average best accuracy across all experiments
+- **Avg Duration** — Average runtime duration
+- **Best Experiment** — Name of the highest-accuracy experiment
+- **Most Used Algo** — Most frequently used algorithm
+
+### Visualizations (4 charts)
+
+1. **Algorithm Comparison** — Dual-axis bar chart showing experiment count and average accuracy per algorithm
+2. **Duration Distribution** — Bar chart showing runtime buckets (<1h, 1-6h, 6-24h, 1-3d, >3d)
+3. **Status Distribution** — Donut/pie chart showing experiment status breakdown (completed, running, pending, failed)
+4. **Accuracy Trend** — Line chart showing best accuracy across experiments chronologically
+
+### Timeline
+
+- Chronological view of all experiments with colored status indicators
+- Shows experiment name, status badge, date range, and best accuracy
+- Running experiments show an animated pulse indicator and "Present" end date
+
+### Experiment Table
+
+| Feature | Description |
+|---|---|
+| **Search** | Text search across name, ID, and algorithm |
+| **Status Filter** | Dropdown to filter by running/completed/pending/failed |
+| **Algorithm Filter** | Dropdown to filter by unique algorithms |
+| **Page Size** | Configurable rows per page (5/10/20/50) |
+| **Pagination** | Page navigation with numbered buttons and ellipsis |
+| **Sorting** | Click column headers to sort ascending/descending (name, algorithm, status, clients, rounds, accuracy, started) |
+| **Clear Filters** | Resets all search/filter state |
+| **Detail Panel** | Click the eye icon to open a slide-in panel with metadata, performance, timeline, and log viewer |
+
+### Detail Panel
+
+The slide-in detail panel contains:
+
+- **Metadata** — ID, name, status, algorithm, clients
+- **Performance** — Best accuracy, round progress
+- **Timeline** — Started and completed timestamps
+- **Log Viewer** — Tabbed log interface with 5 tabs:
+  - **Training Logs** — Round-level training progress messages
+  - **System Logs** — Experiment lifecycle events (initialize, complete, fail)
+  - **Aggregation Logs** — Round-level aggregation messages
+  - **Knowledge Transfer Logs** — Placeholder for cross-modal transfer events
+  - **Personalization Logs** — Placeholder for personalization events
+  - Log entries are generated from experiment metadata (status transitions, round changes)
+
+### Polling Strategy
+
+- Auto-refreshes every **10 seconds** when any experiment has `status === 'running'`
+- Polling stops (no interval) when all experiments are idle/completed/failed/pending
+- Uses React Query's callback form: `refetchInterval: (query) => hasRunning ? 10000 : false`
+- Manual "Refresh" button always available for on-demand updates
+
+### Experiments test coverage:
+- Loading skeleton renders (8 skeleton cards + chart spinners)
+- Error states (server error, backend unavailable, 404, 422, 500, timeout)
+- Error retry functionality
+- Empty data state with retry
+- Statistics cards (total, running, completed, failed, avg accuracy, best experiment, most used algorithm)
+- Charts render (algorithm comparison, duration distribution, status distribution pie, accuracy trend)
+- Timeline section with experiment events
+- Table renders all experiment rows
+- Experiment status badges
+- Search filtering
+- Status filter
+- Algorithm filter
+- Page size selector and pagination
+- Clear filters
+- No results state
+- Detail panel open/close
+- Detail logs tab switching
+- Sorting by column click
+- Manual refresh button
+- Last updated timestamp
+- Auto-refresh indicator for running experiments
