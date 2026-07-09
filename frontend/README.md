@@ -33,18 +33,20 @@ src/
 ├── components/
 │   ├── auth/               # AuthBanner, LoginPage
 │   ├── layout/             # Header, Sidebar, MainLayout
+│   ├── realtime/           # LiveDashboard page component
 │   └── ui/                 # Card, StatCard, StatusBadge
 ├── context/
 │   └── AuthContext.tsx      # Session provider & auth state management
 ├── hooks/
 │   └── useAuth.ts           # useAuth() convenience hook
+├── realtime/               # Realtime monitoring layer (types, events, connection, provider, hooks, status)
 ├── pages/                  # Route pages (10 pages)
 ├── routes/
 │   └── ProtectedRoute.tsx   # Route guard component
 ├── services/               # Legacy mock services (migrated to api/)
 ├── test/                   # Test infrastructure
 │   ├── setup.ts            # Vitest setup (jest-dom matchers)
-│   └── __tests__/          # Component tests (10 test files, 286 tests)
+│   └── __tests__/          # Component tests (11 test files, 322 tests)
 ├── types.ts                # Shared TypeScript interfaces
 ├── App.tsx                 # Router setup with ProtectedRoute wrappers
 ├── main.tsx                # Entry point with QueryClientProvider + AuthProvider
@@ -170,6 +172,8 @@ npm run test:watch   # Watch mode
 
 Tests use **Vitest** + **@testing-library/react** with mocked Axios.
 
+### Total test count: **322 tests across 11 test files**
+
 ### Training test coverage:
 - Loading skeleton renders
 - Error states (server error, backend unavailable)
@@ -261,6 +265,7 @@ Routes wrapped with `<ProtectedRoute>`:
 | `/evaluation` | Evaluation | Renders content + AuthBanner |
 | `/experiments` | Experiments | Renders content + AuthBanner |
 | `/settings` | Settings | Renders content + AuthBanner |
+| `/live` | Live Monitor | Renders content + AuthBanner (realtime dashboard) |
 | `/login` | Login | Displays auth-disabled message |
 
 ### Session Flow (when auth is enabled)
@@ -494,6 +499,114 @@ The Baseline Comparison section uses experiment data from `GET /api/v1/experimen
 - Manual refresh button
 - Last updated timestamp
 - Multiple query error handling
+
+## Realtime Monitoring Layer
+
+A unified real-time monitoring layer (`src/realtime/`) that automatically detects the highest-capability transport supported by the backend and provides typed event tracking, connection status indicators, and a live monitoring dashboard.
+
+### Architecture
+
+```
+src/realtime/
+├── types.ts              # All type definitions (TransportType, ConnectionStatus, RealtimeEvent, etc.)
+├── events.ts             # Event creation, filtering, and severity utilities
+├── connection.ts         # Transport detection probes (WebSocket → SSE → polling)
+├── provider.tsx          # RealtimeContext + RealtimeProvider (wraps app, drives all state)
+├── hooks.ts              # React hooks: useRealtime, useConnectionStatus, useEventHistory, useRealtimeDashboard
+└── status.tsx            # UI components: ConnectionStatusIndicator, TransportLabel
+```
+
+### Transport Detection Strategy
+
+On mount, the `RealtimeProvider` probes transports in priority order:
+
+1. **WebSocket** — Attempts `ws://localhost:8000/ws/health` with 3s timeout
+2. **SSE** — Attempts `GET /api/v1/events/stream` with `Accept: text/event-stream`
+3. **Polling** — Attempts `GET /api/v1/dashboard` via Axios (guaranteed fallback while backend is reachable)
+4. **None** — All probes failed; backend unreachable
+
+Detection runs once on mount (guarded by a `probeDone` ref). The result determines the connection status displayed throughout the app.
+
+### Provider Integration
+
+```tsx
+<QueryClientProvider client={queryClient}>
+  <AuthProvider>
+    <RealtimeProvider pollingInterval={5000}>
+      <App />
+    </RealtimeProvider>
+  </AuthProvider>
+</QueryClientProvider>
+```
+
+`RealtimeProvider` wraps `AuthProvider` (to sit above routes) but is nested inside `QueryClientProvider` (it uses `useQueryClient` to call `invalidateQueries`).
+
+### Context Value
+
+| Property | Type | Description |
+|---|---|---|
+| `transport` | `'websocket' \| 'sse' \| 'polling' \| 'none'` | Detected transport |
+| `connectionStatus` | `'connecting' \| 'connected' \| 'polling' \| 'offline' \| 'disconnected'` | Current status |
+| `events` | `RealtimeEvent[]` | Event history (auto-pruned at 500) |
+| `isLive` | `boolean` | `true` when connected or polling |
+| `transportError` | `string \| null` | Last probe error |
+| `currentTransportLabel` | `string` | Human-readable transport name |
+| `clearHistory()` | `() => void` | Clears all events |
+| `removeEvent(id)` | `(id: string) => void` | Removes a single event |
+| `refetchAll()` | `() => void` | Invalidates all known React Query keys |
+
+### Hooks
+
+| Hook | Returns | Purpose |
+|---|---|---|
+| `useRealtime()` | Full `RealtimeContextValue` | Access all realtime state and actions |
+| `useConnectionStatus()` | `{ connectionStatus, transport, currentTransportLabel, isLive }` | Status display helpers |
+| `useEventHistory(opts?)` | `RealtimeEvent[]` | Filtered event list by category, severity, search, limit |
+| `useRealtimeDashboard(refetchInterval?)` | `{ data, isLoading, error, refetch }` | Wraps `fetchDashboard` with configurable polling interval (default 5s) |
+
+### Route
+
+- `/live` — `LiveDashboard` component rendered via `<ProtectedRoute>`
+
+### LiveDashboard Page
+
+A full-page live monitor with:
+
+1. **Header** — Title, connection status indicator, transport label, event count, last-updated timestamp, Refresh and Clear buttons
+2. **Stat Cards** (8) — Current Round, Running Experiments, Active Clients, Communication Rate, Prototype Updates, KT Events, Global Accuracy, Training Loss
+3. **Server Status Panel** — Transport, Training Status, Uptime, Communication Round, Last Poll Timestamp
+4. **Event History Panel** — Filterable (category/severity/search), auto-scrolling, auto-pruned at 500 entries
+
+### UI Components
+
+| Component | Props | Description |
+|---|---|---|
+| `ConnectionStatusIndicator` | `showLabel?: boolean`, `showTransport?: boolean` | Colored ping dot + status label |
+| `TransportLabel` | — | Transport type label |
+
+Status color mapping:
+
+| Status | Color |
+|---|---|
+| connected | Green (emerald) |
+| polling | Blue (sky) |
+| connecting | Yellow (amber) |
+| disconnected | Gray (slate) |
+| offline | Red (rose) |
+
+### Realtime test coverage (36 tests):
+- Event utilities (createEvent, severityFromStatus, filterEvents, getCategoryLabel, TRANSPORT_LABELS)
+- detectTransport mock integration
+- createConnectionManager (initial state, connect, disconnect)
+- RealtimeProvider (initial context, transition to polling, transition to offline, clearHistory, removeEvent, events populated after probe, refetchAll)
+- useConnectionStatus returns correct values
+- useEventHistory returns filtered
+- useRealtimeDashboard (loading, data)
+- ConnectionStatusIndicator renders with/without label
+- TransportLabel renders
+- LiveDashboard (loading, heading, stat values, buttons, sections, filter toggle, transport display)
+- useRealtime throws outside provider
+- MAX_HISTORY_SIZE constant
 
 ## Experiments Page
 

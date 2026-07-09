@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { MainLayout } from './components/layout/MainLayout';
 import { ProtectedRoute } from './routes/ProtectedRoute';
 import { LoginPage } from './components/auth/LoginPage';
+import { LiveDashboard } from './components/realtime/LiveDashboard';
 import { Dashboard } from './pages/Dashboard';
 import { Clients } from './pages/Clients';
 import { Datasets } from './pages/Datasets';
@@ -25,6 +26,7 @@ export default function App() {
         <Routes>
           <Route path="/login" element={<LoginPage />} />
           <Route path="/" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+          <Route path="/live" element={<ProtectedRoute><LiveDashboard /></ProtectedRoute>} />
           <Route path="/clients" element={<ProtectedRoute><Clients /></ProtectedRoute>} />
           <Route path="/datasets" element={<ProtectedRoute><Datasets /></ProtectedRoute>} />
           <Route path="/training" element={<ProtectedRoute><Training /></ProtectedRoute>} />
