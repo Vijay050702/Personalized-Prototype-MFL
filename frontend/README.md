@@ -18,28 +18,36 @@ Frontend dashboard for the Personalized Prototype-Based Multimodal Federated Lea
 ```
 src/
 ├── api/                    # API layer
-│   ├── axios.ts            # Reusable Axios client (base URL, interceptors, error handling)
+│   ├── auth.ts             # Auth API + token storage abstraction
+│   ├── axios.ts            # Reusable Axios client (base URL, interceptors, error handling, auth)
 │   ├── dashboard.ts        # Dashboard API functions
 │   ├── datasets.ts         # Dataset API functions
 │   ├── clients.ts          # Client API functions
 │   ├── training.ts         # Training API functions
-│   └── knowledgeTransfer.ts # Knowledge Transfer API functions
+│   ├── evaluation.ts       # Evaluation API functions
+│   ├── experiments.ts      # Experiments API functions
+│   ├── knowledgeTransfer.ts # Knowledge Transfer API functions
+│   ├── prototypes.ts       # Prototype API functions
+│   ├── settings.ts         # Settings API functions
+│   └── similarity.ts       # Similarity API functions
 ├── components/
+│   ├── auth/               # AuthBanner, LoginPage
 │   ├── layout/             # Header, Sidebar, MainLayout
 │   └── ui/                 # Card, StatCard, StatusBadge
-├── pages/                  # Route pages
-│   ├── Dashboard.tsx       # Dashboard with React Query, auto-refresh, error/loading states
-│   ├── Clients.tsx
-│   ├── Datasets.tsx
-│   ├── Training.tsx        # Full training dashboard with live backend integration
-│   └── KnowledgeTransfer.tsx # Cross-modal knowledge transfer page with 6 visualizations
+├── context/
+│   └── AuthContext.tsx      # Session provider & auth state management
+├── hooks/
+│   └── useAuth.ts           # useAuth() convenience hook
+├── pages/                  # Route pages (10 pages)
+├── routes/
+│   └── ProtectedRoute.tsx   # Route guard component
 ├── services/               # Legacy mock services (migrated to api/)
 ├── test/                   # Test infrastructure
 │   ├── setup.ts            # Vitest setup (jest-dom matchers)
-│   └── __tests__/          # Component tests
+│   └── __tests__/          # Component tests (10 test files, 286 tests)
 ├── types.ts                # Shared TypeScript interfaces
-├── App.tsx                 # Router setup
-├── main.tsx                # Entry point with QueryClientProvider
+├── App.tsx                 # Router setup with ProtectedRoute wrappers
+├── main.tsx                # Entry point with QueryClientProvider + AuthProvider
 └── index.css               # Global styles & Tailwind theme
 ```
 
@@ -197,6 +205,147 @@ Tests use **Vitest** + **@testing-library/react** with mocked Axios.
 - Detail panel (open, section headings present, similarity metrics, close)
 - Visualizations (Cross-Modal Transfer Graph, Similarity Heatmap, Transfer Timeline, Transfer Success Distribution, Transfer Loss Curve, Modality Interaction Matrix)
 - Last updated timestamp
+
+## Authentication Infrastructure
+
+The frontend includes a complete authentication system that **automatically adapts** to the backend's capabilities.
+
+### Architecture
+
+```
+src/
+├── api/
+│   └── auth.ts              # Auth API + token storage abstraction
+├── context/
+│   └── AuthContext.tsx       # Session provider + state management
+├── hooks/
+│   └── useAuth.ts            # useAuth() convenience hook
+├── components/
+│   └── auth/
+│       ├── AuthBanner.tsx    # "Auth Disabled" banner component
+│       ├── LoginPage.tsx     # Login page (falls back to disabled message)
+│       └── index.ts          # Barrel exports
+├── routes/
+│   └── ProtectedRoute.tsx    # Route guard component
+```
+
+### How It Works
+
+1. **Probe on mount**: `AuthContext` calls `probeAuthEndpoints()` which pings `GET /api/v1/auth/status`
+2. **If backend has auth** (200): Enables full login/session flow
+3. **If backend has no auth** (404/error): Enters **Disabled Authentication Mode**
+
+### Disabled Authentication Mode
+
+When the backend does not expose authentication endpoints:
+- All routes remain accessible
+- An `AuthBanner` appears at the top of protected pages: "Authentication is not enabled by the backend"
+- The `/login` page renders an informative message instead of a login form
+- The `useAuth()` hook returns `{ isAuthEnabled: false, mode: 'disabled' }`
+- No session management, token storage, or login/logout operations occur
+- Existing UI and functionality are unchanged
+
+### Protected Routes
+
+Routes wrapped with `<ProtectedRoute>`:
+
+| Route | Page | Behavior (no auth) |
+|---|---|---|
+| `/` | Dashboard | Renders content + AuthBanner |
+| `/clients` | Clients | Renders content + AuthBanner |
+| `/datasets` | Datasets | Renders content + AuthBanner |
+| `/training` | Training | Renders content + AuthBanner |
+| `/prototypes` | Prototypes | Renders content + AuthBanner |
+| `/knowledge-transfer` | Knowledge Transfer | Renders content + AuthBanner |
+| `/similarity` | Similarity | Renders content + AuthBanner |
+| `/evaluation` | Evaluation | Renders content + AuthBanner |
+| `/experiments` | Experiments | Renders content + AuthBanner |
+| `/settings` | Settings | Renders content + AuthBanner |
+| `/login` | Login | Displays auth-disabled message |
+
+### Session Flow (when auth is enabled)
+
+```
+App Start
+   │
+   ▼
+Probe GET /api/v1/auth/status
+   │
+   ├── 200 ──► Auth Enabled ──► Check stored token
+   │                              │
+   │                         ┌────┴────┐
+   │                         ▼         ▼
+   │                    Has Token    No Token
+   │                         │          │
+   │                    GET /me    ┌────┘
+   │                         │    │
+   │                    ┌────┴┐   │
+   │                    ▼    ▼    │
+   │                 Valid  Invalid
+   │                  │       │
+   │               ┌──┘    Logout
+   │               ▼
+   │           Authenticated
+   │
+   └── 404 ──► Auth Disabled ──► Allow access + show banner
+```
+
+### Token Storage
+
+Abstract storage layer with three implementations:
+
+| Storage | Used When | Persistence |
+|---|---|---|
+| `localStorage` | Default (backend detected) | Survives tab close |
+| `sessionStorage` | Explicit config | Per-tab session |
+| `memory` | Fallback (localStorage unavailable) | Page reload clears |
+
+The storage layer provides: `getAccessToken()`, `setAccessToken()`, `getRefreshToken()`, `setRefreshToken()`, `getStoredUser()`, `setStoredUser()`, `clear()`.
+
+### Axios Integration
+
+- **Request interceptor**: Injects `Authorization: Bearer <token>` from token storage (with backward compatibility for legacy `auth_token` key)
+- **Response interceptor**: Handles:
+  - `401` → Dispatches `auth:session-expired` custom event → triggers session clear
+  - `403` → Dispatches `auth:forbidden` custom event
+  - Timeout / network / 404 / 500 errors (unchanged from existing behavior)
+
+### Token Refresh
+
+When auth is enabled and a login succeeds with `expires_in`, a timer schedules automatic token refresh 60 seconds before expiry using the refresh token.
+
+### Usage
+
+```tsx
+import { useAuth } from '../hooks/useAuth';
+
+function MyComponent() {
+  const { isAuthEnabled, isAuthenticated, user, login, logout } = useAuth();
+
+  if (!isAuthEnabled) {
+    return <p>Auth not configured by backend</p>;
+  }
+
+  if (isAuthenticated) {
+    return <p>Welcome, {user?.username}</p>;
+  }
+
+  return <button onClick={() => login({ username, password })}>Log In</button>;
+}
+```
+
+### Testing
+
+Auth test coverage (28 tests):
+
+- TokenStorage (localStorage, sessionStorage, memory, defaults)
+- AuthContext (probe, disabled mode, session restore, invalid token, network failure, login flow)
+- ProtectedRoute (loading, disabled mode, authenticated)
+- AuthBanner renders correct message
+- LoginPage renders correct placeholder
+- useAuth (throws outside provider, returns context inside provider)
+- Axios interceptor event dispatch
+- Auth API functions (probeAuthEndpoints, clearAuthData)
 
 ## Knowledge Transfer Page
 

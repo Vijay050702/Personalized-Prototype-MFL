@@ -5,6 +5,8 @@
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { MainLayout } from './components/layout/MainLayout';
+import { ProtectedRoute } from './routes/ProtectedRoute';
+import { LoginPage } from './components/auth/LoginPage';
 import { Dashboard } from './pages/Dashboard';
 import { Clients } from './pages/Clients';
 import { Datasets } from './pages/Datasets';
@@ -21,16 +23,17 @@ export default function App() {
     <BrowserRouter>
       <MainLayout>
         <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/clients" element={<Clients />} />
-          <Route path="/datasets" element={<Datasets />} />
-          <Route path="/training" element={<Training />} />
-          <Route path="/prototypes" element={<Prototypes />} />
-          <Route path="/knowledge-transfer" element={<KnowledgeTransfer />} />
-          <Route path="/similarity" element={<Similarity />} />
-          <Route path="/evaluation" element={<Evaluation />} />
-          <Route path="/experiments" element={<Experiments />} />
-          <Route path="/settings" element={<Settings />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+          <Route path="/clients" element={<ProtectedRoute><Clients /></ProtectedRoute>} />
+          <Route path="/datasets" element={<ProtectedRoute><Datasets /></ProtectedRoute>} />
+          <Route path="/training" element={<ProtectedRoute><Training /></ProtectedRoute>} />
+          <Route path="/prototypes" element={<ProtectedRoute><Prototypes /></ProtectedRoute>} />
+          <Route path="/knowledge-transfer" element={<ProtectedRoute><KnowledgeTransfer /></ProtectedRoute>} />
+          <Route path="/similarity" element={<ProtectedRoute><Similarity /></ProtectedRoute>} />
+          <Route path="/evaluation" element={<ProtectedRoute><Evaluation /></ProtectedRoute>} />
+          <Route path="/experiments" element={<ProtectedRoute><Experiments /></ProtectedRoute>} />
+          <Route path="/settings" element={<ProtectedRoute><Settings /></ProtectedRoute>} />
           <Route path="*" element={<div className="text-on-surface p-12 text-center">404 - Not Found</div>} />
         </Routes>
       </MainLayout>

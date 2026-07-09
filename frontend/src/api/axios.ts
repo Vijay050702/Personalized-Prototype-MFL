@@ -1,7 +1,19 @@
 import axios, { AxiosError, type AxiosInstance, type InternalAxiosRequestConfig } from 'axios';
+import { defaultTokenStorage } from './auth';
 
 const BASE_URL: string = import.meta.env.VITE_API_URL ?? 'http://localhost:8000';
 const TIMEOUT_MS: number = 15_000;
+
+export const AUTH_EVENTS = {
+  SESSION_EXPIRED: 'auth:session-expired',
+  FORBIDDEN: 'auth:forbidden',
+} as const;
+
+function dispatchAuthEvent(eventType: string): void {
+  if (typeof window !== 'undefined') {
+    window.dispatchEvent(new CustomEvent(eventType));
+  }
+}
 
 const client: AxiosInstance = axios.create({
   baseURL: BASE_URL,
@@ -11,7 +23,8 @@ const client: AxiosInstance = axios.create({
 
 client.interceptors.request.use(
   (config: InternalAxiosRequestConfig) => {
-    const token: string | null = localStorage.getItem('auth_token');
+    const legacyToken: string | null = localStorage.getItem('auth_token');
+    const token: string | null = defaultTokenStorage.getAccessToken() ?? legacyToken;
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
     }
@@ -32,12 +45,25 @@ client.interceptors.response.use(
       );
     }
     const { status } = error.response;
+
+    if (status === 401) {
+      dispatchAuthEvent(AUTH_EVENTS.SESSION_EXPIRED);
+      return Promise.reject(new Error('Session expired. Please log in again.'));
+    }
+
+    if (status === 403) {
+      dispatchAuthEvent(AUTH_EVENTS.FORBIDDEN);
+      return Promise.reject(new Error('Access denied. You do not have permission.'));
+    }
+
     if (status === 404) {
       return Promise.reject(new Error('Resource not found.'));
     }
+
     if (status >= 500) {
       return Promise.reject(new Error('Server error. Please try again later.'));
     }
+
     return Promise.reject(error);
   },
 );

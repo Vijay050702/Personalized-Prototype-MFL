@@ -434,3 +434,53 @@ export interface SettingsUpdateRequest {
   communication_protocol?: string;
   encryption_enabled?: boolean;
 }
+
+export type AuthMode = 'enabled' | 'disabled' | 'loading';
+
+export interface AuthUser {
+  id: string;
+  username: string;
+  email: string;
+  role: string;
+}
+
+export interface LoginRequest {
+  username: string;
+  password: string;
+}
+
+export interface LoginResponse {
+  access_token: string;
+  refresh_token?: string;
+  token_type: string;
+  expires_in: number;
+  user: AuthUser;
+}
+
+export interface AuthStatusResponse {
+  authenticated: boolean;
+  user: AuthUser | null;
+}
+
+export interface RefreshResponse {
+  access_token: string;
+  token_type: string;
+  expires_in: number;
+}
+
+export interface AuthState {
+  mode: AuthMode;
+  user: AuthUser | null;
+  isAuthenticated: boolean;
+  isLoading: boolean;
+  isAuthEnabled: boolean;
+}
+
+export interface AuthContextValue extends AuthState {
+  login: (credentials: LoginRequest) => Promise<void>;
+  logout: () => Promise<void>;
+  refreshSession: () => Promise<void>;
+  checkAuth: () => Promise<void>;
+}
+
+export type StorageType = 'memory' | 'session' | 'local';
