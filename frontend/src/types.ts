@@ -361,3 +361,40 @@ export interface SimilarityHistoryResponse {
   data: SimilarityAnalysis[];
   total: number;
 }
+
+export interface EvaluationResponse {
+  accuracy: number;
+  precision: number;
+  recall: number;
+  f1_score: number;
+  auc_roc: number;
+  client_id: string;
+  round: number;
+  samples_evaluated: number;
+}
+
+export interface EvaluationSummary {
+  status: string;
+  message: string;
+  data: EvaluationResponse;
+}
+
+export interface ExperimentResponse {
+  id: string;
+  name: string;
+  status: string;
+  algorithm: string;
+  num_clients: number;
+  total_rounds: number;
+  current_round: number;
+  best_accuracy: number;
+  started_at: string;
+  completed_at: string | null;
+}
+
+export interface ExperimentListResponse {
+  status: string;
+  message: string;
+  data: ExperimentResponse[];
+  total: number;
+}

@@ -12,6 +12,7 @@ import { Training } from './pages/Training';
 import { Prototypes } from './pages/Prototypes';
 import { KnowledgeTransfer } from './pages/KnowledgeTransfer';
 import { Similarity } from './pages/Similarity';
+import { Evaluation } from './pages/Evaluation';
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
           <Route path="/prototypes" element={<Prototypes />} />
           <Route path="/knowledge-transfer" element={<KnowledgeTransfer />} />
           <Route path="/similarity" element={<Similarity />} />
+          <Route path="/evaluation" element={<Evaluation />} />
           <Route path="/settings" element={<div className="text-on-surface p-12 text-center border-2 border-dashed border-outline-variant rounded-3xl">System Settings - Configuration Module Coming Soon</div>} />
           <Route path="*" element={<div className="text-on-surface p-12 text-center">404 - Not Found</div>} />
         </Routes>

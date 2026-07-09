@@ -253,3 +253,95 @@ All functions return typed responses matching the `KnowledgeTransfer*Response` i
 | `KnowledgeTransferStatisticsResponse` | Statistics API response wrapper |
 | `KnowledgeTransferStartRequest` | Request body for starting a transfer |
 | `KnowledgeTransferHistoryResponse` | History timeline wrapper |
+
+## Evaluation Page
+
+The Evaluation page (`/evaluation`) displays live model evaluation metrics from the backend.
+
+### API Layer (`src/api/evaluation.ts`)
+
+| Function | Method | Endpoint | Purpose |
+|---|---|---|---|
+| `fetchEvaluation()` | GET | `/api/v1/evaluation` | Core evaluation metrics (accuracy, precision, recall, f1, auc_roc) |
+| `fetchExperiments()` | GET | `/api/v1/experiments` | Experiment runs for baseline comparison |
+
+### Data Flow
+
+1. **Mount**: Two `useQuery` hooks fire `fetchEvaluation()` and `fetchExperiments()` in parallel
+2. **Loading**: Skeleton cards + spinner placeholders for charts
+3. **Success**: Full evaluation dashboard with metrics, charts, baseline comparison, and experiment table
+4. **Error**: Friendly UI with icon, message, and "Try Again" button
+5. **Empty**: "No evaluation data available" state with Retry
+
+### Displayed Metrics (from `/api/v1/evaluation`)
+
+- **Accuracy** — Overall classification accuracy
+- **Precision** — Weighted precision score
+- **Recall** — Weighted recall score
+- **F1 Score** — Harmonic mean of precision and recall
+- **ROC-AUC** — Area under the ROC curve
+- **Comm Round** — Current communication round
+- **Samples** — Number of samples evaluated
+- **Client** — Client ID (global/personalized)
+
+### Visualizations
+
+1. **Precision / Recall / F1 Bar Chart** — Side-by-side bar comparison of three key metrics
+2. **Performance Radar Chart** — Five-metric radar (accuracy, precision, recall, f1, auc_roc)
+3. **Baseline Comparison Chart** — Horizontal bar chart comparing best accuracy across algorithms (FedAvg, FedProx, SCAFFOLD, pFedProto, etc.) from experiment runs
+4. **Best Model Highlight** — Green callout card identifying the experiment with highest accuracy
+
+### Baseline Comparison
+
+The Baseline Comparison section uses experiment data from `GET /api/v1/experiments`:
+- Groups experiments by algorithm
+- Takes the best accuracy per algorithm
+- Renders a horizontal bar chart sorted by algorithm type
+- Highlights the overall best model in a callout card
+
+### Experiment Table
+
+| Feature | Description |
+|---|---|
+| **Search** | Text search across name, ID, and algorithm |
+| **Status Filter** | Dropdown to filter by running/completed/pending/failed |
+| **Algorithm Filter** | Dropdown to filter by unique algorithms |
+| **Clear Filters** | Resets all search/filter state |
+| **Sorting** | Click column headers to sort ascending/descending |
+| **Detail Panel** | Click the eye icon to open a slide-in panel with experiment metadata, performance, and timeline |
+| **Empty State** | Shows "No experiments match your filters" when filtered results are empty |
+
+### Polling Strategy
+
+- **Evaluation query**: Auto-refreshes every 10 seconds
+- **Experiments query**: Auto-refreshes every 30 seconds
+- Manual "Refresh" button always available for on-demand updates
+
+### React Query Integration
+
+- `queryKey: ['evaluation']` for core metrics
+- `queryKey: ['experiments']` for experiment runs
+- `staleTime` configured per query to balance freshness vs. request volume
+- Both queries use `retry: 2` for transient error resilience
+
+### Evaluation test coverage (30+ tests):
+- Loading skeleton renders
+- Error states (server error, backend unavailable, 404, 422)
+- Error retry button
+- Empty data state with Retry
+- Stat cards with backend evaluation metrics (accuracy, precision, recall, f1, auc_roc)
+- Evaluation metadata section (client ID, comm round, samples)
+- Charts render (Precision/Recall/F1 bar chart, Performance radar chart)
+- Baseline comparison with best model highlight
+- Experiment table renders all rows
+- Experiment status badges
+- Search filtering
+- Status filter
+- Algorithm filter
+- Clear filters
+- No results state
+- Detail panel open/close
+- Sorting by column click
+- Manual refresh button
+- Last updated timestamp
+- Multiple query error handling
