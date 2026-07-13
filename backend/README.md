@@ -5,9 +5,9 @@
 ```
 backend/
 ├── app/
-│   ├── core/           # Config, logging (Phase 1)
-│   ├── datasets/       # Dataset adapters, registry, cache (Phase 2A)
-│   ├── data/           # Multimodal data interface layer (Phase 2B)
+│   ├── core/             # Config, logging (Phase 1)
+│   ├── datasets/         # Dataset adapters, registry, cache (Phase 2A)
+│   ├── data/             # Multimodal data interface layer (Phase 2B)
 │   │   ├── modality.py              # Modality enum & mask utilities
 │   │   ├── multimodal_sample.py     # Single multimodal sample
 │   │   ├── multimodal_batch.py      # Batched multimodal sample
@@ -20,7 +20,7 @@ backend/
 │   │   ├── statistics.py            # Dataset statistics computation
 │   │   ├── factory.py               # DataFactory with caching
 │   │   └── dataloaders/             # Modality-specific loaders
-│   ├── models/         # Multimodal model layer (Phase 3)
+│   ├── models/           # Multimodal model layer (Phase 3)
 │   │   ├── base/                    # BaseModel, BaseEncoder
 │   │   ├── encoders/                # Image, Text, Audio, Sensor encoders
 │   │   ├── fusion/                  # Concat, Attention, Weighted fusion
@@ -30,7 +30,7 @@ backend/
 │   │   ├── factory.py               # Registration-based ModelFactory
 │   │   ├── initialization.py        # Weight init strategies
 │   │   └── utils.py                 # Parameter counting, timing, memory
-│   ├── prototypes/     # Prototype Learning Engine (Phase 4)
+│   ├── prototypes/       # Prototype Learning Engine (Phase 4)
 │   │   ├── prototype.py              # Prototype data class
 │   │   ├── repository.py             # In-memory store/retrieve/CRUD
 │   │   ├── generator.py              # Centroid/weighted/median generation
@@ -45,7 +45,11 @@ backend/
 │   │   ├── metrics.py                # Intra/inter-class, purity, drift
 │   │   ├── factory.py                # Static factory with default_system
 │   │   └── utils.py                  # Validation, matrix utils, Timer
-│   ├── evaluation/     # Research Evaluation & Paper Reproduction (Phase 9)
+│   ├── knowledge_transfer/ # Knowledge Transfer Module (Phase 7)
+│   │   ├── similarity.py              # Similarity computation (cosine/euclidean/manhattan)
+│   │   ├── registry.py               # TransferRegistry
+│   │   └── utils.py                  # TransferLogger helper
+│   ├── evaluation/       # Research Evaluation & Paper Reproduction (Phase 9)
 │   │   ├── registry.py               # MetricRegistry, BaselineRegistry, AblationRegistry, ExperimentRegistry
 │   │   ├── factory.py                # EvaluationFactory, MetricFactory
 │   │   ├── metrics.py                # Classification, Communication, Training, Prototype, KnowledgeTransfer, Personalization metrics
@@ -59,10 +63,31 @@ backend/
 │   │   ├── exporter.py               # JSON, CSV, Excel, Markdown, LaTeX export
 │   │   ├── report_generator.py       # Auto-generated experiment reports
 │   │   └── leaderboard.py            # Ranking by accuracy, F1, cost, time, quality
-│   ├── routers/        # FastAPI routers
-│   ├── schemas/        # Pydantic schemas
-│   └── services/       # Business logic
-├── tests/              # Test suite (1750 tests, 1 skipped)
+│   ├── routers/          # FastAPI REST endpoints
+│   │   ├── clients.py                # GET /clients, GET /clients/{id}
+│   │   ├── dashboard.py              # GET /dashboard
+│   │   ├── datasets.py               # GET /datasets, GET /datasets/{id}
+│   │   ├── evaluation.py             # GET /evaluation
+│   │   ├── experiments.py            # GET /experiments, POST /experiments
+│   │   ├── knowledge_transfer.py     # Knowledge transfer endpoints (NEW)
+│   │   ├── prototypes.py             # GET /prototypes, GET /prototypes/{id}
+│   │   ├── settings.py               # GET /settings
+│   │   ├── similarity.py             # Similarity analysis endpoints (NEW)
+│   │   └── training.py               # GET /training
+│   ├── schemas/          # Pydantic request/response schemas
+│   │   ├── knowledge_transfer.py     # KnowledgeTransferResponse, etc. (NEW)
+│   │   └── similarity.py             # SimilarityAnalysis, etc. (NEW)
+│   ├── services/         # Business logic
+│   │   └── training_service.py       # Training status service
+│   ├── api/
+│   │   └── api.py                    # Router registration (API_PREFIX = /api/v1)
+│   ├── main.py
+│   └── core/
+│       ├── config.py                 # Application configuration
+│       ├── constants.py              # API_PREFIX = "/api/v1"
+│       ├── error_handlers.py         # Consistent error JSON responses
+│       └── logging.py                # Logging setup
+├── tests/              # Test suite (1766 tests, 1 skipped)
 └── sample_data/        # UCI-HAR sample dataset
 ```
 
@@ -412,10 +437,166 @@ report = report_gen.generate_report(
 # report is a dict with all sections; can be exported or printed
 ```
 
+## REST API Layer
+
+The backend exposes a FastAPI REST API under the `/api/v1` prefix. All endpoints return consistent JSON with proper HTTP status codes (200, 400, 404, 422, 500).
+
+### Architecture
+
+```
+Frontend (React/Vue)
+      │
+      ▼  HTTP /api/v1/*
+FastAPI Router Layer (thin — delegates to services)
+      │
+      ├── /clients              → Representative data
+      ├── /dashboard            → Representative data
+      ├── /datasets             → Representative data
+      ├── /evaluation           → Representative data
+      ├── /experiments          → Representative data
+      ├── /knowledge-transfer   → Similarity + TransferRegistry insights
+      ├── /prototypes           → Representative data
+      ├── /settings             → Config data
+      ├── /similarity           → Similarity class + mock matrix
+      └── /training             → TrainingService.get_training_status()
+```
+
+### Endpoints
+
+| Method | Path | Description | Status |
+|---|---|---|---|
+| `GET` | `/api/v1/clients` | List all clients | ✅ |
+| `GET` | `/api/v1/clients/{client_id}` | Client detail | ✅ |
+| `GET` | `/api/v1/dashboard` | Dashboard summary | ✅ |
+| `GET` | `/api/v1/datasets` | List all datasets | ✅ |
+| `GET` | `/api/v1/datasets/{dataset_id}` | Dataset detail | ✅ |
+| `GET` | `/api/v1/evaluation` | Evaluation results | ✅ |
+| `GET` | `/api/v1/experiments` | List experiments | ✅ |
+| `POST` | `/api/v1/experiments` | Create experiment | ✅ |
+| `GET` | `/api/v1/knowledge-transfer` | List knowledge transfers | ✅ |
+| `GET` | `/api/v1/knowledge-transfer/{transfer_id}` | Knowledge transfer detail | ✅ |
+| `GET` | `/api/v1/knowledge-transfer/statistics` | Transfer statistics | ✅ |
+| `GET` | `/api/v1/knowledge-transfer/history` | Transfer history | ✅ |
+| `GET` | `/api/v1/prototypes` | List prototypes | ✅ |
+| `GET` | `/api/v1/prototypes/{prototype_id}` | Prototype detail | ✅ |
+| `GET` | `/api/v1/settings` | Settings summary | ✅ |
+| `GET` | `/api/v1/similarity` | List similarity analyses | ✅ |
+| `GET` | `/api/v1/similarity/{analysis_id}` | Similarity analysis detail | ✅ |
+| `GET` | `/api/v1/similarity/statistics` | Similarity statistics | ✅ |
+| `GET` | `/api/v1/similarity/matrix` | Pairwise similarity matrix | ✅ |
+| `GET` | `/api/v1/similarity/history` | Similarity history | ✅ |
+| `GET` | `/api/v1/training` | Training status | ✅ |
+
+### Knowledge Transfer Endpoints
+
+**`GET /api/v1/knowledge-transfer`** — Returns a list of knowledge transfer records.
+
+Response schema (`KnowledgeTransferListResponse`):
+```json
+{
+  "status": "success",
+  "message": "Knowledge transfer records retrieved successfully",
+  "data": [
+    {
+      "transfer_id": "kt_001",
+      "source_client": "client_A",
+      "target_client": "client_B",
+      "source_prototype": "proto_img_1",
+      "target_prototype": "proto_img_2",
+      "modalities": ["image", "sensor"],
+      "strategy": "adaptive_mapping",
+      "mapping": "cross_modal",
+      "loss": 0.235,
+      "similarity": 0.892,
+      "confidence": 0.87,
+      "round": 5,
+      "status": "completed",
+      "execution_time": 1.23,
+      "created_at": "2025-01-15T10:30:00Z"
+    }
+  ],
+  "total": 3
+}
+```
+
+**`GET /api/v1/knowledge-transfer/{transfer_id}`** — Returns detail or 404.
+
+**`GET /api/v1/knowledge-transfer/statistics`** — Aggregate statistics:
+- `total_transfers`, `successful_transfers`, `failed_transfers`
+- `average_similarity`, `average_confidence`, `average_loss`, `average_execution_time`
+- `transfer_efficiency`, `current_round`
+
+**`GET /api/v1/knowledge-transfer/history`** — Same data as list endpoint (for historical timeline views).
+
+### Similarity Endpoints
+
+**`GET /api/v1/similarity`** — Returns a list of similarity analysis records.
+
+Response schema (`SimilarityListResponse`):
+```json
+{
+  "status": "success",
+  "message": "Similarity analyses retrieved successfully",
+  "data": [
+    {
+      "analysis_id": "sim_001",
+      "source_client": "client_A",
+      "target_client": "client_B",
+      "prototype_id": "proto_img_1",
+      "modality": "image",
+      "metric": "cosine",
+      "cosine_similarity": 0.92,
+      "euclidean_distance": 0.28,
+      "prototype_distance": 0.15,
+      "confidence": 0.95,
+      "round": 10,
+      "cluster": 1,
+      "status": "completed",
+      "created_at": "2025-01-15T10:30:00Z"
+    }
+  ],
+  "total": 4
+}
+```
+
+**`GET /api/v1/similarity/{analysis_id}`** — Returns detail or 404.
+
+**`GET /api/v1/similarity/statistics`** — Aggregate statistics:
+- `average_similarity`, `max_similarity`, `min_similarity`, `average_distance`
+- `total_analyses`, `total_clusters`, `total_clients`, `total_prototypes`, `current_round`
+
+**`GET /api/v1/similarity/matrix`** — Pairwise modality-modality similarity matrix:
+```json
+{
+  "status": "success",
+  "message": "Similarity matrix retrieved successfully",
+  "data": [
+    {"source": "image", "target": "sensor", "similarity": 0.85, "count": 42},
+    {"source": "image", "target": "text", "similarity": 0.62, "count": 38}
+  ]
+}
+```
+
+**`GET /api/v1/similarity/history`** — Same data as list endpoint (for historical timeline views).
+
+### Prototype Endpoints
+
+**`GET /api/v1/prototypes`** — Returns list of prototypes.
+
+**`GET /api/v1/prototypes/{prototype_id}`** — Returns detail or 404.
+
+### Swagger
+
+Interactive API documentation is available at:
+- Swagger UI: `http://localhost:8000/docs`
+- ReDoc: `http://localhost:8000/redoc`
+
+All endpoints are registered in the OpenAPI schema and visible in the Swagger UI.
+
 ## Tests
 
 ```bash
 cd backend
-python -m pytest                       # Run all 1750 tests (1750 pass, 1 skip)
+python -m pytest                       # Run all 1766 tests (1766 pass, 1 skip)
 python -m pytest --cov=app.data --cov=app.models --cov=app.prototypes --cov=app.evaluation  # Coverage (96%+)
 ```

@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     project_name: str = "Personalized Prototype-Based Multimodal Federated Learning"
     project_name_short: str = "PP-MFL"
     version: str = "0.1.0"
-    debug: bool = True
+    debug: bool = False
     api_prefix: str = "/api/v1"
 
     cors_origins: list[str] = ["*"]
@@ -18,7 +18,7 @@ class Settings(BaseSettings):
     cors_allow_headers: list[str] = ["*"]
 
     datasets_root: str = "datasets"
-    log_level: str = "DEBUG"
+    log_level: str = "INFO"
     log_format: str = "json"
     log_file: str = "logs/app.log"
 
